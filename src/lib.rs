@@ -3,17 +3,6 @@
 
 //! Thin facade re-exports for the available RustUse crate sets.
 
-#[cfg(feature = "use-atomic-mass")]
-pub use use_atomic_mass;
-#[cfg(feature = "use-atomic-number")]
-pub use use_atomic_number;
-#[cfg(feature = "use-electron-shell")]
-pub use use_electron_shell;
-#[cfg(feature = "use-element")]
-pub use use_element;
-#[cfg(feature = "use-periodic-table")]
-pub use use_periodic_table;
-
 #[cfg(feature = "use-algebra")]
 pub use use_algebra;
 #[cfg(feature = "use-calculus")]
@@ -51,51 +40,12 @@ pub use use_statistics;
 #[cfg(feature = "use-trigonometry")]
 pub use use_trigonometry;
 
-#[cfg(feature = "use-cargo")]
-pub use use_cargo;
 #[cfg(feature = "use-crate")]
 pub use use_crate;
-#[cfg(feature = "use-release")]
-pub use use_release;
 #[cfg(feature = "use-rust")]
 pub use use_rust;
 #[cfg(feature = "use-version")]
 pub use use_version;
-
-/// Grouped access to the RustUse chemistry crates.
-#[cfg(any(
-    feature = "use-atomic-mass",
-    feature = "use-atomic-number",
-    feature = "use-electron-shell",
-    feature = "use-element",
-    feature = "use-periodic-table"
-))]
-pub mod chemistry {
-    #[cfg(feature = "use-atomic-mass")]
-    pub use crate::use_atomic_mass;
-    #[cfg(feature = "use-atomic-mass")]
-    pub use crate::use_atomic_mass as atomic_mass;
-
-    #[cfg(feature = "use-atomic-number")]
-    pub use crate::use_atomic_number;
-    #[cfg(feature = "use-atomic-number")]
-    pub use crate::use_atomic_number as atomic_number;
-
-    #[cfg(feature = "use-electron-shell")]
-    pub use crate::use_electron_shell;
-    #[cfg(feature = "use-electron-shell")]
-    pub use crate::use_electron_shell as electron_shell;
-
-    #[cfg(feature = "use-element")]
-    pub use crate::use_element;
-    #[cfg(feature = "use-element")]
-    pub use crate::use_element as element;
-
-    #[cfg(feature = "use-periodic-table")]
-    pub use crate::use_periodic_table;
-    #[cfg(feature = "use-periodic-table")]
-    pub use crate::use_periodic_table as periodic_table;
-}
 
 /// Grouped access to the RustUse math crates.
 #[cfg(any(
@@ -211,28 +161,12 @@ pub mod math {
 }
 
 /// Grouped access to the RustUse Rust ecosystem crates.
-#[cfg(any(
-    feature = "use-cargo",
-    feature = "use-crate",
-    feature = "use-release",
-    feature = "use-rust",
-    feature = "use-version"
-))]
+#[cfg(any(feature = "use-crate", feature = "use-rust", feature = "use-version"))]
 pub mod rust {
-    #[cfg(feature = "use-cargo")]
-    pub use crate::use_cargo;
-    #[cfg(feature = "use-cargo")]
-    pub use crate::use_cargo as cargo;
-
     #[cfg(feature = "use-crate")]
     pub use crate::use_crate;
     #[cfg(feature = "use-crate")]
     pub use crate::use_crate as crate_tools;
-
-    #[cfg(feature = "use-release")]
-    pub use crate::use_release;
-    #[cfg(feature = "use-release")]
-    pub use crate::use_release as release;
 
     #[cfg(feature = "use-rust")]
     pub use crate::use_rust;
@@ -255,8 +189,6 @@ pub mod prelude {
 
 #[cfg(test)]
 mod tests {
-    #[cfg(feature = "use-element")]
-    use crate::chemistry::element::element_by_symbol;
     #[cfg(feature = "use-combinatorics")]
     use crate::math::combinatorics::factorial;
     #[cfg(feature = "use-version")]
@@ -264,12 +196,6 @@ mod tests {
 
     #[test]
     fn set_modules_expose_child_crates() {
-        #[cfg(feature = "use-element")]
-        {
-            let carbon = element_by_symbol("C").expect("known element should exist");
-            assert_eq!(carbon.atomic_number, 6);
-        }
-
         #[cfg(feature = "use-combinatorics")]
         assert_eq!(factorial(5), Ok(120));
 
