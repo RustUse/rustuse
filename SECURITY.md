@@ -5,12 +5,12 @@ its published crates, and the canonical release path.
 
 ## Supported versions
 
-| Surface | Status |
-| ------- | ------ |
-| `main` | Supported on a best-effort basis until superseded |
-| Latest published pre-1.0 release line | Supported when available |
-| Older published pre-1.0 releases | Not guaranteed |
-| Unofficial forks or mirrors | Best effort after canonical triage |
+| Surface                               | Status                                            |
+| ------------------------------------- | ------------------------------------------------- |
+| `main`                                | Supported on a best-effort basis until superseded |
+| Latest published pre-1.0 release line | Supported when available                          |
+| Older published pre-1.0 releases      | Not guaranteed                                    |
+| Unofficial forks or mirrors           | Best effort after canonical triage                |
 
 ## Reporting a vulnerability
 

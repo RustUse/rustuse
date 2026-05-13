@@ -2,7 +2,7 @@
 name = "rustuse"
 description = "Unified facade crate for the published RustUse sets and child crates"
 publish = true
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
@@ -10,7 +10,7 @@ documentation = "https://docs.rs/rustuse"
 repository = "https://github.com/RustUse/rustuse"
 homepage = "https://rustuse.org"
 rust-version = "1.95.0"
-keywords = ["rustuse", "facade", "math", "rust", "prelude"]
+keywords = ["rustuse", "facade", "math", "rust", "chemistry"]
 categories = ["mathematics", "development-tools", "rust-patterns"]
 
 [package.metadata.docs.rs]
@@ -18,7 +18,15 @@ all-features = true
 
 [features]
 default = ["full"]
-full = ["math", "rust"]
+full = ["chemistry", "math", "rust"]
+chemistry = [
+    "use-atomic-mass",
+    "use-atomic-number",
+    "use-chemistry",
+    "use-electron-shell",
+    "use-element",
+    "use-periodic-table",
+]
 math = [
     "use-algebra",
     "use-calculus",
@@ -60,6 +68,12 @@ use-series = { version = "0.0.1", path = "../use-math/crates/use-series", option
 use-set = { version = "0.0.1", path = "../use-math/crates/use-set", optional = true }
 use-statistics = { version = "0.0.1", path = "../use-math/crates/use-statistics", optional = true }
 use-trigonometry = { version = "0.0.1", path = "../use-math/crates/use-trigonometry", optional = true }
+use-atomic-mass = { version = "0.1.0", path = "../use-chemistry/crates/use-atomic-mass", optional = true }
+use-atomic-number = { version = "0.1.0", path = "../use-chemistry/crates/use-atomic-number", optional = true }
+use-chemistry = { version = "0.1.0", path = "../use-chemistry/crates/use-chemistry", optional = true }
+use-electron-shell = { version = "0.1.0", path = "../use-chemistry/crates/use-electron-shell", optional = true }
+use-element = { version = "0.1.0", path = "../use-chemistry/crates/use-element", optional = true }
+use-periodic-table = { version = "0.1.0", path = "../use-chemistry/crates/use-periodic-table", optional = true }
 use-crate = { version = "0.1.0", path = "../use-rust/crates/use-crate", optional = true }
 use-rust = { version = "0.1.0", path = "../use-rust/crates/use-rust", optional = true }
 use-version = { version = "0.1.0", path = "../use-rust/crates/use-version", optional = true }

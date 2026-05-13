@@ -50,20 +50,26 @@ dependencies = [
 
 [[package]]
 name = "rustuse"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "use-algebra",
+ "use-atomic-mass",
+ "use-atomic-number",
  "use-calculus",
  "use-catalan",
+ "use-chemistry",
  "use-combinatorics",
  "use-complex",
  "use-crate",
+ "use-electron-shell",
+ "use-element",
  "use-geometry",
  "use-integer",
  "use-linear",
  "use-logic",
  "use-math",
  "use-number",
+ "use-periodic-table",
  "use-probability",
  "use-rational",
  "use-real",
@@ -161,12 +167,37 @@ name = "use-algebra"
 version = "0.0.1"
 
 [[package]]
+name = "use-atomic-mass"
+version = "0.1.0"
+dependencies = [
+ "use-element",
+]
+
+[[package]]
+name = "use-atomic-number"
+version = "0.1.0"
+dependencies = [
+ "use-element",
+]
+
+[[package]]
 name = "use-calculus"
 version = "0.0.1"
 
 [[package]]
 name = "use-catalan"
 version = "0.0.1"
+
+[[package]]
+name = "use-chemistry"
+version = "0.1.0"
+dependencies = [
+ "use-atomic-mass",
+ "use-atomic-number",
+ "use-electron-shell",
+ "use-element",
+ "use-periodic-table",
+]
 
 [[package]]
 name = "use-combinatorics"
@@ -183,6 +214,17 @@ dependencies = [
  "serde",
  "toml_edit",
 ]
+
+[[package]]
+name = "use-electron-shell"
+version = "0.1.0"
+dependencies = [
+ "use-element",
+]
+
+[[package]]
+name = "use-element"
+version = "0.1.0"
 
 [[package]]
 name = "use-geometry"
@@ -226,6 +268,13 @@ dependencies = [
 [[package]]
 name = "use-number"
 version = "0.0.1"
+
+[[package]]
+name = "use-periodic-table"
+version = "0.1.0"
+dependencies = [
+ "use-element",
+]
 
 [[package]]
 name = "use-probability"

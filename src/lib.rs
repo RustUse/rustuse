@@ -3,6 +3,19 @@
 
 //! Thin facade re-exports for the available RustUse crate sets.
 
+#[cfg(feature = "use-atomic-mass")]
+pub use use_atomic_mass;
+#[cfg(feature = "use-atomic-number")]
+pub use use_atomic_number;
+#[cfg(feature = "use-chemistry")]
+pub use use_chemistry;
+#[cfg(feature = "use-electron-shell")]
+pub use use_electron_shell;
+#[cfg(feature = "use-element")]
+pub use use_element;
+#[cfg(feature = "use-periodic-table")]
+pub use use_periodic_table;
+
 #[cfg(feature = "use-algebra")]
 pub use use_algebra;
 #[cfg(feature = "use-calculus")]
@@ -46,6 +59,47 @@ pub use use_crate;
 pub use use_rust;
 #[cfg(feature = "use-version")]
 pub use use_version;
+
+/// Grouped access to the RustUse chemistry crates.
+#[cfg(any(
+    feature = "use-atomic-mass",
+    feature = "use-atomic-number",
+    feature = "use-chemistry",
+    feature = "use-electron-shell",
+    feature = "use-element",
+    feature = "use-periodic-table"
+))]
+pub mod chemistry {
+    #[cfg(feature = "use-atomic-mass")]
+    pub use crate::use_atomic_mass;
+    #[cfg(feature = "use-atomic-mass")]
+    pub use crate::use_atomic_mass as atomic_mass;
+
+    #[cfg(feature = "use-atomic-number")]
+    pub use crate::use_atomic_number;
+    #[cfg(feature = "use-atomic-number")]
+    pub use crate::use_atomic_number as atomic_number;
+
+    #[cfg(feature = "use-chemistry")]
+    pub use crate::use_chemistry;
+    #[cfg(feature = "use-chemistry")]
+    pub use crate::use_chemistry as facade;
+
+    #[cfg(feature = "use-electron-shell")]
+    pub use crate::use_electron_shell;
+    #[cfg(feature = "use-electron-shell")]
+    pub use crate::use_electron_shell as electron_shell;
+
+    #[cfg(feature = "use-element")]
+    pub use crate::use_element;
+    #[cfg(feature = "use-element")]
+    pub use crate::use_element as element;
+
+    #[cfg(feature = "use-periodic-table")]
+    pub use crate::use_periodic_table;
+    #[cfg(feature = "use-periodic-table")]
+    pub use crate::use_periodic_table as periodic_table;
+}
 
 /// Grouped access to the RustUse math crates.
 #[cfg(any(
@@ -181,6 +235,8 @@ pub mod rust {
 
 /// Commonly used facade items from set crates that already define a prelude.
 pub mod prelude {
+    #[cfg(feature = "use-chemistry")]
+    pub use use_chemistry::prelude::*;
     #[cfg(feature = "use-math")]
     pub use use_math::prelude::*;
     #[cfg(feature = "use-rust")]
@@ -189,6 +245,8 @@ pub mod prelude {
 
 #[cfg(test)]
 mod tests {
+    #[cfg(feature = "use-element")]
+    use crate::chemistry::element::element_by_symbol;
     #[cfg(feature = "use-combinatorics")]
     use crate::math::combinatorics::factorial;
     #[cfg(feature = "use-version")]
@@ -203,6 +261,12 @@ mod tests {
         {
             let version = parse_version("0.1.0").expect("version should parse");
             assert_eq!(version.to_string(), "0.1.0");
+        }
+
+        #[cfg(feature = "use-element")]
+        {
+            let oxygen = element_by_symbol("O").expect("oxygen should exist");
+            assert_eq!(oxygen.atomic_number, 8);
         }
     }
 }
