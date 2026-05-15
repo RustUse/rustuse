@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+## [0.1.2](https://github.com/RustUse/rustuse/compare/v0.1.1...v0.1.2) - 2026-05-15
+
+### Added
+
+- Added a `constants` feature group and facade reexports for `use-constants` plus its focused
+  child crates on `main`.
+- Added `use-earth-constants` to the constants facade surface on `main`.
+
+### Changed
+
+- Updated the release documentation to reflect the published `use-constants` facade surface.
+
 ## [0.1.1](https://github.com/RustUse/rustuse/compare/v0.1.0...v0.1.1) - 2026-05-13
 
 ### Changed
@@ -11,7 +23,7 @@
 ### Added
 
 - Added a `chemistry` feature group and reexports for `use-chemistry` plus its published child
-	crates.
+  crates.
 
 ## 0.1.0 - 2026-05-12
 

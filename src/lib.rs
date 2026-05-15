@@ -3,6 +3,21 @@
 
 //! Thin facade re-exports for the available RustUse crate sets.
 
+#[cfg(feature = "use-astronomical-constants")]
+pub use use_astronomical_constants;
+#[cfg(feature = "use-chemical-constants")]
+pub use use_chemical_constants;
+#[cfg(feature = "use-computing-constants")]
+pub use use_computing_constants;
+#[cfg(feature = "use-constants")]
+pub use use_constants;
+#[cfg(feature = "use-earth-constants")]
+pub use use_earth_constants;
+#[cfg(feature = "use-math-constants")]
+pub use use_math_constants;
+#[cfg(feature = "use-physical-constants")]
+pub use use_physical_constants;
+
 #[cfg(feature = "use-atomic-mass")]
 pub use use_atomic_mass;
 #[cfg(feature = "use-atomic-number")]
@@ -59,6 +74,53 @@ pub use use_crate;
 pub use use_rust;
 #[cfg(feature = "use-version")]
 pub use use_version;
+
+/// Grouped access to the RustUse constants crates.
+#[cfg(any(
+    feature = "use-astronomical-constants",
+    feature = "use-chemical-constants",
+    feature = "use-computing-constants",
+    feature = "use-earth-constants",
+    feature = "use-constants",
+    feature = "use-math-constants",
+    feature = "use-physical-constants"
+))]
+pub mod constants {
+    #[cfg(feature = "use-astronomical-constants")]
+    pub use crate::use_astronomical_constants;
+    #[cfg(feature = "use-astronomical-constants")]
+    pub use crate::use_astronomical_constants as astronomical;
+
+    #[cfg(feature = "use-chemical-constants")]
+    pub use crate::use_chemical_constants;
+    #[cfg(feature = "use-chemical-constants")]
+    pub use crate::use_chemical_constants as chemical;
+
+    #[cfg(feature = "use-computing-constants")]
+    pub use crate::use_computing_constants;
+    #[cfg(feature = "use-computing-constants")]
+    pub use crate::use_computing_constants as computing;
+
+    #[cfg(feature = "use-earth-constants")]
+    pub use crate::use_earth_constants;
+    #[cfg(feature = "use-earth-constants")]
+    pub use crate::use_earth_constants as earth;
+
+    #[cfg(feature = "use-constants")]
+    pub use crate::use_constants;
+    #[cfg(feature = "use-constants")]
+    pub use crate::use_constants as facade;
+
+    #[cfg(feature = "use-math-constants")]
+    pub use crate::use_math_constants;
+    #[cfg(feature = "use-math-constants")]
+    pub use crate::use_math_constants as math;
+
+    #[cfg(feature = "use-physical-constants")]
+    pub use crate::use_physical_constants;
+    #[cfg(feature = "use-physical-constants")]
+    pub use crate::use_physical_constants as physical;
+}
 
 /// Grouped access to the RustUse chemistry crates.
 #[cfg(any(
@@ -247,13 +309,27 @@ pub mod prelude {
 mod tests {
     #[cfg(feature = "use-element")]
     use crate::chemistry::element::element_by_symbol;
+    #[cfg(feature = "use-earth-constants")]
+    use crate::constants::earth;
+    #[cfg(feature = "use-math-constants")]
+    use crate::constants::math;
     #[cfg(feature = "use-combinatorics")]
     use crate::math::combinatorics::factorial;
     #[cfg(feature = "use-version")]
     use crate::rust::version::parse_version;
 
+    fn runtime(value: f64) -> f64 {
+        value
+    }
+
     #[test]
     fn set_modules_expose_child_crates() {
+        #[cfg(feature = "use-earth-constants")]
+        assert!(runtime(earth::EARTH_RADIUS_MEAN) > 0.0);
+
+        #[cfg(feature = "use-math-constants")]
+        assert_eq!(math::TAU, 2.0 * math::PI);
+
         #[cfg(feature = "use-combinatorics")]
         assert_eq!(factorial(5), Ok(120));
 
