@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+### Added
+
+- Added a `pattern` feature group and facade reexports for `use-pattern` plus its focused child
+  crates on `main`.
+
+### Changed
+
+- Updated the rustuse release notes and publish-readiness flow to treat the staged
+  `use-pattern` surface like the existing crates.io-gated facade waves.
+
 ## [0.1.2](https://github.com/RustUse/rustuse/compare/v0.1.1...v0.1.2) - 2026-05-15
 
 ### Added

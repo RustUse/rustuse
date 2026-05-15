@@ -3,6 +3,15 @@
 version = 4
 
 [[package]]
+name = "aho-corasick"
+version = "1.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ddd31a130427c27518df266943a5308ed92d4b226cc639f5a8f1002816174301"
+dependencies = [
+ "memchr",
+]
+
+[[package]]
 name = "equivalent"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -49,6 +58,35 @@ dependencies = [
 ]
 
 [[package]]
+name = "regex"
+version = "1.12.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e10754a14b9137dd7b1e3e5b0493cc9171fdd105e0ab477f51b72e7f3ac0e276"
+dependencies = [
+ "aho-corasick",
+ "memchr",
+ "regex-automata",
+ "regex-syntax",
+]
+
+[[package]]
+name = "regex-automata"
+version = "0.4.14"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6e1dd4122fc1595e8162618945476892eefca7b88c52820e74af6262213cae8f"
+dependencies = [
+ "aho-corasick",
+ "memchr",
+ "regex-syntax",
+]
+
+[[package]]
+name = "regex-syntax"
+version = "0.8.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dc897dd8d9e8bd1ed8cdad82b5966c3e0ecae09fb1907d58efaa013543185d0a"
+
+[[package]]
 name = "rustuse"
 version = "0.1.2"
 dependencies = [
@@ -60,32 +98,62 @@ dependencies = [
  "use-catalan",
  "use-chemical-constants",
  "use-chemistry",
+ "use-cidr",
  "use-combinatorics",
  "use-complex",
  "use-computing-constants",
  "use-constants",
+ "use-cookie",
  "use-crate",
+ "use-css",
+ "use-dns",
+ "use-domain",
  "use-earth-constants",
  "use-electron-shell",
  "use-element",
  "use-geometry",
+ "use-glob",
+ "use-header",
+ "use-host",
+ "use-html",
+ "use-http",
  "use-integer",
+ "use-ip",
  "use-linear",
  "use-logic",
+ "use-mac",
+ "use-match",
  "use-math",
  "use-math-constants",
+ "use-method",
+ "use-mime",
+ "use-net",
  "use-number",
+ "use-origin",
+ "use-pattern",
  "use-periodic-table",
  "use-physical-constants",
+ "use-port",
  "use-probability",
+ "use-query",
  "use-rational",
  "use-real",
+ "use-regex",
+ "use-route",
  "use-rust",
  "use-series",
  "use-set",
+ "use-socket",
  "use-statistics",
+ "use-status",
+ "use-tcp",
  "use-trigonometry",
+ "use-udp",
+ "use-uri",
+ "use-url",
  "use-version",
+ "use-web",
+ "use-wildcard",
 ]
 
 [[package]]
@@ -171,11 +239,11 @@ checksum = "e6e4313cd5fcd3dad5cafa179702e2b244f760991f45397d14d4ebf38247da75"
 
 [[package]]
 name = "use-algebra"
-version = "0.0.3"
+version = "0.0.6"
 
 [[package]]
 name = "use-arithmetic"
-version = "0.0.3"
+version = "0.0.6"
 
 [[package]]
 name = "use-astronomical-constants"
@@ -197,11 +265,11 @@ dependencies = [
 
 [[package]]
 name = "use-calculus"
-version = "0.0.3"
+version = "0.0.6"
 
 [[package]]
 name = "use-catalan"
-version = "0.0.3"
+version = "0.0.6"
 
 [[package]]
 name = "use-chemical-constants"
@@ -219,12 +287,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-cidr"
+version = "0.1.0"
+
+[[package]]
 name = "use-combinatorics"
-version = "0.0.3"
+version = "0.0.6"
 
 [[package]]
 name = "use-complex"
-version = "0.0.3"
+version = "0.0.6"
 
 [[package]]
 name = "use-computing-constants"
@@ -243,12 +315,28 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-cookie"
+version = "0.0.1"
+
+[[package]]
 name = "use-crate"
 version = "0.1.0"
 dependencies = [
  "serde",
  "toml_edit",
 ]
+
+[[package]]
+name = "use-css"
+version = "0.0.1"
+
+[[package]]
+name = "use-dns"
+version = "0.1.0"
+
+[[package]]
+name = "use-domain"
+version = "0.1.0"
 
 [[package]]
 name = "use-earth-constants"
@@ -266,23 +354,58 @@ name = "use-element"
 version = "0.1.0"
 
 [[package]]
+name = "use-equation"
+version = "0.0.6"
+dependencies = [
+ "use-polynomial",
+]
+
+[[package]]
 name = "use-geode"
-version = "0.0.3"
+version = "0.0.6"
 dependencies = [
  "use-catalan",
 ]
 
 [[package]]
 name = "use-geometry"
-version = "0.0.3"
+version = "0.0.6"
+
+[[package]]
+name = "use-glob"
+version = "0.1.0"
+
+[[package]]
+name = "use-header"
+version = "0.0.1"
+
+[[package]]
+name = "use-host"
+version = "0.1.0"
+
+[[package]]
+name = "use-html"
+version = "0.0.1"
+
+[[package]]
+name = "use-http"
+version = "0.0.1"
 
 [[package]]
 name = "use-integer"
-version = "0.0.3"
+version = "0.0.6"
+
+[[package]]
+name = "use-interval"
+version = "0.0.6"
+
+[[package]]
+name = "use-ip"
+version = "0.1.0"
 
 [[package]]
 name = "use-linear"
-version = "0.0.3"
+version = "0.0.6"
 dependencies = [
  "use-matrix",
  "use-vector",
@@ -290,11 +413,19 @@ dependencies = [
 
 [[package]]
 name = "use-logic"
-version = "0.0.3"
+version = "0.0.6"
+
+[[package]]
+name = "use-mac"
+version = "0.1.0"
+
+[[package]]
+name = "use-match"
+version = "0.1.0"
 
 [[package]]
 name = "use-math"
-version = "0.0.3"
+version = "0.0.6"
 dependencies = [
  "use-algebra",
  "use-arithmetic",
@@ -302,13 +433,19 @@ dependencies = [
  "use-catalan",
  "use-combinatorics",
  "use-complex",
+ "use-equation",
  "use-geode",
  "use-geometry",
  "use-integer",
+ "use-interval",
  "use-linear",
  "use-logic",
  "use-matrix",
+ "use-modular",
  "use-number",
+ "use-numerical",
+ "use-polynomial",
+ "use-prime",
  "use-probability",
  "use-rational",
  "use-real",
@@ -325,14 +462,51 @@ version = "0.1.0"
 
 [[package]]
 name = "use-matrix"
-version = "0.0.3"
+version = "0.0.6"
 dependencies = [
  "use-vector",
 ]
 
 [[package]]
+name = "use-method"
+version = "0.0.1"
+
+[[package]]
+name = "use-mime"
+version = "0.0.1"
+
+[[package]]
+name = "use-modular"
+version = "0.0.6"
+
+[[package]]
+name = "use-net"
+version = "0.1.0"
+
+[[package]]
 name = "use-number"
-version = "0.0.3"
+version = "0.0.6"
+
+[[package]]
+name = "use-numerical"
+version = "0.0.6"
+dependencies = [
+ "use-interval",
+]
+
+[[package]]
+name = "use-origin"
+version = "0.0.1"
+
+[[package]]
+name = "use-pattern"
+version = "0.1.0"
+dependencies = [
+ "use-glob",
+ "use-match",
+ "use-regex",
+ "use-wildcard",
+]
 
 [[package]]
 name = "use-periodic-table"
@@ -346,16 +520,46 @@ name = "use-physical-constants"
 version = "0.1.0"
 
 [[package]]
+name = "use-polynomial"
+version = "0.0.6"
+
+[[package]]
+name = "use-port"
+version = "0.1.0"
+
+[[package]]
+name = "use-prime"
+version = "0.0.6"
+
+[[package]]
 name = "use-probability"
-version = "0.0.3"
+version = "0.0.6"
+
+[[package]]
+name = "use-query"
+version = "0.0.1"
 
 [[package]]
 name = "use-rational"
-version = "0.0.3"
+version = "0.0.6"
 
 [[package]]
 name = "use-real"
-version = "0.0.3"
+version = "0.0.6"
+dependencies = [
+ "use-interval",
+]
+
+[[package]]
+name = "use-regex"
+version = "0.1.0"
+dependencies = [
+ "regex",
+]
+
+[[package]]
+name = "use-route"
+version = "0.0.1"
 
 [[package]]
 name = "use-rust"
@@ -367,23 +571,47 @@ dependencies = [
 
 [[package]]
 name = "use-series"
-version = "0.0.3"
+version = "0.0.6"
 
 [[package]]
 name = "use-set"
-version = "0.0.3"
+version = "0.0.6"
+
+[[package]]
+name = "use-socket"
+version = "0.1.0"
 
 [[package]]
 name = "use-statistics"
-version = "0.0.3"
+version = "0.0.6"
+
+[[package]]
+name = "use-status"
+version = "0.0.1"
+
+[[package]]
+name = "use-tcp"
+version = "0.1.0"
 
 [[package]]
 name = "use-trigonometry"
-version = "0.0.3"
+version = "0.0.6"
+
+[[package]]
+name = "use-udp"
+version = "0.1.0"
+
+[[package]]
+name = "use-uri"
+version = "0.0.1"
+
+[[package]]
+name = "use-url"
+version = "0.0.1"
 
 [[package]]
 name = "use-vector"
-version = "0.0.3"
+version = "0.0.6"
 
 [[package]]
 name = "use-version"
@@ -392,6 +620,14 @@ dependencies = [
  "semver",
  "serde",
 ]
+
+[[package]]
+name = "use-web"
+version = "0.0.1"
+
+[[package]]
+name = "use-wildcard"
+version = "0.1.0"
 
 [[package]]
 name = "winnow"

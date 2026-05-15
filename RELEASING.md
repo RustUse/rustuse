@@ -21,6 +21,9 @@ cargo xtest-minimal
 cargo publish --dry-run --allow-dirty -p rustuse
 ```
 
+The publish dry-run is intentionally crates.io-gated. It is only expected to succeed after every
+staged child crate wired into `rustuse` is already visible on crates.io.
+
 ## Notes
 
 - `rustuse` is a facade crate, so releases should stay aligned with the
@@ -32,3 +35,6 @@ cargo publish --dry-run --allow-dirty -p rustuse
   bootstrap path.
 - Published crates.io versions are permanent. Verify crate metadata, README
   examples, and changelog entries before any real publish.
+- The current `main` branch wires in staged `use-net`, `use-web`, and
+  `use-pattern` surfaces. Until those focused crates and facades are live on
+  crates.io, the publish-readiness dry-run is expected to remain blocked.

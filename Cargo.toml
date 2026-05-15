@@ -18,7 +18,7 @@ all-features = true
 
 [features]
 default = ["full"]
-full = ["chemistry", "constants", "math", "rust"]
+full = ["chemistry", "constants", "math", "net", "pattern", "rust", "web"]
 chemistry = [
     "use-atomic-mass",
     "use-atomic-number",
@@ -56,27 +56,79 @@ math = [
     "use-statistics",
     "use-trigonometry",
 ]
+net = [
+    "use-cidr",
+    "use-dns",
+    "use-domain",
+    "use-host",
+    "use-ip",
+    "use-mac",
+    "use-net",
+    "use-port",
+    "use-socket",
+    "use-tcp",
+    "use-udp",
+]
+pattern = [
+    "use-glob",
+    "use-match",
+    "use-pattern",
+    "use-regex",
+    "use-wildcard",
+]
 rust = ["use-crate", "use-rust", "use-version"]
+web = [
+    "use-web",
+    "use-http",
+    "use-method",
+    "use-header",
+    "use-status",
+    "use-cookie",
+    "use-mime",
+    "use-query",
+    "use-uri",
+    "use-url",
+    "use-origin",
+    "use-route",
+    "use-html",
+    "use-css",
+]
 
 [dependencies]
-use-algebra = { version = "0.0.3", path = "../use-math/crates/use-algebra", optional = true }
-use-calculus = { version = "0.0.3", path = "../use-math/crates/use-calculus", optional = true }
-use-catalan = { version = "0.0.3", path = "../use-math/crates/use-catalan", optional = true }
-use-combinatorics = { version = "0.0.3", path = "../use-math/crates/use-combinatorics", optional = true }
-use-complex = { version = "0.0.3", path = "../use-math/crates/use-complex", optional = true }
-use-geometry = { version = "0.0.3", path = "../use-math/crates/use-geometry", optional = true }
-use-integer = { version = "0.0.3", path = "../use-math/crates/use-integer", optional = true }
-use-linear = { version = "0.0.3", path = "../use-math/crates/use-linear", optional = true }
-use-logic = { version = "0.0.3", path = "../use-math/crates/use-logic", optional = true }
-use-math = { version = "0.0.3", path = "../use-math/crates/use-math", optional = true }
-use-number = { version = "0.0.3", path = "../use-math/crates/use-number", optional = true }
-use-probability = { version = "0.0.3", path = "../use-math/crates/use-probability", optional = true }
-use-rational = { version = "0.0.3", path = "../use-math/crates/use-rational", optional = true }
-use-real = { version = "0.0.3", path = "../use-math/crates/use-real", optional = true }
-use-series = { version = "0.0.3", path = "../use-math/crates/use-series", optional = true }
-use-set = { version = "0.0.3", path = "../use-math/crates/use-set", optional = true }
-use-statistics = { version = "0.0.3", path = "../use-math/crates/use-statistics", optional = true }
-use-trigonometry = { version = "0.0.3", path = "../use-math/crates/use-trigonometry", optional = true }
+use-algebra = { version = "0.0.6", path = "../use-math/crates/use-algebra", optional = true }
+use-calculus = { version = "0.0.6", path = "../use-math/crates/use-calculus", optional = true }
+use-catalan = { version = "0.0.6", path = "../use-math/crates/use-catalan", optional = true }
+use-combinatorics = { version = "0.0.6", path = "../use-math/crates/use-combinatorics", optional = true }
+use-complex = { version = "0.0.6", path = "../use-math/crates/use-complex", optional = true }
+use-geometry = { version = "0.0.6", path = "../use-math/crates/use-geometry", optional = true }
+use-integer = { version = "0.0.6", path = "../use-math/crates/use-integer", optional = true }
+use-linear = { version = "0.0.6", path = "../use-math/crates/use-linear", optional = true }
+use-logic = { version = "0.0.6", path = "../use-math/crates/use-logic", optional = true }
+use-math = { version = "0.0.6", path = "../use-math/crates/use-math", optional = true }
+use-number = { version = "0.0.6", path = "../use-math/crates/use-number", optional = true }
+use-probability = { version = "0.0.6", path = "../use-math/crates/use-probability", optional = true }
+use-rational = { version = "0.0.6", path = "../use-math/crates/use-rational", optional = true }
+use-real = { version = "0.0.6", path = "../use-math/crates/use-real", optional = true }
+use-series = { version = "0.0.6", path = "../use-math/crates/use-series", optional = true }
+use-set = { version = "0.0.6", path = "../use-math/crates/use-set", optional = true }
+use-statistics = { version = "0.0.6", path = "../use-math/crates/use-statistics", optional = true }
+use-trigonometry = { version = "0.0.6", path = "../use-math/crates/use-trigonometry", optional = true }
+use-cidr = { version = "0.1.0", path = "../use-net/crates/use-cidr", optional = true }
+use-dns = { version = "0.1.0", path = "../use-net/crates/use-dns", optional = true }
+use-domain = { version = "0.1.0", path = "../use-net/crates/use-domain", optional = true }
+use-host = { version = "0.1.0", path = "../use-net/crates/use-host", optional = true }
+use-ip = { version = "0.1.0", path = "../use-net/crates/use-ip", optional = true }
+use-mac = { version = "0.1.0", path = "../use-net/crates/use-mac", optional = true }
+use-net = { version = "0.1.0", path = "../use-net/crates/use-net", optional = true }
+use-port = { version = "0.1.0", path = "../use-net/crates/use-port", optional = true }
+use-socket = { version = "0.1.0", path = "../use-net/crates/use-socket", optional = true }
+use-tcp = { version = "0.1.0", path = "../use-net/crates/use-tcp", optional = true }
+use-udp = { version = "0.1.0", path = "../use-net/crates/use-udp", optional = true }
+use-glob = { version = "0.1.0", path = "../use-pattern/crates/use-glob", optional = true }
+use-match = { version = "0.1.0", path = "../use-pattern/crates/use-match", optional = true }
+use-pattern = { version = "0.1.0", path = "../use-pattern/crates/use-pattern", optional = true, features = ["full"] }
+use-regex = { version = "0.1.0", path = "../use-pattern/crates/use-regex", optional = true }
+use-wildcard = { version = "0.1.0", path = "../use-pattern/crates/use-wildcard", optional = true }
 use-atomic-mass = { version = "0.1.0", path = "../use-chemistry/crates/use-atomic-mass", optional = true }
 use-atomic-number = { version = "0.1.0", path = "../use-chemistry/crates/use-atomic-number", optional = true }
 use-chemistry = { version = "0.1.0", path = "../use-chemistry/crates/use-chemistry", optional = true }
@@ -90,6 +142,20 @@ use-earth-constants = { version = "0.1.0", path = "../use-constants/crates/use-e
 use-constants = { version = "0.1.0", path = "../use-constants/crates/use-constants", optional = true }
 use-math-constants = { version = "0.1.0", path = "../use-constants/crates/use-math-constants", optional = true }
 use-physical-constants = { version = "0.1.0", path = "../use-constants/crates/use-physical-constants", optional = true }
+use-web = { version = "0.0.1", path = "../use-web/crates/use-web", optional = true }
+use-http = { version = "0.0.1", path = "../use-web/crates/use-http", optional = true }
+use-method = { version = "0.0.1", path = "../use-web/crates/use-method", optional = true }
+use-header = { version = "0.0.1", path = "../use-web/crates/use-header", optional = true }
+use-status = { version = "0.0.1", path = "../use-web/crates/use-status", optional = true }
+use-cookie = { version = "0.0.1", path = "../use-web/crates/use-cookie", optional = true }
+use-mime = { version = "0.0.1", path = "../use-web/crates/use-mime", optional = true }
+use-query = { version = "0.0.1", path = "../use-web/crates/use-query", optional = true }
+use-uri = { version = "0.0.1", path = "../use-web/crates/use-uri", optional = true }
+use-url = { version = "0.0.1", path = "../use-web/crates/use-url", optional = true }
+use-origin = { version = "0.0.1", path = "../use-web/crates/use-origin", optional = true }
+use-route = { version = "0.0.1", path = "../use-web/crates/use-route", optional = true }
+use-html = { version = "0.0.1", path = "../use-web/crates/use-html", optional = true }
+use-css = { version = "0.0.1", path = "../use-web/crates/use-css", optional = true }
 use-crate = { version = "0.1.0", path = "../use-rust/crates/use-crate", optional = true }
 use-rust = { version = "0.1.0", path = "../use-rust/crates/use-rust", optional = true }
 use-version = { version = "0.1.0", path = "../use-rust/crates/use-version", optional = true }

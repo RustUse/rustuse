@@ -18,6 +18,69 @@ pub use use_math_constants;
 #[cfg(feature = "use-physical-constants")]
 pub use use_physical_constants;
 
+#[cfg(feature = "use-cookie")]
+pub use use_cookie;
+#[cfg(feature = "use-css")]
+pub use use_css;
+#[cfg(feature = "use-header")]
+pub use use_header;
+#[cfg(feature = "use-html")]
+pub use use_html;
+#[cfg(feature = "use-http")]
+pub use use_http;
+#[cfg(feature = "use-method")]
+pub use use_method;
+#[cfg(feature = "use-mime")]
+pub use use_mime;
+#[cfg(feature = "use-origin")]
+pub use use_origin;
+#[cfg(feature = "use-query")]
+pub use use_query;
+#[cfg(feature = "use-route")]
+pub use use_route;
+#[cfg(feature = "use-status")]
+pub use use_status;
+#[cfg(feature = "use-uri")]
+pub use use_uri;
+#[cfg(feature = "use-url")]
+pub use use_url;
+#[cfg(feature = "use-web")]
+pub use use_web;
+
+#[cfg(feature = "use-cidr")]
+pub use use_cidr;
+#[cfg(feature = "use-dns")]
+pub use use_dns;
+#[cfg(feature = "use-domain")]
+pub use use_domain;
+#[cfg(feature = "use-host")]
+pub use use_host;
+#[cfg(feature = "use-ip")]
+pub use use_ip;
+#[cfg(feature = "use-mac")]
+pub use use_mac;
+#[cfg(feature = "use-net")]
+pub use use_net;
+#[cfg(feature = "use-port")]
+pub use use_port;
+#[cfg(feature = "use-socket")]
+pub use use_socket;
+#[cfg(feature = "use-tcp")]
+pub use use_tcp;
+#[cfg(feature = "use-udp")]
+pub use use_udp;
+
+#[cfg(feature = "use-glob")]
+pub use use_glob;
+#[cfg(feature = "use-match")]
+pub use use_match;
+#[cfg(feature = "use-pattern")]
+pub use use_pattern;
+#[cfg(feature = "use-regex")]
+pub use use_regex;
+#[cfg(feature = "use-wildcard")]
+pub use use_wildcard;
+
 #[cfg(feature = "use-atomic-mass")]
 pub use use_atomic_mass;
 #[cfg(feature = "use-atomic-number")]
@@ -276,6 +339,201 @@ pub mod math {
     pub use crate::use_trigonometry as trigonometry;
 }
 
+/// Grouped access to the RustUse networking crates.
+#[cfg(any(
+    feature = "use-cidr",
+    feature = "use-dns",
+    feature = "use-domain",
+    feature = "use-host",
+    feature = "use-ip",
+    feature = "use-mac",
+    feature = "use-net",
+    feature = "use-port",
+    feature = "use-socket",
+    feature = "use-tcp",
+    feature = "use-udp"
+))]
+pub mod net {
+    #[cfg(feature = "use-cidr")]
+    pub use crate::use_cidr;
+    #[cfg(feature = "use-cidr")]
+    pub use crate::use_cidr as cidr;
+
+    #[cfg(feature = "use-dns")]
+    pub use crate::use_dns;
+    #[cfg(feature = "use-dns")]
+    pub use crate::use_dns as dns;
+
+    #[cfg(feature = "use-domain")]
+    pub use crate::use_domain;
+    #[cfg(feature = "use-domain")]
+    pub use crate::use_domain as domain;
+
+    #[cfg(feature = "use-host")]
+    pub use crate::use_host;
+    #[cfg(feature = "use-host")]
+    pub use crate::use_host as host;
+
+    #[cfg(feature = "use-ip")]
+    pub use crate::use_ip;
+    #[cfg(feature = "use-ip")]
+    pub use crate::use_ip as ip;
+
+    #[cfg(feature = "use-mac")]
+    pub use crate::use_mac;
+    #[cfg(feature = "use-mac")]
+    pub use crate::use_mac as mac;
+
+    #[cfg(feature = "use-net")]
+    pub use crate::use_net;
+    #[cfg(feature = "use-net")]
+    pub use crate::use_net as facade;
+
+    #[cfg(feature = "use-port")]
+    pub use crate::use_port;
+    #[cfg(feature = "use-port")]
+    pub use crate::use_port as port;
+
+    #[cfg(feature = "use-socket")]
+    pub use crate::use_socket;
+    #[cfg(feature = "use-socket")]
+    pub use crate::use_socket as socket;
+
+    #[cfg(feature = "use-tcp")]
+    pub use crate::use_tcp;
+    #[cfg(feature = "use-tcp")]
+    pub use crate::use_tcp as tcp;
+
+    #[cfg(feature = "use-udp")]
+    pub use crate::use_udp;
+    #[cfg(feature = "use-udp")]
+    pub use crate::use_udp as udp;
+}
+
+/// Grouped access to the RustUse pattern crates.
+#[cfg(any(
+    feature = "use-glob",
+    feature = "use-match",
+    feature = "use-pattern",
+    feature = "use-regex",
+    feature = "use-wildcard"
+))]
+pub mod pattern {
+    #[cfg(feature = "use-glob")]
+    pub use crate::use_glob;
+    #[cfg(feature = "use-glob")]
+    pub use crate::use_glob as glob;
+
+    #[cfg(feature = "use-match")]
+    pub use crate::use_match;
+    #[cfg(feature = "use-match")]
+    pub use crate::use_match as matchers;
+
+    #[cfg(feature = "use-pattern")]
+    pub use crate::use_pattern;
+    #[cfg(feature = "use-pattern")]
+    pub use crate::use_pattern as facade;
+
+    #[cfg(feature = "use-regex")]
+    pub use crate::use_regex;
+    #[cfg(feature = "use-regex")]
+    pub use crate::use_regex as regex;
+
+    #[cfg(feature = "use-wildcard")]
+    pub use crate::use_wildcard;
+    #[cfg(feature = "use-wildcard")]
+    pub use crate::use_wildcard as wildcard;
+}
+
+/// Grouped access to the RustUse web crates.
+#[cfg(any(
+    feature = "use-cookie",
+    feature = "use-css",
+    feature = "use-header",
+    feature = "use-html",
+    feature = "use-http",
+    feature = "use-method",
+    feature = "use-mime",
+    feature = "use-origin",
+    feature = "use-query",
+    feature = "use-route",
+    feature = "use-status",
+    feature = "use-uri",
+    feature = "use-url",
+    feature = "use-web"
+))]
+pub mod web {
+    #[cfg(feature = "use-cookie")]
+    pub use crate::use_cookie;
+    #[cfg(feature = "use-cookie")]
+    pub use crate::use_cookie as cookie;
+
+    #[cfg(feature = "use-css")]
+    pub use crate::use_css;
+    #[cfg(feature = "use-css")]
+    pub use crate::use_css as css;
+
+    #[cfg(feature = "use-header")]
+    pub use crate::use_header;
+    #[cfg(feature = "use-header")]
+    pub use crate::use_header as header;
+
+    #[cfg(feature = "use-html")]
+    pub use crate::use_html;
+    #[cfg(feature = "use-html")]
+    pub use crate::use_html as html;
+
+    #[cfg(feature = "use-http")]
+    pub use crate::use_http;
+    #[cfg(feature = "use-http")]
+    pub use crate::use_http as http;
+
+    #[cfg(feature = "use-method")]
+    pub use crate::use_method;
+    #[cfg(feature = "use-method")]
+    pub use crate::use_method as method;
+
+    #[cfg(feature = "use-mime")]
+    pub use crate::use_mime;
+    #[cfg(feature = "use-mime")]
+    pub use crate::use_mime as mime;
+
+    #[cfg(feature = "use-origin")]
+    pub use crate::use_origin;
+    #[cfg(feature = "use-origin")]
+    pub use crate::use_origin as origin;
+
+    #[cfg(feature = "use-query")]
+    pub use crate::use_query;
+    #[cfg(feature = "use-query")]
+    pub use crate::use_query as query;
+
+    #[cfg(feature = "use-route")]
+    pub use crate::use_route;
+    #[cfg(feature = "use-route")]
+    pub use crate::use_route as route;
+
+    #[cfg(feature = "use-status")]
+    pub use crate::use_status;
+    #[cfg(feature = "use-status")]
+    pub use crate::use_status as status;
+
+    #[cfg(feature = "use-uri")]
+    pub use crate::use_uri;
+    #[cfg(feature = "use-uri")]
+    pub use crate::use_uri as uri;
+
+    #[cfg(feature = "use-url")]
+    pub use crate::use_url;
+    #[cfg(feature = "use-url")]
+    pub use crate::use_url as url;
+
+    #[cfg(feature = "use-web")]
+    pub use crate::use_web;
+    #[cfg(feature = "use-web")]
+    pub use crate::use_web as facade;
+}
+
 /// Grouped access to the RustUse Rust ecosystem crates.
 #[cfg(any(feature = "use-crate", feature = "use-rust", feature = "use-version"))]
 pub mod rust {
@@ -301,6 +559,8 @@ pub mod prelude {
     pub use use_chemistry::prelude::*;
     #[cfg(feature = "use-math")]
     pub use use_math::prelude::*;
+    #[cfg(feature = "use-pattern")]
+    pub use use_pattern::prelude::*;
     #[cfg(feature = "use-rust")]
     pub use use_rust::prelude::*;
 }
@@ -315,9 +575,26 @@ mod tests {
     use crate::constants::math;
     #[cfg(feature = "use-combinatorics")]
     use crate::math::combinatorics::factorial;
+    #[cfg(feature = "use-ip")]
+    use crate::net::ip;
+    #[cfg(feature = "use-socket")]
+    use crate::net::socket;
+    #[cfg(feature = "use-match")]
+    use crate::pattern::matchers::{MatchSpan, slice_match};
+    #[cfg(feature = "use-regex")]
+    use crate::pattern::regex::count_regex_matches;
     #[cfg(feature = "use-version")]
     use crate::rust::version::parse_version;
+    #[cfg(feature = "use-pattern")]
+    use crate::use_pattern::prelude::MatchSpan as FacadeMatchSpan;
+    #[cfg(feature = "use-html")]
+    use crate::web::html::extract_title;
+    #[cfg(feature = "use-status")]
+    use crate::web::status::reason_phrase;
+    #[cfg(feature = "use-url")]
+    use crate::web::url::parse_url_basic;
 
+    #[cfg(any(feature = "use-earth-constants", feature = "use-math-constants"))]
     fn runtime(value: f64) -> f64 {
         value
     }
@@ -344,5 +621,42 @@ mod tests {
             let oxygen = element_by_symbol("O").expect("oxygen should exist");
             assert_eq!(oxygen.atomic_number, 8);
         }
+
+        #[cfg(feature = "use-ip")]
+        assert!(ip::is_ipv4("127.0.0.1"));
+
+        #[cfg(feature = "use-socket")]
+        {
+            let endpoint = socket::parse_socket_endpoint("localhost:8080")
+                .expect("socket endpoint should parse");
+            assert_eq!(endpoint.port, 8080);
+        }
+
+        #[cfg(feature = "use-match")]
+        {
+            let span = MatchSpan { start: 0, end: 4 };
+            assert_eq!(slice_match("rustacean", &span), Some("rust"));
+        }
+
+        #[cfg(feature = "use-pattern")]
+        assert_eq!(FacadeMatchSpan { start: 0, end: 1 }.end, 1);
+
+        #[cfg(feature = "use-regex")]
+        assert_eq!(count_regex_matches(r"\d+", "v1 v20"), Some(2));
+
+        #[cfg(feature = "use-url")]
+        {
+            let parts = parse_url_basic("https://example.com/docs").expect("url should parse");
+            assert_eq!(parts.host.as_deref(), Some("example.com"));
+        }
+
+        #[cfg(feature = "use-status")]
+        assert_eq!(reason_phrase(404), Some("Not Found"));
+
+        #[cfg(feature = "use-html")]
+        assert_eq!(
+            extract_title("<title>Docs</title>").as_deref(),
+            Some("Docs")
+        );
     }
 }
