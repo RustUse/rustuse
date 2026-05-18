@@ -3,20 +3,72 @@
 
 //! Thin facade re-exports for the available RustUse crate sets.
 
+#[cfg(feature = "use-accessibility")]
+pub use use_accessibility;
+#[cfg(feature = "use-acoustics")]
+pub use use_acoustics;
 #[cfg(feature = "use-astronomical-constants")]
 pub use use_astronomical_constants;
+#[cfg(feature = "use-calendar")]
+pub use use_calendar;
 #[cfg(feature = "use-chemical-constants")]
 pub use use_chemical_constants;
+#[cfg(feature = "use-color")]
+pub use use_color;
 #[cfg(feature = "use-computing-constants")]
 pub use use_computing_constants;
 #[cfg(feature = "use-constants")]
 pub use use_constants;
+#[cfg(feature = "use-control")]
+pub use use_control;
+#[cfg(feature = "use-data")]
+pub use use_data;
 #[cfg(feature = "use-earth-constants")]
 pub use use_earth_constants;
+#[cfg(feature = "use-encoding")]
+pub use use_encoding;
+#[cfg(feature = "use-fs")]
+pub use use_fs;
+#[cfg(feature = "use-graph")]
+pub use use_graph;
+#[cfg(feature = "use-id")]
+pub use use_id;
+#[cfg(feature = "use-materials")]
+pub use use_materials;
 #[cfg(feature = "use-math-constants")]
 pub use use_math_constants;
+#[cfg(feature = "use-measure")]
+pub use use_measure;
+#[cfg(feature = "use-media")]
+pub use use_media;
+#[cfg(feature = "use-optics")]
+pub use use_optics;
+#[cfg(feature = "use-optimization")]
+pub use use_optimization;
 #[cfg(feature = "use-physical-constants")]
 pub use use_physical_constants;
+#[cfg(feature = "use-physics")]
+pub use use_physics;
+#[cfg(feature = "use-rustacean")]
+pub use use_rustacean;
+#[cfg(feature = "use-signal")]
+pub use use_signal;
+#[cfg(feature = "use-simulation")]
+pub use use_simulation;
+#[cfg(feature = "use-stats")]
+pub use use_stats;
+#[cfg(feature = "use-text")]
+pub use use_text;
+#[cfg(feature = "use-time")]
+pub use use_time;
+#[cfg(feature = "use-typography")]
+pub use use_typography;
+#[cfg(feature = "use-units")]
+pub use use_units;
+#[cfg(feature = "use-validate")]
+pub use use_validate;
+#[cfg(feature = "use-wave")]
+pub use use_wave;
 
 #[cfg(feature = "use-cookie")]
 pub use use_cookie;
@@ -185,6 +237,27 @@ pub mod constants {
     pub use crate::use_physical_constants as physical;
 }
 
+/// Grouped access to the RustUse accessibility crates.
+#[cfg(feature = "use-accessibility")]
+pub mod accessibility {
+    pub use crate::use_accessibility;
+    pub use crate::use_accessibility as facade;
+}
+
+/// Grouped access to the RustUse acoustics crates.
+#[cfg(feature = "use-acoustics")]
+pub mod acoustics {
+    pub use crate::use_acoustics;
+    pub use crate::use_acoustics as facade;
+}
+
+/// Grouped access to the RustUse calendar crates.
+#[cfg(feature = "use-calendar")]
+pub mod calendar {
+    pub use crate::use_calendar;
+    pub use crate::use_calendar as facade;
+}
+
 /// Grouped access to the RustUse chemistry crates.
 #[cfg(any(
     feature = "use-atomic-mass",
@@ -224,6 +297,69 @@ pub mod chemistry {
     pub use crate::use_periodic_table;
     #[cfg(feature = "use-periodic-table")]
     pub use crate::use_periodic_table as periodic_table;
+}
+
+/// Grouped access to the RustUse color crates.
+#[cfg(feature = "use-color")]
+pub mod color {
+    pub use crate::use_color;
+    pub use crate::use_color as facade;
+}
+
+/// Grouped access to the RustUse control crates.
+#[cfg(feature = "use-control")]
+pub mod control {
+    pub use crate::use_control;
+    pub use crate::use_control as facade;
+}
+
+/// Grouped access to the RustUse data crates.
+#[cfg(feature = "use-data")]
+pub mod data {
+    pub use crate::use_data;
+    pub use crate::use_data as facade;
+}
+
+/// Grouped access to the RustUse encoding crates.
+#[cfg(feature = "use-encoding")]
+pub mod encoding {
+    pub use crate::use_encoding;
+    pub use crate::use_encoding as facade;
+}
+
+/// Grouped access to the RustUse filesystem crates.
+#[cfg(feature = "use-fs")]
+pub mod fs {
+    pub use crate::use_fs;
+    pub use crate::use_fs as facade;
+}
+
+/// Grouped access to the RustUse geometry crates.
+#[cfg(feature = "use-geometry")]
+pub mod geometry {
+    pub use crate::use_geometry;
+    pub use crate::use_geometry as facade;
+}
+
+/// Grouped access to the RustUse graph crates.
+#[cfg(feature = "use-graph")]
+pub mod graph {
+    pub use crate::use_graph;
+    pub use crate::use_graph as facade;
+}
+
+/// Grouped access to the RustUse identity crates.
+#[cfg(feature = "use-id")]
+pub mod id {
+    pub use crate::use_id;
+    pub use crate::use_id as facade;
+}
+
+/// Grouped access to the RustUse materials crates.
+#[cfg(feature = "use-materials")]
+pub mod materials {
+    pub use crate::use_materials;
+    pub use crate::use_materials as facade;
 }
 
 /// Grouped access to the RustUse math crates.
@@ -339,6 +475,20 @@ pub mod math {
     pub use crate::use_trigonometry as trigonometry;
 }
 
+/// Grouped access to the RustUse measurement crates.
+#[cfg(feature = "use-measure")]
+pub mod measure {
+    pub use crate::use_measure;
+    pub use crate::use_measure as facade;
+}
+
+/// Grouped access to the RustUse media crates.
+#[cfg(feature = "use-media")]
+pub mod media {
+    pub use crate::use_media;
+    pub use crate::use_media as facade;
+}
+
 /// Grouped access to the RustUse networking crates.
 #[cfg(any(
     feature = "use-cidr",
@@ -410,6 +560,20 @@ pub mod net {
     pub use crate::use_udp as udp;
 }
 
+/// Grouped access to the RustUse optics crates.
+#[cfg(feature = "use-optics")]
+pub mod optics {
+    pub use crate::use_optics;
+    pub use crate::use_optics as facade;
+}
+
+/// Grouped access to the RustUse optimization crates.
+#[cfg(feature = "use-optimization")]
+pub mod optimization {
+    pub use crate::use_optimization;
+    pub use crate::use_optimization as facade;
+}
+
 /// Grouped access to the RustUse pattern crates.
 #[cfg(any(
     feature = "use-glob",
@@ -443,6 +607,13 @@ pub mod pattern {
     pub use crate::use_wildcard;
     #[cfg(feature = "use-wildcard")]
     pub use crate::use_wildcard as wildcard;
+}
+
+/// Grouped access to the RustUse physics crates.
+#[cfg(feature = "use-physics")]
+pub mod physics {
+    pub use crate::use_physics;
+    pub use crate::use_physics as facade;
 }
 
 /// Grouped access to the RustUse web crates.
@@ -553,6 +724,76 @@ pub mod rust {
     pub use crate::use_version as version;
 }
 
+/// Grouped access to the RustUse Rustacean crates.
+#[cfg(feature = "use-rustacean")]
+pub mod rustacean {
+    pub use crate::use_rustacean;
+    pub use crate::use_rustacean as facade;
+}
+
+/// Grouped access to the RustUse signal crates.
+#[cfg(feature = "use-signal")]
+pub mod signal {
+    pub use crate::use_signal;
+    pub use crate::use_signal as facade;
+}
+
+/// Grouped access to the RustUse simulation crates.
+#[cfg(feature = "use-simulation")]
+pub mod simulation {
+    pub use crate::use_simulation;
+    pub use crate::use_simulation as facade;
+}
+
+/// Grouped access to the RustUse statistics crates.
+#[cfg(feature = "use-stats")]
+pub mod stats {
+    pub use crate::use_stats;
+    pub use crate::use_stats as facade;
+}
+
+/// Grouped access to the RustUse text crates.
+#[cfg(feature = "use-text")]
+pub mod text {
+    pub use crate::use_text;
+    pub use crate::use_text as facade;
+}
+
+/// Grouped access to the RustUse time crates.
+#[cfg(feature = "use-time")]
+pub mod time {
+    pub use crate::use_time;
+    pub use crate::use_time as facade;
+}
+
+/// Grouped access to the RustUse typography crates.
+#[cfg(feature = "use-typography")]
+pub mod typography {
+    pub use crate::use_typography;
+    pub use crate::use_typography as facade;
+}
+
+/// Grouped access to the RustUse units crates.
+#[cfg(feature = "use-units")]
+pub mod units {
+    pub use crate::use_units;
+    pub use crate::use_units as facade;
+}
+
+/// Grouped access to the RustUse validation crates.
+#[cfg(feature = "use-validate")]
+pub mod validate {
+    pub use crate::use_validate;
+    pub use crate::use_validate as facade;
+}
+
+/// Grouped access to the RustUse wave crates.
+#[cfg(feature = "use-wave")]
+pub mod wave {
+    pub use crate::use_wave;
+    pub use crate::use_wave as facade;
+}
+
 /// Commonly used facade items from set crates that already define a prelude.
 pub mod prelude {
     #[cfg(feature = "use-chemistry")]
@@ -569,6 +810,8 @@ pub mod prelude {
 mod tests {
     #[cfg(feature = "use-element")]
     use crate::chemistry::element::element_by_symbol;
+    #[cfg(feature = "use-color")]
+    use crate::color::facade as color;
     #[cfg(feature = "use-earth-constants")]
     use crate::constants::earth;
     #[cfg(feature = "use-math-constants")]
@@ -585,8 +828,12 @@ mod tests {
     use crate::pattern::regex::count_regex_matches;
     #[cfg(feature = "use-version")]
     use crate::rust::version::parse_version;
+    #[cfg(feature = "use-time")]
+    use crate::time::facade as time;
     #[cfg(feature = "use-pattern")]
     use crate::use_pattern::prelude::MatchSpan as FacadeMatchSpan;
+    #[cfg(feature = "use-wave")]
+    use crate::wave::facade as wave;
     #[cfg(feature = "use-html")]
     use crate::web::html::extract_title;
     #[cfg(feature = "use-status")]
@@ -643,6 +890,23 @@ mod tests {
 
         #[cfg(feature = "use-regex")]
         assert_eq!(count_regex_matches(r"\d+", "v1 v20"), Some(2));
+
+        #[cfg(feature = "use-color")]
+        assert_eq!(
+            color::parse_hex_rgb("#3366CC")
+                .expect("color should parse")
+                .to_hex_rgb(),
+            "#3366CC"
+        );
+
+        #[cfg(feature = "use-time")]
+        assert_eq!(time::minutes_to_seconds(5), Some(300));
+
+        #[cfg(feature = "use-wave")]
+        assert_eq!(
+            wave::period_seconds(4.0).expect("period should compute"),
+            0.25
+        );
 
         #[cfg(feature = "use-url")]
         {
