@@ -2,7 +2,7 @@
 name = "rustuse"
 description = "Unified facade crate for the published RustUse sets and child crates"
 publish = true
-version = "0.1.3"
+version = "0.1.4"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
@@ -21,26 +21,42 @@ default = ["full"]
 full = [
     "accessibility",
     "acoustics",
+    "astronomy",
+    "bioinformatics",
+    "biology",
     "calendar",
     "chemistry",
+    "cli",
     "color",
+    "config",
     "constants",
     "control",
     "data",
+    "diagnostic",
+    "ecology",
+    "electronics",
     "encoding",
     "fs",
+    "geography",
+    "geology",
     "geometry",
     "graph",
     "id",
+    "locale",
     "materials",
     "math",
     "measure",
     "media",
+    "meteorology",
     "net",
     "optics",
     "optimization",
+    "os",
     "pattern",
     "physics",
+    "presence",
+    "quant",
+    "robotics",
     "rust",
     "rustacean",
     "signal",
@@ -56,6 +72,9 @@ full = [
 ]
 accessibility = ["use-accessibility"]
 acoustics = ["use-acoustics"]
+astronomy = ["use-astronomy"]
+bioinformatics = ["use-bioinformatics"]
+biology = ["use-biology"]
 calendar = ["use-calendar"]
 chemistry = [
     "use-atomic-mass",
@@ -63,9 +82,12 @@ chemistry = [
     "use-chemistry",
     "use-electron-shell",
     "use-element",
+    "use-isotope",
     "use-periodic-table",
 ]
+cli = ["use-cli"]
 color = ["use-color"]
+config = ["use-config"]
 constants = [
     "use-astronomical-constants",
     "use-chemical-constants",
@@ -77,11 +99,17 @@ constants = [
 ]
 control = ["use-control"]
 data = ["use-data"]
+diagnostic = ["use-diagnostic"]
+ecology = ["use-ecology"]
+electronics = ["use-electronics"]
 encoding = ["use-encoding"]
 fs = ["use-fs"]
+geography = ["use-geography"]
+geology = ["use-geology"]
 geometry = ["use-geometry"]
 graph = ["use-graph"]
 id = ["use-id"]
+locale = ["use-locale"]
 materials = ["use-materials"]
 math = [
     "use-algebra",
@@ -105,6 +133,7 @@ math = [
 ]
 measure = ["use-measure"]
 media = ["use-media"]
+meteorology = ["use-meteorology"]
 net = [
     "use-cidr",
     "use-dns",
@@ -120,6 +149,7 @@ net = [
 ]
 optics = ["use-optics"]
 optimization = ["use-optimization"]
+os = ["use-os"]
 pattern = [
     "use-glob",
     "use-match",
@@ -128,6 +158,9 @@ pattern = [
     "use-wildcard",
 ]
 physics = ["use-physics"]
+presence = ["use-presence"]
+quant = ["use-quant"]
+robotics = ["use-robotics"]
 rust = ["use-crate", "use-rust", "use-version"]
 rustacean = ["use-rustacean"]
 signal = ["use-signal"]
@@ -162,11 +195,11 @@ use-calculus = { version = "0.0.6", path = "../use-math/crates/use-calculus", op
 use-catalan = { version = "0.0.6", path = "../use-math/crates/use-catalan", optional = true }
 use-combinatorics = { version = "0.0.6", path = "../use-math/crates/use-combinatorics", optional = true }
 use-complex = { version = "0.0.6", path = "../use-math/crates/use-complex", optional = true }
-use-geometry = { version = "0.0.6", optional = true }
+use-geometry = { version = "0.2.0", optional = true }
 use-integer = { version = "0.0.6", path = "../use-math/crates/use-integer", optional = true }
-use-linear = { version = "0.0.6", path = "../use-math/crates/use-linear", optional = true }
+use-linear = { version = "0.0.7", path = "../use-math/crates/use-linear", optional = true }
 use-logic = { version = "0.0.6", path = "../use-math/crates/use-logic", optional = true }
-use-math = { version = "0.0.6", path = "../use-math/crates/use-math", optional = true }
+use-math = { version = "0.0.7", path = "../use-math/crates/use-math", optional = true }
 use-number = { version = "0.0.6", path = "../use-math/crates/use-number", optional = true }
 use-probability = { version = "0.0.6", path = "../use-math/crates/use-probability", optional = true }
 use-rational = { version = "0.0.6", path = "../use-math/crates/use-rational", optional = true }
@@ -177,17 +210,29 @@ use-statistics = { version = "0.0.6", path = "../use-math/crates/use-statistics"
 use-trigonometry = { version = "0.0.6", path = "../use-math/crates/use-trigonometry", optional = true }
 use-accessibility = { version = "0.0.1", optional = true }
 use-acoustics = { version = "0.1.0", optional = true }
+use-astronomy = { version = "0.1.0", optional = true }
+use-bioinformatics = { version = "0.1.0", optional = true }
+use-biology = { version = "0.1.0", optional = true }
 use-calendar = { version = "0.0.1", optional = true }
 use-color = { version = "0.1.0", optional = true }
+use-cli = { version = "0.0.1", optional = true }
+use-config = { version = "0.1.0", optional = true }
 use-control = { version = "0.0.1", optional = true }
 use-data = { version = "0.1.0", optional = true }
+use-diagnostic = { version = "0.0.1", optional = true }
+use-ecology = { version = "0.1.0", optional = true }
+use-electronics = { version = "0.0.1", optional = true }
 use-encoding = { version = "0.1.0", optional = true }
 use-fs = { version = "0.0.1", optional = true }
+use-geography = { version = "0.1.0", optional = true }
+use-geology = { version = "0.1.0", optional = true }
 use-graph = { version = "0.0.1", optional = true }
 use-id = { version = "0.0.1", optional = true }
+use-locale = { version = "0.1.0", optional = true }
 use-materials = { version = "0.0.1", optional = true }
 use-measure = { version = "0.1.0", optional = true }
 use-media = { version = "0.0.1", optional = true }
+use-meteorology = { version = "0.1.0", optional = true }
 use-cidr = { version = "0.1.0", path = "../use-net/crates/use-cidr", optional = true }
 use-dns = { version = "0.1.0", path = "../use-net/crates/use-dns", optional = true }
 use-domain = { version = "0.1.0", path = "../use-net/crates/use-domain", optional = true }
@@ -201,17 +246,22 @@ use-tcp = { version = "0.1.0", path = "../use-net/crates/use-tcp", optional = tr
 use-udp = { version = "0.1.0", path = "../use-net/crates/use-udp", optional = true }
 use-optics = { version = "0.1.0", optional = true }
 use-optimization = { version = "0.0.1", optional = true }
+use-os = { version = "0.1.0", optional = true }
 use-glob = { version = "0.1.0", path = "../use-pattern/crates/use-glob", optional = true }
 use-match = { version = "0.1.0", path = "../use-pattern/crates/use-match", optional = true }
 use-pattern = { version = "0.1.0", path = "../use-pattern/crates/use-pattern", optional = true, features = ["full"] }
 use-regex = { version = "0.1.0", path = "../use-pattern/crates/use-regex", optional = true }
 use-wildcard = { version = "0.1.0", path = "../use-pattern/crates/use-wildcard", optional = true }
 use-physics = { version = "0.0.1", optional = true }
+use-presence = { version = "0.0.1", optional = true }
+use-quant = { version = "0.0.1", optional = true }
+use-robotics = { version = "0.0.1", optional = true }
 use-atomic-mass = { version = "0.1.0", path = "../use-chemistry/crates/use-atomic-mass", optional = true }
 use-atomic-number = { version = "0.1.0", path = "../use-chemistry/crates/use-atomic-number", optional = true }
 use-chemistry = { version = "0.1.0", path = "../use-chemistry/crates/use-chemistry", optional = true }
 use-electron-shell = { version = "0.1.0", path = "../use-chemistry/crates/use-electron-shell", optional = true }
 use-element = { version = "0.1.0", path = "../use-chemistry/crates/use-element", optional = true }
+use-isotope = { version = "0.1.0", path = "../use-chemistry/crates/use-isotope", optional = true }
 use-periodic-table = { version = "0.1.0", path = "../use-chemistry/crates/use-periodic-table", optional = true }
 use-astronomical-constants = { version = "0.1.0", path = "../use-constants/crates/use-astronomical-constants", optional = true }
 use-chemical-constants = { version = "0.1.0", path = "../use-constants/crates/use-chemical-constants", optional = true }
@@ -241,7 +291,7 @@ use-rustacean = { version = "0.1.0", optional = true }
 use-signal = { version = "0.0.1", optional = true }
 use-simulation = { version = "0.0.1", optional = true }
 use-stats = { version = "0.0.1", optional = true }
-use-text = { version = "0.1.0", optional = true }
+use-text = { version = "0.2.0", optional = true }
 use-time = { version = "0.1.0", optional = true }
 use-typography = { version = "0.0.1", optional = true }
 use-units = { version = "0.1.0", optional = true }

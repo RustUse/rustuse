@@ -9,30 +9,52 @@ pub use use_accessibility;
 pub use use_acoustics;
 #[cfg(feature = "use-astronomical-constants")]
 pub use use_astronomical_constants;
+#[cfg(feature = "use-astronomy")]
+pub use use_astronomy;
+#[cfg(feature = "use-bioinformatics")]
+pub use use_bioinformatics;
+#[cfg(feature = "use-biology")]
+pub use use_biology;
 #[cfg(feature = "use-calendar")]
 pub use use_calendar;
 #[cfg(feature = "use-chemical-constants")]
 pub use use_chemical_constants;
+#[cfg(feature = "use-cli")]
+pub use use_cli;
 #[cfg(feature = "use-color")]
 pub use use_color;
 #[cfg(feature = "use-computing-constants")]
 pub use use_computing_constants;
+#[cfg(feature = "use-config")]
+pub use use_config;
 #[cfg(feature = "use-constants")]
 pub use use_constants;
 #[cfg(feature = "use-control")]
 pub use use_control;
 #[cfg(feature = "use-data")]
 pub use use_data;
+#[cfg(feature = "use-diagnostic")]
+pub use use_diagnostic;
 #[cfg(feature = "use-earth-constants")]
 pub use use_earth_constants;
+#[cfg(feature = "use-ecology")]
+pub use use_ecology;
+#[cfg(feature = "use-electronics")]
+pub use use_electronics;
 #[cfg(feature = "use-encoding")]
 pub use use_encoding;
 #[cfg(feature = "use-fs")]
 pub use use_fs;
+#[cfg(feature = "use-geography")]
+pub use use_geography;
+#[cfg(feature = "use-geology")]
+pub use use_geology;
 #[cfg(feature = "use-graph")]
 pub use use_graph;
 #[cfg(feature = "use-id")]
 pub use use_id;
+#[cfg(feature = "use-locale")]
+pub use use_locale;
 #[cfg(feature = "use-materials")]
 pub use use_materials;
 #[cfg(feature = "use-math-constants")]
@@ -41,14 +63,24 @@ pub use use_math_constants;
 pub use use_measure;
 #[cfg(feature = "use-media")]
 pub use use_media;
+#[cfg(feature = "use-meteorology")]
+pub use use_meteorology;
 #[cfg(feature = "use-optics")]
 pub use use_optics;
 #[cfg(feature = "use-optimization")]
 pub use use_optimization;
+#[cfg(feature = "use-os")]
+pub use use_os;
 #[cfg(feature = "use-physical-constants")]
 pub use use_physical_constants;
 #[cfg(feature = "use-physics")]
 pub use use_physics;
+#[cfg(feature = "use-presence")]
+pub use use_presence;
+#[cfg(feature = "use-quant")]
+pub use use_quant;
+#[cfg(feature = "use-robotics")]
+pub use use_robotics;
 #[cfg(feature = "use-rustacean")]
 pub use use_rustacean;
 #[cfg(feature = "use-signal")]
@@ -143,6 +175,8 @@ pub use use_chemistry;
 pub use use_electron_shell;
 #[cfg(feature = "use-element")]
 pub use use_element;
+#[cfg(feature = "use-isotope")]
+pub use use_isotope;
 #[cfg(feature = "use-periodic-table")]
 pub use use_periodic_table;
 
@@ -251,6 +285,27 @@ pub mod acoustics {
     pub use crate::use_acoustics as facade;
 }
 
+/// Grouped access to the RustUse astronomy crates.
+#[cfg(feature = "use-astronomy")]
+pub mod astronomy {
+    pub use crate::use_astronomy;
+    pub use crate::use_astronomy as facade;
+}
+
+/// Grouped access to the RustUse bioinformatics crates.
+#[cfg(feature = "use-bioinformatics")]
+pub mod bioinformatics {
+    pub use crate::use_bioinformatics;
+    pub use crate::use_bioinformatics as facade;
+}
+
+/// Grouped access to the RustUse biology crates.
+#[cfg(feature = "use-biology")]
+pub mod biology {
+    pub use crate::use_biology;
+    pub use crate::use_biology as facade;
+}
+
 /// Grouped access to the RustUse calendar crates.
 #[cfg(feature = "use-calendar")]
 pub mod calendar {
@@ -265,6 +320,7 @@ pub mod calendar {
     feature = "use-chemistry",
     feature = "use-electron-shell",
     feature = "use-element",
+    feature = "use-isotope",
     feature = "use-periodic-table"
 ))]
 pub mod chemistry {
@@ -293,10 +349,22 @@ pub mod chemistry {
     #[cfg(feature = "use-element")]
     pub use crate::use_element as element;
 
+    #[cfg(feature = "use-isotope")]
+    pub use crate::use_isotope;
+    #[cfg(feature = "use-isotope")]
+    pub use crate::use_isotope as isotope;
+
     #[cfg(feature = "use-periodic-table")]
     pub use crate::use_periodic_table;
     #[cfg(feature = "use-periodic-table")]
     pub use crate::use_periodic_table as periodic_table;
+}
+
+/// Grouped access to the RustUse CLI crates.
+#[cfg(feature = "use-cli")]
+pub mod cli {
+    pub use crate::use_cli;
+    pub use crate::use_cli as facade;
 }
 
 /// Grouped access to the RustUse color crates.
@@ -304,6 +372,13 @@ pub mod chemistry {
 pub mod color {
     pub use crate::use_color;
     pub use crate::use_color as facade;
+}
+
+/// Grouped access to the RustUse configuration crates.
+#[cfg(feature = "use-config")]
+pub mod config {
+    pub use crate::use_config;
+    pub use crate::use_config as facade;
 }
 
 /// Grouped access to the RustUse control crates.
@@ -320,6 +395,27 @@ pub mod data {
     pub use crate::use_data as facade;
 }
 
+/// Grouped access to the RustUse diagnostic crates.
+#[cfg(feature = "use-diagnostic")]
+pub mod diagnostic {
+    pub use crate::use_diagnostic;
+    pub use crate::use_diagnostic as facade;
+}
+
+/// Grouped access to the RustUse ecology crates.
+#[cfg(feature = "use-ecology")]
+pub mod ecology {
+    pub use crate::use_ecology;
+    pub use crate::use_ecology as facade;
+}
+
+/// Grouped access to the RustUse electronics crates.
+#[cfg(feature = "use-electronics")]
+pub mod electronics {
+    pub use crate::use_electronics;
+    pub use crate::use_electronics as facade;
+}
+
 /// Grouped access to the RustUse encoding crates.
 #[cfg(feature = "use-encoding")]
 pub mod encoding {
@@ -332,6 +428,20 @@ pub mod encoding {
 pub mod fs {
     pub use crate::use_fs;
     pub use crate::use_fs as facade;
+}
+
+/// Grouped access to the RustUse geography crates.
+#[cfg(feature = "use-geography")]
+pub mod geography {
+    pub use crate::use_geography;
+    pub use crate::use_geography as facade;
+}
+
+/// Grouped access to the RustUse geology crates.
+#[cfg(feature = "use-geology")]
+pub mod geology {
+    pub use crate::use_geology;
+    pub use crate::use_geology as facade;
 }
 
 /// Grouped access to the RustUse geometry crates.
@@ -353,6 +463,13 @@ pub mod graph {
 pub mod id {
     pub use crate::use_id;
     pub use crate::use_id as facade;
+}
+
+/// Grouped access to the RustUse locale crates.
+#[cfg(feature = "use-locale")]
+pub mod locale {
+    pub use crate::use_locale;
+    pub use crate::use_locale as facade;
 }
 
 /// Grouped access to the RustUse materials crates.
@@ -489,6 +606,13 @@ pub mod media {
     pub use crate::use_media as facade;
 }
 
+/// Grouped access to the RustUse meteorology crates.
+#[cfg(feature = "use-meteorology")]
+pub mod meteorology {
+    pub use crate::use_meteorology;
+    pub use crate::use_meteorology as facade;
+}
+
 /// Grouped access to the RustUse networking crates.
 #[cfg(any(
     feature = "use-cidr",
@@ -574,6 +698,13 @@ pub mod optimization {
     pub use crate::use_optimization as facade;
 }
 
+/// Grouped access to the RustUse operating system crates.
+#[cfg(feature = "use-os")]
+pub mod os {
+    pub use crate::use_os;
+    pub use crate::use_os as facade;
+}
+
 /// Grouped access to the RustUse pattern crates.
 #[cfg(any(
     feature = "use-glob",
@@ -614,6 +745,27 @@ pub mod pattern {
 pub mod physics {
     pub use crate::use_physics;
     pub use crate::use_physics as facade;
+}
+
+/// Grouped access to the RustUse presence crates.
+#[cfg(feature = "use-presence")]
+pub mod presence {
+    pub use crate::use_presence;
+    pub use crate::use_presence as facade;
+}
+
+/// Grouped access to the RustUse quantitative finance crates.
+#[cfg(feature = "use-quant")]
+pub mod quant {
+    pub use crate::use_quant;
+    pub use crate::use_quant as facade;
+}
+
+/// Grouped access to the RustUse robotics crates.
+#[cfg(feature = "use-robotics")]
+pub mod robotics {
+    pub use crate::use_robotics;
+    pub use crate::use_robotics as facade;
 }
 
 /// Grouped access to the RustUse web crates.
@@ -810,6 +962,8 @@ pub mod prelude {
 mod tests {
     #[cfg(feature = "use-element")]
     use crate::chemistry::element::element_by_symbol;
+    #[cfg(feature = "use-isotope")]
+    use crate::chemistry::isotope::isotope_by_symbol;
     #[cfg(feature = "use-color")]
     use crate::color::facade as color;
     #[cfg(feature = "use-earth-constants")]
@@ -867,6 +1021,12 @@ mod tests {
         {
             let oxygen = element_by_symbol("O").expect("oxygen should exist");
             assert_eq!(oxygen.atomic_number, 8);
+        }
+
+        #[cfg(feature = "use-isotope")]
+        {
+            let carbon_14 = isotope_by_symbol("C", 14).expect("carbon-14 should construct");
+            assert_eq!(carbon_14.neutron_count(), 8);
         }
 
         #[cfg(feature = "use-ip")]

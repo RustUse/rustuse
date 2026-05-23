@@ -2,6 +2,27 @@
 
 ## Unreleased
 
+## [0.1.4](https://github.com/RustUse/rustuse/compare/v0.1.3...v0.1.4) - 2026-05-23
+
+### Added
+
+- Added grouped facade modules and top-level reexports for `use-astronomy`, `use-bioinformatics`,
+  `use-biology`, `use-cli`, `use-config`, `use-diagnostic`, `use-ecology`, `use-electronics`,
+  `use-geography`, `use-geology`, `use-locale`, `use-meteorology`, `use-os`, `use-presence`,
+  `use-quant`, and `use-robotics`.
+- Added `use-isotope` to the chemistry feature group and grouped chemistry reexports.
+
+### Changed
+
+- Expanded the default `full` feature to cover all repository-level RustUse facade crates currently
+  published on crates.io.
+- Aligned the `use-geometry` and `use-text` facade dependency pins with their current published
+  local versions.
+
+### Fixed
+
+- Aligned local `use-linear` and `use-math` path dependency pins with sibling `0.0.7` packages.
+
 ## [0.1.3](https://github.com/RustUse/rustuse/compare/v0.1.2...v0.1.3) - 2026-05-18
 
 ### Changed
