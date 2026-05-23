@@ -210,7 +210,7 @@ checksum = "dc897dd8d9e8bd1ed8cdad82b5966c3e0ecae09fb1907d58efaa013543185d0a"
 
 [[package]]
 name = "rustuse"
-version = "0.1.4"
+version = "0.1.5"
 dependencies = [
  "use-accessibility",
  "use-acoustics",
@@ -936,6 +936,12 @@ name = "use-collatz"
 version = "0.0.6"
 
 [[package]]
+name = "use-collision"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3beac49091aaad62885551602724231a158dfa437dd68113735804f8cf497b87"
+
+[[package]]
 name = "use-color"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1395,9 +1401,21 @@ version = "0.0.6"
 
 [[package]]
 name = "use-elasticity"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7d070f1330c38aa277ed21178f0d7169bbc08a91ac47f4e9b264ac2c9d3bf145"
+
+[[package]]
+name = "use-electricity"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "753afa430c71c0647c1441f66e44b1670bc2ba2ebf6e2cfcfe7cfdddf8a2b078"
+checksum = "63e39e5563d63392571f6aecb0e1787374f4faf6772dd412e2575503b8983632"
+
+[[package]]
+name = "use-electromagnetism"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "58f2fda2f3ee41493a536b0bed993a45a043d8a476463ebfb52db8fe85594c6c"
 
 [[package]]
 name = "use-electron-shell"
@@ -1538,6 +1556,12 @@ name = "use-flag"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "89c2cdc21ccc8734a82e5d27366738d47134de04be8f6a5c7df98e400531b3c5"
+
+[[package]]
+name = "use-fluid"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "12c633f807c1b8ec103a51f87093f795cfc0049941093e2a34ca3ebc2c74e857"
 
 [[package]]
 name = "use-focus-order"
@@ -1845,6 +1869,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "559d8b2c4a07888e9762079d73ec3acd95aee6338e87c37b5a15c0352d821944"
 
 [[package]]
+name = "use-gravity"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "32f574160aee8a7096cb5232a9980eb76d89a31fa0360ba447b64c5de536b228"
+
+[[package]]
 name = "use-grid-search"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2134,6 +2164,12 @@ name = "use-mac"
 version = "0.1.0"
 
 [[package]]
+name = "use-magnetism"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7c407184926aae24567bf382a161bd51ef38c32774334cbe86100892a39f27df"
+
+[[package]]
 name = "use-magnitude"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2168,6 +2204,12 @@ name = "use-match"
 version = "0.1.0"
 
 [[package]]
+name = "use-material-elasticity"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fbdeb9cbc932947dde8dbd34ba88fccb6e558e412898e27051d47473a55d10b2"
+
+[[package]]
 name = "use-material-property"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2175,13 +2217,13 @@ checksum = "81c89bb71e90a9e42497d83a5ed8a4c6cd919f035f014604690c718ee60e3c30"
 
 [[package]]
 name = "use-materials"
-version = "0.0.1"
+version = "0.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b7ab69d358264cf1154528ce0214bf2d9a3dbf49649321da02fe15c15c3009ec"
+checksum = "fc306e9245186fee670ca1a461d45a7ed18a78c8df071d9a86ea5ea98802f2cb"
 dependencies = [
  "use-conductivity",
- "use-elasticity",
  "use-hardness",
+ "use-material-elasticity",
  "use-material-property",
  "use-materials-density",
  "use-strain",
@@ -2353,6 +2395,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-momentum"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "290fcde9fc1051419970d20616feb14e3a6cfc677b55ac78fcf309982f54ed2b"
+
+[[package]]
 name = "use-monte-carlo"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2417,6 +2465,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "625671019250f0e2c231ec580ac6f2f4e76989dcfb76b3115dfa973beda60603"
 
 [[package]]
+name = "use-nuclear"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5c11901d34d5c2ad1dbf45768ac6a42dfb335b615ca483a996919d834ae7952b"
+
+[[package]]
 name = "use-nucleotide"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2471,6 +2525,12 @@ name = "use-option"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a7db67067e442278fbbb1e0dc70e2376648fea5abb82ece40c5b4e5e39611fc2"
+
+[[package]]
+name = "use-orbit"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5c266de5f35cf0c882eef524092a3dacce671b9c41ba71ef8a9b50cf794d0b78"
 
 [[package]]
 name = "use-orbital-element"
@@ -2554,6 +2614,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d58b8b916b34d3ab3fbfca0acdf504af0512a473a5078c09e51e7555ea9b8f67"
 
 [[package]]
+name = "use-oscillation"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a1b96fc7081f6bb33fa3e05d1415ade09c9396eaa77ee5d9a82d9c3b4f7da8be"
+
+[[package]]
 name = "use-oxidation-state"
 version = "0.1.0"
 
@@ -2562,6 +2628,12 @@ name = "use-package"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5f21f8e92460892a97f5bc0127d24def1b55c1e73f0b1cea380de3fd7a0301e7"
+
+[[package]]
+name = "use-particle"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4fc38b200919b2c010a93a24c585039317e0291f3279409e06c7bbac98419528"
 
 [[package]]
 name = "use-pattern"
@@ -2592,17 +2664,38 @@ version = "0.1.0"
 
 [[package]]
 name = "use-physics"
-version = "0.0.1"
+version = "0.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8dbad554a7bbe1b05d96aeafa86b667253ee879ea376303f3ca02f9d1725a016"
+checksum = "63c5effe3641466152293773fb8e117ae844ce3882bf4460c3004a9c5e224306"
 dependencies = [
+ "use-collision",
  "use-density",
+ "use-elasticity",
+ "use-electricity",
+ "use-electromagnetism",
  "use-energy",
+ "use-fluid",
  "use-force",
+ "use-gravity",
+ "use-magnetism",
+ "use-momentum",
  "use-motion",
+ "use-nuclear",
+ "use-orbit",
+ "use-oscillation",
+ "use-particle",
+ "use-plasma",
  "use-power",
  "use-pressure",
+ "use-quantum",
+ "use-radiation",
+ "use-relativity",
+ "use-rigidbody",
+ "use-rotation",
+ "use-statics",
  "use-thermodynamics",
+ "use-torque",
+ "use-work",
 ]
 
 [[package]]
@@ -2641,6 +2734,12 @@ name = "use-planet"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b833c06d30d302f20a44e2d8b35026aed304c09ae8eb9198cdc2419383a09758"
+
+[[package]]
+name = "use-plasma"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "62e991d3e527e19b3884beca6cc5e67d9eaf490fe89415cdcef5fbc6c8ff0d60"
 
 [[package]]
 name = "use-platform"
@@ -2859,6 +2958,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-quantum"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "26dd128252c7535658c6460a280940fd59af7a8a850a15d2a921ededb00c2325"
+
+[[package]]
 name = "use-quarter"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2870,6 +2975,12 @@ dependencies = [
 [[package]]
 name = "use-query"
 version = "0.0.1"
+
+[[package]]
+name = "use-radiation"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "48d28555da6d55a3970f07299672458c5fffbe1052260e14e4f4659151d502f8"
 
 [[package]]
 name = "use-random-walk"
@@ -2989,6 +3100,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-relativity"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "50b381f2768e15bd422ba94763d8bc980600fb735b64388718b7469d58dd8d17"
+
+[[package]]
 name = "use-reproduction"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3029,6 +3146,12 @@ checksum = "9deef1b77be46983d2b6a5ddd5289a2b7eab16dd6fa6707d7c4e8c4dece0dacf"
 dependencies = [
  "use-angle",
 ]
+
+[[package]]
+name = "use-rigidbody"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "105b7648eaed144c18f9490461cccafdc53fb3e6f1a6b787c6371310fe59105f"
 
 [[package]]
 name = "use-risk"
@@ -3089,6 +3212,12 @@ name = "use-rock"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bacd8b23dee9bfb00e6df22ebedcd2b759d96961ad76811eacce9175d1b10331"
+
+[[package]]
+name = "use-rotation"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8bcc60db194fc59d3a01b14b5a5052c78030de1c5eb79d2e8dedb461a903611c"
 
 [[package]]
 name = "use-route"
@@ -3390,6 +3519,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "971d4537eb2910c9839d10b423c37b8c01009a3795aa5875633393fe85ad9184"
 
 [[package]]
+name = "use-statics"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3847e8336968d71e749fc0217d40e6d83f5189e11ab436a9d682d0113d0093b0"
+
+[[package]]
 name = "use-statistics"
 version = "0.0.6"
 
@@ -3592,6 +3727,12 @@ name = "use-token"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b9ce3b72288d4ac6d11fd860f53e19c7b478592f99a9bb0a2a83f421fe9fae64"
+
+[[package]]
+name = "use-torque"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "571ea50047a056c350839b7c98a36fb33dfc2a0aa633a28fdd07a7860d76cda5"
 
 [[package]]
 name = "use-torus"
@@ -3864,6 +4005,12 @@ name = "use-word"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e134bc673fbbe6020d96e379821781d4fce3067b575b7f20b5c0ffa021a8dfe9"
+
+[[package]]
+name = "use-work"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4f3ad79eb97f4cd14bd79fd766e4ddb4ba37a81df0979325968e71a196d532d8"
 
 [[package]]
 name = "use-wythoff"

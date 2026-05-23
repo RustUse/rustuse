@@ -2,7 +2,7 @@
 name = "rustuse"
 description = "Unified facade crate for the published RustUse sets and child crates"
 publish = true
-version = "0.1.4"
+version = "0.1.5"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
@@ -229,7 +229,7 @@ use-geology = { version = "0.1.0", optional = true }
 use-graph = { version = "0.0.1", optional = true }
 use-id = { version = "0.0.1", optional = true }
 use-locale = { version = "0.1.0", optional = true }
-use-materials = { version = "0.0.1", optional = true }
+use-materials = { version = "0.0.2", optional = true }
 use-measure = { version = "0.1.0", optional = true }
 use-media = { version = "0.0.1", optional = true }
 use-meteorology = { version = "0.1.0", optional = true }
@@ -252,7 +252,7 @@ use-match = { version = "0.1.0", path = "../use-pattern/crates/use-match", optio
 use-pattern = { version = "0.1.0", path = "../use-pattern/crates/use-pattern", optional = true, features = ["full"] }
 use-regex = { version = "0.1.0", path = "../use-pattern/crates/use-regex", optional = true }
 use-wildcard = { version = "0.1.0", path = "../use-pattern/crates/use-wildcard", optional = true }
-use-physics = { version = "0.0.1", optional = true }
+use-physics = { version = "0.0.2", optional = true }
 use-presence = { version = "0.0.1", optional = true }
 use-quant = { version = "0.0.1", optional = true }
 use-robotics = { version = "0.0.1", optional = true }

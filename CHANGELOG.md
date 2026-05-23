@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+## [0.1.5](https://github.com/RustUse/rustuse/compare/v0.1.4...v0.1.5) - 2026-05-23
+
+### Changed
+
+- Updated the `use-materials` facade pin to `0.0.2`, which uses the renamed
+  `use-material-elasticity` package for materials elasticity helpers.
+- Updated the `use-physics` facade pin to `0.0.2`, which owns `use-elasticity` from `0.0.2`
+  onward.
+
 ## [0.1.4](https://github.com/RustUse/rustuse/compare/v0.1.3...v0.1.4) - 2026-05-23
 
 ### Added
