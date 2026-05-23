@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## [0.1.6](https://github.com/RustUse/rustuse/compare/v0.1.5...v0.1.6) - 2026-05-23
+
+### Changed
+
+- Updated the `use-geometry` facade pin to `0.2.1`, which uses the published
+  `use-geometric-complex` package for geometry complex primitives while `use-complex`
+  remains the sibling math complex-number package.
+
 ## [0.1.5](https://github.com/RustUse/rustuse/compare/v0.1.4...v0.1.5) - 2026-05-23
 
 ### Changed

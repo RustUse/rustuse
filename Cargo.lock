@@ -210,7 +210,7 @@ checksum = "dc897dd8d9e8bd1ed8cdad82b5966c3e0ecae09fb1907d58efaa013543185d0a"
 
 [[package]]
 name = "rustuse"
-version = "0.1.5"
+version = "0.1.6"
 dependencies = [
  "use-accessibility",
  "use-acoustics",
@@ -230,7 +230,7 @@ dependencies = [
  "use-cli",
  "use-color",
  "use-combinatorics",
- "use-complex 0.0.6",
+ "use-complex",
  "use-computing-constants",
  "use-config",
  "use-constants",
@@ -966,12 +966,6 @@ checksum = "1bef4a38930d65a3e866e07a1a52653d7602d2710dd17e809263ef985498da71"
 [[package]]
 name = "use-complex"
 version = "0.0.6"
-
-[[package]]
-name = "use-complex"
-version = "0.0.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "079ecb95eb4dd9d5c07218d4e279c53bec77ed1a240535b3ab115e11ff8d09ef"
 
 [[package]]
 name = "use-component"
@@ -1756,10 +1750,19 @@ dependencies = [
 ]
 
 [[package]]
-name = "use-geometry"
-version = "0.2.0"
+name = "use-geometric-complex"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1fcf3c48d5a954f6e14806644075f68d678dd5fe8a5587b61c4032ab417293e8"
+checksum = "b7bb16d1ee4d6c923a3ab6bd6f830a00f27ca7c2003cbad0f7031b5e04a95d63"
+dependencies = [
+ "use-cell",
+]
+
+[[package]]
+name = "use-geometry"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "38279cb818e7da6b673b37e70e693ab884eb01d0af350b9927a95fc8b8dd6337"
 dependencies = [
  "use-affine",
  "use-angle",
@@ -1769,7 +1772,6 @@ dependencies = [
  "use-catalan-solid",
  "use-cell",
  "use-circle",
- "use-complex 0.0.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "use-configuration",
  "use-congruence",
  "use-conic",
@@ -1785,6 +1787,7 @@ dependencies = [
  "use-duality",
  "use-face",
  "use-folding",
+ "use-geometric-complex",
  "use-hull",
  "use-hyperplane",
  "use-hypersphere",
@@ -2247,7 +2250,7 @@ dependencies = [
  "use-catalan",
  "use-collatz",
  "use-combinatorics",
- "use-complex 0.0.6",
+ "use-complex",
  "use-eigen",
  "use-equation",
  "use-geode",

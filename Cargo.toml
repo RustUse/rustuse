@@ -2,7 +2,7 @@
 name = "rustuse"
 description = "Unified facade crate for the published RustUse sets and child crates"
 publish = true
-version = "0.1.5"
+version = "0.1.6"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
@@ -195,7 +195,7 @@ use-calculus = { version = "0.0.6", path = "../use-math/crates/use-calculus", op
 use-catalan = { version = "0.0.6", path = "../use-math/crates/use-catalan", optional = true }
 use-combinatorics = { version = "0.0.6", path = "../use-math/crates/use-combinatorics", optional = true }
 use-complex = { version = "0.0.6", path = "../use-math/crates/use-complex", optional = true }
-use-geometry = { version = "0.2.0", optional = true }
+use-geometry = { version = "0.2.1", optional = true }
 use-integer = { version = "0.0.6", path = "../use-math/crates/use-integer", optional = true }
 use-linear = { version = "0.0.7", path = "../use-math/crates/use-linear", optional = true }
 use-logic = { version = "0.0.6", path = "../use-math/crates/use-logic", optional = true }
