@@ -36,6 +36,7 @@ full = [
     "ecology",
     "electronics",
     "encoding",
+    "finance",
     "fs",
     "geography",
     "geology",
@@ -103,6 +104,7 @@ diagnostic = ["use-diagnostic"]
 ecology = ["use-ecology"]
 electronics = ["use-electronics"]
 encoding = ["use-encoding"]
+finance = ["use-finance"]
 fs = ["use-fs"]
 geography = ["use-geography"]
 geology = ["use-geology"]
@@ -150,13 +152,7 @@ net = [
 optics = ["use-optics"]
 optimization = ["use-optimization"]
 os = ["use-os"]
-pattern = [
-    "use-glob",
-    "use-match",
-    "use-pattern",
-    "use-regex",
-    "use-wildcard",
-]
+pattern = ["use-glob", "use-match", "use-pattern", "use-regex", "use-wildcard"]
 physics = ["use-physics"]
 presence = ["use-presence"]
 quant = ["use-quant"]
@@ -223,6 +219,7 @@ use-diagnostic = { version = "0.0.1", optional = true }
 use-ecology = { version = "0.1.0", optional = true }
 use-electronics = { version = "0.0.1", optional = true }
 use-encoding = { version = "0.1.0", optional = true }
+use-finance = { version = "0.1.1", path = "../use-finance/crates/use-finance", optional = true }
 use-fs = { version = "0.0.1", optional = true }
 use-geography = { version = "0.1.0", optional = true }
 use-geology = { version = "0.1.0", optional = true }
@@ -249,7 +246,9 @@ use-optimization = { version = "0.0.1", optional = true }
 use-os = { version = "0.1.0", optional = true }
 use-glob = { version = "0.1.0", path = "../use-pattern/crates/use-glob", optional = true }
 use-match = { version = "0.1.0", path = "../use-pattern/crates/use-match", optional = true }
-use-pattern = { version = "0.1.0", path = "../use-pattern/crates/use-pattern", optional = true, features = ["full"] }
+use-pattern = { version = "0.1.0", path = "../use-pattern/crates/use-pattern", optional = true, features = [
+    "full",
+] }
 use-regex = { version = "0.1.0", path = "../use-pattern/crates/use-regex", optional = true }
 use-wildcard = { version = "0.1.0", path = "../use-pattern/crates/use-wildcard", optional = true }
 use-physics = { version = "0.0.2", optional = true }

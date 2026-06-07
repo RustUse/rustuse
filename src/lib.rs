@@ -43,6 +43,8 @@ pub use use_ecology;
 pub use use_electronics;
 #[cfg(feature = "use-encoding")]
 pub use use_encoding;
+#[cfg(feature = "use-finance")]
+pub use use_finance;
 #[cfg(feature = "use-fs")]
 pub use use_fs;
 #[cfg(feature = "use-geography")]
@@ -421,6 +423,13 @@ pub mod electronics {
 pub mod encoding {
     pub use crate::use_encoding;
     pub use crate::use_encoding as facade;
+}
+
+/// Grouped access to the RustUse practical finance crates.
+#[cfg(feature = "use-finance")]
+pub mod finance {
+    pub use crate::use_finance;
+    pub use crate::use_finance as facade;
 }
 
 /// Grouped access to the RustUse filesystem crates.

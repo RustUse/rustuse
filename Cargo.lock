@@ -247,6 +247,7 @@ dependencies = [
  "use-electronics",
  "use-element",
  "use-encoding",
+ "use-finance",
  "use-fs",
  "use-geography",
  "use-geology",
@@ -459,6 +460,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "21cb90a256d1e32ffb2c5791c1c4210cb8650e2fedd813e131324b636404d851"
 
 [[package]]
+name = "use-ach"
+version = "0.1.0"
+
+[[package]]
 name = "use-acoustics"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -512,6 +517,10 @@ name = "use-amino-acid"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2124cc4090925ad7e24a4e06c83f547b2bc933e6412a3cee02813b7154773572"
+
+[[package]]
+name = "use-amount"
+version = "0.1.0"
 
 [[package]]
 name = "use-amplitude"
@@ -640,6 +649,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a6c3962dbc07526ebcf667adb03aeb820749244374c68aa9bf32a9ff31290df6"
 
 [[package]]
+name = "use-bai2"
+version = "0.1.0"
+dependencies = [
+ "use-amount",
+ "use-transaction",
+]
+
+[[package]]
+name = "use-bank-account"
+version = "0.1.0"
+
+[[package]]
 name = "use-bar"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -656,6 +677,10 @@ checksum = "d69bc7b038d224fc6b8f3cad7c613fb4910c50a9981198c472d788086c121e40"
 dependencies = [
  "use-point 0.0.6",
 ]
+
+[[package]]
+name = "use-bic"
+version = "0.1.0"
 
 [[package]]
 name = "use-biodiversity"
@@ -1182,6 +1207,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-currency"
+version = "0.1.0"
+
+[[package]]
 name = "use-currency-code"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1544,6 +1573,27 @@ name = "use-feedback"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fb2f459e041532ced97647468ab4458b155f7e137e604dbe8f1133debad9a304"
+
+[[package]]
+name = "use-finance"
+version = "0.1.1"
+dependencies = [
+ "use-ach",
+ "use-amount",
+ "use-bai2",
+ "use-bank-account",
+ "use-bic",
+ "use-currency",
+ "use-iban",
+ "use-invoice",
+ "use-ledger",
+ "use-money",
+ "use-payment",
+ "use-receipt",
+ "use-reconciliation",
+ "use-routing-number",
+ "use-transaction",
+]
 
 [[package]]
 name = "use-flag"
@@ -1945,6 +1995,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2c616a4ec0cb26943d65faa841e277e5a229ebdbe81d5d00f304bdd0784aab29"
 
 [[package]]
+name = "use-iban"
+version = "0.1.0"
+
+[[package]]
 name = "use-id"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2016,6 +2070,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-invoice"
+version = "0.1.0"
+dependencies = [
+ "use-money",
+]
+
+[[package]]
 name = "use-ion"
 version = "0.1.0"
 dependencies = [
@@ -2056,6 +2117,13 @@ name = "use-language"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1e610966641052156e39a6bd9e0a2ae39b39d9aee2ab14c90cc3ad498802641b"
+
+[[package]]
+name = "use-ledger"
+version = "0.1.0"
+dependencies = [
+ "use-money",
+]
 
 [[package]]
 name = "use-life-stage"
@@ -2404,6 +2472,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "290fcde9fc1051419970d20616feb14e3a6cfc677b55ac78fcf309982f54ed2b"
 
 [[package]]
+name = "use-money"
+version = "0.1.0"
+dependencies = [
+ "use-amount",
+ "use-currency",
+]
+
+[[package]]
 name = "use-monte-carlo"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2646,6 +2722,13 @@ dependencies = [
  "use-match",
  "use-regex",
  "use-wildcard",
+]
+
+[[package]]
+name = "use-payment"
+version = "0.1.0"
+dependencies = [
+ "use-money",
 ]
 
 [[package]]
@@ -3046,6 +3129,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-receipt"
+version = "0.1.0"
+dependencies = [
+ "use-money",
+]
+
+[[package]]
+name = "use-reconciliation"
+version = "0.1.0"
+dependencies = [
+ "use-amount",
+]
+
+[[package]]
 name = "use-rectangle"
 version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3225,6 +3322,10 @@ checksum = "8bcc60db194fc59d3a01b14b5a5052c78030de1c5eb79d2e8dedb461a903611c"
 [[package]]
 name = "use-route"
 version = "0.0.1"
+
+[[package]]
+name = "use-routing-number"
+version = "0.1.0"
 
 [[package]]
 name = "use-rule"
@@ -3754,6 +3855,13 @@ name = "use-trait"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3a1b7133508e28c89248e8f8db558192eb29109a5c77c0c780993c5c86948885"
+
+[[package]]
+name = "use-transaction"
+version = "0.1.0"
+dependencies = [
+ "use-amount",
+]
 
 [[package]]
 name = "use-transform"
