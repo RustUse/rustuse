@@ -1,5 +1,12 @@
 # rustuse
 
+[![CI](https://github.com/RustUse/rustuse/actions/workflows/ci.yml/badge.svg)](https://github.com/RustUse/rustuse/actions/workflows/ci.yml)
+[![Crates.io](https://img.shields.io/crates/v/rustuse.svg)](https://crates.io/crates/rustuse)
+[![Docs.rs](https://docs.rs/rustuse/badge.svg)](https://docs.rs/rustuse)
+[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](#license)
+[![Rust 2024](https://img.shields.io/badge/rust-2024-orange.svg)](https://www.rust-lang.org/)
+[![Unsafe forbidden](https://img.shields.io/badge/unsafe-forbidden-success.svg)](#)
+
 Composable facade for RustUse utility crates.
 
 `rustuse` provides a single top-level entry point for published RustUse domain facades. Each enabled feature exposes one domain facade crate at the root of this crate, such as `rustuse::use_geometry`, `rustuse::use_web`, or `rustuse::use_math`.
