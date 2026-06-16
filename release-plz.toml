@@ -5,11 +5,18 @@ changelog_update = false
 pr_labels = ["release"]
 max_analyze_commits = 2000
 
+# Only create release PRs for commits that should produce a crate release.
+# Docs/tooling-only commits can still appear in a release changelog when bundled
+# with a real release-triggering change.
+release_commits = "^(feat|fix|security|refactor|perf|change)(?:\\([^)]+\\))?!?: .+"
+
 [[package]]
 name = "rustuse"
 release = true
 changelog_update = true
 changelog_path = "./CHANGELOG.md"
+semver_check = true
+publish_all_features = true
 
 [changelog]
 header = """# Changelog

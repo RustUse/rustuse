@@ -2,27 +2,19 @@
 all-features = true
 
 [advisories]
-# cargo-deny 0.19+ removed `vulnerability` and `notice`; vulnerability advisories
-# remain denied by default.
-# `unmaintained` now uses scope values (`all|workspace|transitive|none`), so
-# warning-only behavior is not available in this key.
-# Keep unmaintained advisories non-blocking in CI while still surfacing yanked crates.
-unmaintained = "none"
-yanked = "warn"
+# Vulnerability advisories are denied by default in cargo-deny 0.19+.
+# Keep unmaintained advisories non-blocking to avoid noisy CI failures from
+# transitive ecosystem status changes, but fail on unsound and yanked crates.
 ignore = []
+unmaintained = "none"
+unsound = "all"
+yanked = "deny"
 
 [licenses]
 confidence-threshold = 0.93
 unused-allowed-license = "warn"
 
-allow = [
-    "Apache-2.0",
-    "MIT",
-    "BSD-2-Clause",
-    "BSD-3-Clause",
-    "ISC",
-    "Unicode-3.0",
-]
+allow = ["Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "MIT", "Unicode-3.0"]
 
 [licenses.private]
 ignore = true
@@ -32,9 +24,6 @@ multiple-versions = "warn"
 wildcards = "deny"
 
 [sources]
+allow-registry = ["https://github.com/rust-lang/crates.io-index", "sparse+https://index.crates.io/"]
 unknown-git = "deny"
 unknown-registry = "deny"
-allow-registry = [
-    "https://github.com/rust-lang/crates.io-index",
-    "sparse+https://index.crates.io/",
-]
