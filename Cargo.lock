@@ -3,15 +3,6 @@
 version = 4
 
 [[package]]
-name = "aho-corasick"
-version = "1.1.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ddd31a130427c27518df266943a5308ed92d4b226cc639f5a8f1002816174301"
-dependencies = [
- "memchr",
-]
-
-[[package]]
 name = "bumpalo"
 version = "3.20.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -180,146 +171,82 @@ dependencies = [
 ]
 
 [[package]]
-name = "regex"
-version = "1.12.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e10754a14b9137dd7b1e3e5b0493cc9171fdd105e0ab477f51b72e7f3ac0e276"
-dependencies = [
- "aho-corasick",
- "memchr",
- "regex-automata",
- "regex-syntax",
-]
-
-[[package]]
-name = "regex-automata"
-version = "0.4.14"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6e1dd4122fc1595e8162618945476892eefca7b88c52820e74af6262213cae8f"
-dependencies = [
- "aho-corasick",
- "memchr",
- "regex-syntax",
-]
-
-[[package]]
-name = "regex-syntax"
-version = "0.8.10"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dc897dd8d9e8bd1ed8cdad82b5966c3e0ecae09fb1907d58efaa013543185d0a"
-
-[[package]]
 name = "rustuse"
-version = "0.1.6"
+version = "0.2.0"
 dependencies = [
  "use-accessibility",
  "use-acoustics",
- "use-algebra",
- "use-astronomical-constants",
+ "use-ai",
+ "use-api",
+ "use-archive",
  "use-astronomy",
- "use-atomic-mass",
- "use-atomic-number",
  "use-bioinformatics",
  "use-biology",
- "use-calculus",
  "use-calendar",
- "use-catalan",
- "use-chemical-constants",
  "use-chemistry",
- "use-cidr",
  "use-cli",
  "use-color",
- "use-combinatorics",
- "use-complex",
- "use-computing-constants",
  "use-config",
  "use-constants",
  "use-control",
- "use-cookie",
- "use-crate",
  "use-data",
+ "use-database",
  "use-diagnostic",
- "use-dns",
- "use-domain",
- "use-earth-constants",
+ "use-docker",
  "use-ecology",
- "use-electron-shell",
  "use-electronics",
- "use-element",
+ "use-email",
  "use-encoding",
+ "use-event",
  "use-finance",
  "use-fs",
  "use-geography",
  "use-geology",
  "use-geometry",
- "use-glob",
+ "use-git",
+ "use-go",
  "use-graph",
- "use-header",
- "use-host",
- "use-html",
- "use-http",
  "use-id",
- "use-integer",
- "use-ip",
- "use-isotope",
- "use-linear",
+ "use-js",
  "use-locale",
- "use-logic",
- "use-mac",
- "use-match",
  "use-materials",
  "use-math",
- "use-math-constants",
  "use-measure",
  "use-media",
  "use-meteorology",
- "use-method",
- "use-mime",
+ "use-ml",
+ "use-music",
  "use-net",
- "use-number",
+ "use-nosql",
+ "use-oci",
  "use-optics",
  "use-optimization",
- "use-origin",
  "use-os",
  "use-pattern",
- "use-periodic-table",
- "use-physical-constants",
+ "use-php",
  "use-physics",
- "use-port",
+ "use-postgres",
  "use-presence",
- "use-probability",
+ "use-python",
  "use-quant",
- "use-query",
- "use-rational",
- "use-real",
- "use-regex",
  "use-robotics",
- "use-route",
  "use-rust",
  "use-rustacean",
- "use-series",
- "use-set",
+ "use-security",
  "use-signal",
  "use-simulation",
- "use-socket",
- "use-statistics",
+ "use-sql",
  "use-stats",
- "use-status",
- "use-tcp",
+ "use-test",
  "use-text",
  "use-time",
- "use-trigonometry",
  "use-typography",
- "use-udp",
+ "use-ui",
  "use-units",
- "use-uri",
- "use-url",
  "use-validate",
- "use-version",
+ "use-wasm",
  "use-wave",
  "use-web",
- "use-web-css",
- "use-wildcard",
 ]
 
 [[package]]
@@ -426,6 +353,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e6e4313cd5fcd3dad5cafa179702e2b244f760991f45397d14d4ebf38247da75"
 
 [[package]]
+name = "use-7z"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2644f6c124ddb9ce85caa023134b729a1d8a19a82534ca5f2cba6a44651cddd2"
+
+[[package]]
 name = "use-accessibility"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -462,6 +395,8 @@ checksum = "21cb90a256d1e32ffb2c5791c1c4210cb8650e2fedd813e131324b636404d851"
 [[package]]
 name = "use-ach"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5ca05cca0a700665ffb23aa3e5096f1a4cea56e587fbcdb63cef93899f7488cd"
 
 [[package]]
 name = "use-acoustics"
@@ -491,6 +426,95 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-affordance"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3e4e624589778e65c1089ee7d68b2b5d79d73d032d23585be8731bc97dafc618"
+
+[[package]]
+name = "use-agent"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4470c7c7a0b4af4d13d5c6683a9097ae18f0f185f9298fe431786c5aef613672"
+
+[[package]]
+name = "use-ai"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c836b9093b4ef6c23d4e86f9e24b09031242e1275202a8812c3195b02cac07a3"
+dependencies = [
+ "use-agent",
+ "use-ai-capability",
+ "use-ai-context",
+ "use-ai-eval",
+ "use-ai-memory",
+ "use-ai-message",
+ "use-ai-model",
+ "use-ai-prompt",
+ "use-ai-provider",
+ "use-ai-role",
+ "use-guardrail",
+ "use-planning",
+ "use-rag",
+ "use-reasoning",
+ "use-tool-call",
+]
+
+[[package]]
+name = "use-ai-capability"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "396a5058df33e67f43e5fb0a2b4abd6e06928f9454f45cd9c141e4c5024b1821"
+
+[[package]]
+name = "use-ai-context"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "41247bc935e9555328e5a8ed423ac2e78c0fe005d57d961bb8039e038ec33c95"
+
+[[package]]
+name = "use-ai-eval"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5a3628fcd9db37f484585ec9cb18f2efa51bc29d411ae775677a5c59c57c2c97"
+
+[[package]]
+name = "use-ai-memory"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "918b97540ad8779b560ab69f2cde21d6695c0d8b9d877bc58cae67d480dadf76"
+
+[[package]]
+name = "use-ai-message"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "af3ede428f634fc5c19a38f10b38deff38e99d559b5a669b27fb1f9337f1c98f"
+
+[[package]]
+name = "use-ai-model"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bf9bd3a7a307aaccd2622511bf5c72d788122e0b9922637e0bbe6a006aae1865"
+
+[[package]]
+name = "use-ai-prompt"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3900bc7aef82c229ec0ba16e7a2f117a38aac518052be9695ae8bde0020953a4"
+
+[[package]]
+name = "use-ai-provider"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d57f27922ec34a17c7878ef00d1a3f874225db9d89e66229e2e7bd772fad509a"
+
+[[package]]
+name = "use-ai-role"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "23f70248fcf849b4d66eba65738a519c2ec6059ee00f69839d2c643dfc0af0e0"
+
+[[package]]
 name = "use-air-temperature"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -499,6 +523,8 @@ checksum = "4bea58854a1061653c6b5a3e057f2bcd4b6ce7c0d9470c34b1208e537a8838c9"
 [[package]]
 name = "use-algebra"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0057f26ebb21ab4f35b6937abee18211df3fd012913bbc5d1dfafbf6f12db419"
 
 [[package]]
 name = "use-alignment"
@@ -521,6 +547,8 @@ checksum = "2124cc4090925ad7e24a4e06c83f547b2bc933e6412a3cee02813b7154773572"
 [[package]]
 name = "use-amount"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "51467550089520a7014b1b415bbfa802f637e1ad7c7b714f65441ed33535c351"
 
 [[package]]
 name = "use-amplitude"
@@ -535,10 +563,143 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "753ae0c8d233c095aafb38ee59195c9f3dd22d47494871f5817e67b304c46a5a"
 
 [[package]]
+name = "use-angular"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "64a38b89482dcc2967d08391484d364a5b7a291c42ee2893ce7858e0bb1ebdea"
+dependencies = [
+ "use-js-identifier",
+]
+
+[[package]]
 name = "use-annotation"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ed1e2e5055867ddecb28bd1294188ba73235521e77baa5e1136ba4b36c6aa574"
+
+[[package]]
+name = "use-api"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7915b8fdd62b545881c581dd940b44f267e7ccfb9b892dcb12de24506e3fdedf"
+dependencies = [
+ "use-api-auth",
+ "use-api-deprecation",
+ "use-api-error",
+ "use-api-header",
+ "use-api-key",
+ "use-api-media-type",
+ "use-api-operation",
+ "use-api-param",
+ "use-api-request",
+ "use-api-resource",
+ "use-api-response",
+ "use-api-route",
+ "use-api-schema",
+ "use-api-version",
+ "use-content-negotiation",
+ "use-cursor",
+ "use-endpoint",
+ "use-graphql",
+ "use-grpc",
+ "use-idempotency",
+ "use-openapi",
+ "use-pagination",
+ "use-rate-limit",
+ "use-rest",
+ "use-rpc",
+ "use-webhook",
+]
+
+[[package]]
+name = "use-api-auth"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9915ca3b28e84ff901cf134f4e874734b0a319fbd0fac6ceee6a28f3f87b3ce3"
+
+[[package]]
+name = "use-api-deprecation"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ef6b82a60fe30f55fa831699f6462ef4c560b36c737c75a5478af267ddf972f4"
+
+[[package]]
+name = "use-api-error"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "aa9f6c22fa5b82929711c6d659ca5318e77848405d1505bba7e32657c6f53f02"
+
+[[package]]
+name = "use-api-header"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "17dc2f406ef658bedcd32209b0b7998b5936db18f089ec0c37839e73c062993a"
+
+[[package]]
+name = "use-api-key"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a30aeda86b037646ab95d3235f103e220e2a5ca8c8ccced23ee4c2780e23cced"
+
+[[package]]
+name = "use-api-media-type"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1d87722674bb446e00bf5f671d543471cb6bdde6670b895928b4ff2fc09aa173"
+
+[[package]]
+name = "use-api-operation"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cf25c5b69c62faff9a7254fd8952d72784a2512ebae072cdab464645f6375de6"
+
+[[package]]
+name = "use-api-param"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "83c437a13c4867cf4f7c37d5a436e6d4b6bf4061e56774a4118876a7f0e9464a"
+
+[[package]]
+name = "use-api-request"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bc61b1d17f21679133d2db85d660d23b2c7b4236fd97b264e65060f236074cfb"
+
+[[package]]
+name = "use-api-resource"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0c9690d6960a35572ec6d4691b011c2cbb578434a223f1a30d920e14c486e329"
+
+[[package]]
+name = "use-api-response"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "14b4da5bb74cbc80fd60bdbf064a277498a857b6a764430af13c6e240b528ce6"
+
+[[package]]
+name = "use-api-route"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7d4c2dc9b26f5e8554f2ace03cfd43b1b2cfa9cd3b74cd90eedf46ab3cb22257"
+
+[[package]]
+name = "use-api-schema"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6a30564a0ee45f259afb59244a8511fc1a4062e29cd84251e76eb95ca99eaba9"
+
+[[package]]
+name = "use-api-version"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d60171b6b597e9cb91e8a5e78aa9f42519fa8d0d8d2d33fa81d6a94bf92a3916"
+
+[[package]]
+name = "use-ar"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "01278291dfd22b6094d39ad204f47df76c9e6ac6f21f8606f1fff43c82d7a207"
 
 [[package]]
 name = "use-archimedean"
@@ -553,6 +714,75 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2a902b871a72bb343d37726439648f892264757080b629dd70ba49d25e4f4ac4"
 
 [[package]]
+name = "use-archive"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8e469aed0a410df38e12ace2fb9b0c63d58f1d912d7eb4dc15cd9b1849fcddeb"
+dependencies = [
+ "use-7z",
+ "use-ar",
+ "use-archive-entry",
+ "use-archive-format",
+ "use-archive-manifest",
+ "use-archive-path",
+ "use-archive-policy",
+ "use-brotli",
+ "use-bzip2",
+ "use-cab",
+ "use-compression",
+ "use-cpio",
+ "use-gzip",
+ "use-iso",
+ "use-lz4",
+ "use-mtree",
+ "use-rar",
+ "use-tar",
+ "use-warc",
+ "use-xz",
+ "use-zip",
+ "use-zstd",
+]
+
+[[package]]
+name = "use-archive-entry"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bede927b2cd92d3787a7652a92d7d32a23c382aac479569b0e95f18d9b90cb0d"
+
+[[package]]
+name = "use-archive-format"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f435fdaf6723ee5ccff53b0df1f4f05981346cc4cb7732e42f112ab86c391b4b"
+
+[[package]]
+name = "use-archive-manifest"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2e0bf1645bea5090389b56b0025913e2c7829b0ae43831f42512895b269c6a33"
+dependencies = [
+ "use-archive-entry",
+ "use-archive-format",
+ "use-archive-path",
+]
+
+[[package]]
+name = "use-archive-path"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ac1b97eea038ebe43644c830bc4a74b0203350eaa94a3877cffe3ba849d36c16"
+
+[[package]]
+name = "use-archive-policy"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "933e37f6e4d76c5023a6519c068f3ec601442b7f82fe671a5112f388b4ea5809"
+dependencies = [
+ "use-archive-entry",
+ "use-archive-path",
+]
+
+[[package]]
 name = "use-arg"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -561,6 +791,14 @@ checksum = "935616bf2c753550907d64c4d9f37486391af76db8abf20d678bb21497d6df2a"
 [[package]]
 name = "use-arithmetic"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ff4fd7c19d02edb632eb4cbffb27a5f190166e86b648dadea1b570abef1a1708"
+
+[[package]]
+name = "use-articulation"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9259a86903c46e668268fac7dd066a21eb2fb05097d07a2591d598996d39ea56"
 
 [[package]]
 name = "use-aspect-ratio"
@@ -569,8 +807,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0cf2c26cc2daf1d9fcf44045b5401ef4bcc1e54d56264ac59cbd7df78466a838"
 
 [[package]]
+name = "use-astro"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ab2e48a442255de01f1c97d961764ba9bbdf7352bb39c20bc1847bdc61f3981c"
+
+[[package]]
 name = "use-astronomical-constants"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "59cad647bf156421e2558000d2fe27c499d8988d8dd892b40cc2d9ca6adc9b89"
 
 [[package]]
 name = "use-astronomical-coordinate"
@@ -625,6 +871,8 @@ checksum = "f705b2843e7d192a3bc9dc0f9ba77c7c1019ccd0d2875cc6de0d4b42f10f8594"
 [[package]]
 name = "use-atomic-mass"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2bf3e1584baaff9b1a6fe8203207bdc191eb87629d9f9eb58b6fd55f5103aae4"
 dependencies = [
  "use-element",
 ]
@@ -632,6 +880,8 @@ dependencies = [
 [[package]]
 name = "use-atomic-number"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ffb055056d3f5a35e90be8cbb21429dc4a7ad10f512ed5dd8958baef8f62eec1"
 dependencies = [
  "use-element",
 ]
@@ -651,6 +901,8 @@ checksum = "a6c3962dbc07526ebcf667adb03aeb820749244374c68aa9bf32a9ff31290df6"
 [[package]]
 name = "use-bai2"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f7c5e703af6ca8a482fca2e5b075f6abc6ac82dafadf32ca012021568e624a03"
 dependencies = [
  "use-amount",
  "use-transaction",
@@ -659,6 +911,8 @@ dependencies = [
 [[package]]
 name = "use-bank-account"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bb2178cc20bad6189d6793bcd0f65075aa0f65bf7db09e4dd20f9f21233c1966"
 
 [[package]]
 name = "use-bar"
@@ -681,6 +935,8 @@ dependencies = [
 [[package]]
 name = "use-bic"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1fb760d017d43306df4c88c8d74930b744749dd9f3094b4cfc14caec89d46ba8"
 
 [[package]]
 name = "use-biodiversity"
@@ -757,10 +1013,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2adf3c5bad40a83231985382a0a8f61b2f818c39af4b6a2224274858816e5d1f"
 
 [[package]]
-name = "use-bond"
-version = "0.1.0"
-
-[[package]]
 name = "use-bound"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -783,6 +1035,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-breakpoint"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "482ec332fa503d092df13c685a278de05466d8714692cc1ef8b782ff1b2c1153"
+
+[[package]]
+name = "use-brotli"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dc1b5282a2a0d368fee9df88dd88ad4f01217c4617c2ddc9a621b3a06767157a"
+
+[[package]]
+name = "use-bun"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "58d3b1f8a93f404a6036ee6c37a19c35949788fca7dc6456cdedd6128bee5e4f"
+
+[[package]]
 name = "use-business-day"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -793,8 +1063,28 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-bzip2"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bcde70f2b379e795eb83f1faa32154af2cc29ebfe369a9519fd623c4274cb734"
+
+[[package]]
+name = "use-cab"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ad460e4dc3d281d62738e4854030974998771577b333ec3d698326495492ef51"
+
+[[package]]
+name = "use-cache-store"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "11092412a5eb8aca5320a26af44b622c6733f24b39b0cfd929a703959b2292d8"
+
+[[package]]
 name = "use-calculus"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "08163a79849a79c39dd021e5d5e552e774bb3331b369cbd941440a8fc8b387b3"
 
 [[package]]
 name = "use-calendar"
@@ -842,6 +1132,8 @@ checksum = "fedeacf6d04546787691e50c559d9f1643824aa0735925e3807624a4d49c1d27"
 [[package]]
 name = "use-catalan"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4270841aba0d08b4f3c23c51c71f8bf2dc5df2ac5000c4e9ed6a85488054394c"
 
 [[package]]
 name = "use-catalan-solid"
@@ -871,6 +1163,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3454821ca142bd7af0c7b31aab172054f29586f1cdee09e6febd3583f1e99246"
 
 [[package]]
+name = "use-change-event"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "915447373e5e400ac32ad0e82c29699a4cf644aa911d098a6920be73c1b3f864"
+
+[[package]]
 name = "use-check"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -879,35 +1177,27 @@ checksum = "ded6b6183f874b51a6ddb5c6c133b0365d91bf7eafe02cfd0078d49edf691d8f"
 [[package]]
 name = "use-chemical-constants"
 version = "0.1.0"
-
-[[package]]
-name = "use-chemical-formula"
-version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "80d8d0ad9229851cea688cd700ebc5d9aae036784ac2faec62a1decaed13ee48"
 
 [[package]]
 name = "use-chemistry"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f50058a67f735676f1067540a0606f15a0814b69cea1a30024468092d680f496"
 dependencies = [
  "use-atomic-mass",
  "use-atomic-number",
- "use-bond",
- "use-chemical-formula",
- "use-compound",
  "use-electron-shell",
  "use-element",
- "use-ion",
- "use-isotope",
- "use-molar-mass",
- "use-molecule",
- "use-oxidation-state",
  "use-periodic-table",
- "use-reaction",
- "use-stoichiometry",
 ]
 
 [[package]]
-name = "use-cidr"
-version = "0.1.0"
+name = "use-chord"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f8302563087d3cf481e2ff75645b63bbdf07fe872573d4d2e8fe77bc16c5b711"
 
 [[package]]
 name = "use-circle"
@@ -959,6 +1249,8 @@ checksum = "bac3ca48707e169cc62937ce0ef59ee50fdd175373bfaab829267064bdbc3f86"
 [[package]]
 name = "use-collatz"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f7d9cfaa4002b592bbab427cc391cca863a9443a8f16040dbdb8d539159fb399"
 
 [[package]]
 name = "use-collision"
@@ -975,6 +1267,8 @@ checksum = "b8c8b8a2e95d2108948522e4fa2d370a43417ff0e1083f947115405bb16a9386"
 [[package]]
 name = "use-combinatorics"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "26b43a9aeb7950c2cdc0130de1cacbbcfae3551980a750ad18dd38e36e768531"
 
 [[package]]
 name = "use-command-name"
@@ -991,6 +1285,8 @@ checksum = "1bef4a38930d65a3e866e07a1a52653d7602d2710dd17e809263ef985498da71"
 [[package]]
 name = "use-complex"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "079ecb95eb4dd9d5c07218d4e279c53bec77ed1a240535b3ab115e11ff8d09ef"
 
 [[package]]
 name = "use-component"
@@ -999,15 +1295,30 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f89b5821ea8d33cb864d20f1bb407c77e4cd80fa80ef958cea5ec0792f0ea442"
 
 [[package]]
-name = "use-compound"
+name = "use-composer-json"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1957ca5389a846797d398820618c7142b2bb2053c245208d64e8fa5ce71c37e0"
+
+[[package]]
+name = "use-compression"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bc7ff7a11ad7bdca234c80e16fd9ab12724935767ecc94f7f216389df790a247"
 dependencies = [
- "use-chemical-formula",
+ "use-brotli",
+ "use-bzip2",
+ "use-gzip",
+ "use-lz4",
+ "use-xz",
+ "use-zstd",
 ]
 
 [[package]]
 name = "use-computing-constants"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "72a38110383cb029c10ac5ec1de8539bcb71e4213403845a10c1241392fe9460"
 
 [[package]]
 name = "use-conductivity"
@@ -1102,8 +1413,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0791d657f9ef096da9ff5bf1e6d3d4acb2f311eb72dd29cb21c5f595033e5cec"
 
 [[package]]
+name = "use-consistency"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6d2e317f8478054de9a29ab7ebef7f807462c0cfa055bfe6a76b66f1688109a6"
+
+[[package]]
 name = "use-constants"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4504a3e27784182305db9ae91a947e792a93f7da22ee7dd067a1240c9458267c"
 dependencies = [
  "use-astronomical-constants",
  "use-chemical-constants",
@@ -1133,6 +1452,12 @@ name = "use-containment"
 version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "17abf3e1e2f88f5c2067e78f7292a4b24cd4b33c805df1f90f21027a7126b08b"
+
+[[package]]
+name = "use-content-negotiation"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6708e826dbe839cdd2089ed9a843a9921b4b2c3c1ba90c257795ae435e1390db"
 
 [[package]]
 name = "use-contrast"
@@ -1168,10 +1493,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b4d3597f322fceb6657265be3ba9fffa2bc0576fc65c93bce0a21a3d4dd03974"
 
 [[package]]
-name = "use-cookie"
-version = "0.0.1"
-
-[[package]]
 name = "use-coordinate"
 version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1190,8 +1511,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bccd34bdc537f78d08bda9e651c966f6b1d727ade9df043f4e7bb9a05f9c31a5"
 
 [[package]]
+name = "use-cpio"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "69963eee58200adc0319150d2537eb2f9b5758c09b86e5a0f8d41efffc4797c0"
+
+[[package]]
 name = "use-crate"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0492eee59e190130f539254b0eff368da15c5ed5c9990b5b57ed7eb42f6abadb"
 dependencies = [
  "serde",
  "toml_edit",
@@ -1209,12 +1538,20 @@ dependencies = [
 [[package]]
 name = "use-currency"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "58d072cadaf37e18ae3384c80e49550a58f8312bc7b8a81d7269ccae94ab4c46"
 
 [[package]]
 name = "use-currency-code"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "da4e9ddfd218f646c879d81586b650d54fd2ac372a4c7139a70fcf1b6c315c79"
+
+[[package]]
+name = "use-cursor"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7315c7883b0a092875bf0d0ede4d9aad330789a51fc7881133f377a00bb7f68c"
 
 [[package]]
 name = "use-curve"
@@ -1232,6 +1569,31 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "37ee0ea4264d0426898b5ad0af94074cd065d21765164c872f38f6a5b68dced3"
 
 [[package]]
+name = "use-database"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1bc27f54e0257dd060117b0c487f94a498b11885545f90a739a891dea2b0b2f1"
+dependencies = [
+ "use-db-column",
+ "use-db-constraint",
+ "use-db-core",
+ "use-db-driver",
+ "use-db-index",
+ "use-db-key",
+ "use-db-migration",
+ "use-db-name",
+ "use-db-query",
+ "use-db-record",
+ "use-db-relation",
+ "use-db-result",
+ "use-db-row",
+ "use-db-schema",
+ "use-db-table",
+ "use-db-transaction",
+ "use-db-url",
+]
+
+[[package]]
 name = "use-date"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1247,16 +1609,154 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-db-column"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "615917cc153df2a372fd2d72b2b8e4680a42e59130e28ebce51625b4860b6080"
+dependencies = [
+ "use-db-name",
+]
+
+[[package]]
+name = "use-db-constraint"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "41c9a4a5f91f72451c11f64284c8f238c25d086d17b3d87295a89dd2a7ac4ac3"
+dependencies = [
+ "use-db-name",
+]
+
+[[package]]
+name = "use-db-core"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "34f72065e7d4e352590e77d191d8b1d71aee614f0d11c620c2f4a1dcab574481"
+
+[[package]]
+name = "use-db-driver"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1e7ad7c431536e5d5cc20a828699db1911ddd6ae20b9fa85276d072fdb936ac9"
+dependencies = [
+ "use-db-name",
+]
+
+[[package]]
+name = "use-db-index"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b6b1baf5c79eec9afb0ae9c50cee3678b7c8adf22af930e91a945c0e9d0b0920"
+dependencies = [
+ "use-db-name",
+]
+
+[[package]]
+name = "use-db-key"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fc0f449646a80b4a17643c4944e345ef3f22dfd2ba51f2ad1c93ab959231d6be"
+dependencies = [
+ "use-db-name",
+]
+
+[[package]]
+name = "use-db-migration"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f7697860d860c9cb1d3ec9cb9be3277a21d5879354363e35f2347c108556dd9c"
+
+[[package]]
+name = "use-db-name"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b2a860fcdbeea433ed4f298b29980d342a5ed5b767617529d4079358c87a7c3f"
+
+[[package]]
+name = "use-db-query"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "36ae242d81cb4076ab796feaf654d313e57e5e2a9cd18bc41ac29569a895e442"
+
+[[package]]
+name = "use-db-record"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7fc08762b6649b5870b95614c3788c666e8f4e1d4d6bc2e1ada24a9b27caca79"
+
+[[package]]
+name = "use-db-relation"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8f790106eea755a59ef8f3aadf16c2da47361e1a26a3096037f2df39b433e32f"
+dependencies = [
+ "use-db-name",
+]
+
+[[package]]
+name = "use-db-result"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "be69680ec16bf95d7484b98d2b42301e663a5c28999f20c9672c37c20445fb60"
+
+[[package]]
+name = "use-db-row"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dd23fc5ce33d76546e9019c7eac2114b867912a76718a5afff15cda1ca5cbcc6"
+
+[[package]]
+name = "use-db-schema"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3eaa9a4d86989eee2feeadf202720c1eaa4db2e345884831417744dc3de42274"
+dependencies = [
+ "use-db-name",
+]
+
+[[package]]
+name = "use-db-table"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7e5fc624cad7544fb17ca1bf1d51f9dbc3ea9fa13daedbcae1d3b1278b7c1d9b"
+dependencies = [
+ "use-db-name",
+]
+
+[[package]]
+name = "use-db-transaction"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c2b4004027750a6a86ccaa5eed0d1997ed25b4b179065555f6556fa490b79869"
+
+[[package]]
+name = "use-db-url"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "be94370c615f6d6f5208dd7a2a666078391a507bc257dc6415efdb4a62b0a273"
+
+[[package]]
 name = "use-delaunay"
 version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "261a51313caf1c6dc6578237b075e753b5577cba43d7569648e472485defab26"
 
 [[package]]
+name = "use-deno"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "833d4f69d96990744838d4f0f216295191d57c7f79aa81da3d2b5c2823a47a66"
+
+[[package]]
 name = "use-density"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4614689301340a24309fe3fc8c76c658c824c06e56018dce5ebd8dbb8b174763"
+
+[[package]]
+name = "use-design-token"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cb9787d57c6ff05917e4b36b591b53e40f87671173d47120e6fc352a527531c1"
 
 [[package]]
 name = "use-diagnostic"
@@ -1364,12 +1864,115 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "008230400b51bdc000ffbb8cc86ed9bb36962cf0345e8c1bb317b2fb7819b189"
 
 [[package]]
-name = "use-dns"
-version = "0.1.0"
+name = "use-docker"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f5f23afbd4f3ed5ad295ce8c86eec19770474ccefed6863763c57ee659b015f5"
+dependencies = [
+ "use-docker-build",
+ "use-docker-compose",
+ "use-docker-env",
+ "use-docker-healthcheck",
+ "use-docker-image",
+ "use-docker-label",
+ "use-docker-network",
+ "use-docker-port",
+ "use-docker-registry",
+ "use-docker-tag",
+ "use-docker-volume",
+ "use-dockerfile",
+ "use-dockerignore",
+]
 
 [[package]]
-name = "use-domain"
+name = "use-docker-build"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "32f001ba6a3a1c3748c9b6e62e91990b1cd64a75f2761a5f22dfb0327d4d8974"
+
+[[package]]
+name = "use-docker-compose"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9777d04a066ce6c557a5bd40da02f8874e0c21211279250474030df98874fd26"
+
+[[package]]
+name = "use-docker-env"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2c1cb592cd9c6332895c54a76618708a7bf1b72024833ff9dd98214065250713"
+
+[[package]]
+name = "use-docker-healthcheck"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "08e835adeade7e3853932e71313ef17d3368e31e4c4169526d2857726b854112"
+
+[[package]]
+name = "use-docker-image"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "69f0ce0f92c13de769686b95e7e5ac04883feabe7f0da0bc917af5f90bd8c7f1"
+
+[[package]]
+name = "use-docker-label"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1be9b0c2a18f42766631b19427e8fa414fbb947a944fd05f81e7a8e3200f7620"
+
+[[package]]
+name = "use-docker-network"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9a1f066571b81bc2019860db309a042a7c5c633004ca6f27592a388af428660e"
+
+[[package]]
+name = "use-docker-port"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6c18c239e2d76acea54cb83d7ffbcc71232cf2044d7258675fed10a85c1aa252"
+
+[[package]]
+name = "use-docker-registry"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "065738a6b202d2847ed587568add8c5dff978014bab78bcfee998f2a986c9fb5"
+
+[[package]]
+name = "use-docker-tag"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0cca14ec4f0776d96a35fea0396dcc92a7df06a71339a293f77d28f8b9e87d79"
+
+[[package]]
+name = "use-docker-volume"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e57a03e3fc01803d40454dd45b74ad5bff43ffd9cc65f37c62b973d3d93b57a7"
+
+[[package]]
+name = "use-dockerfile"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c2d8e47afe8fbd9fcf2f978515c9c9a86a648b2574a24b58f6867a86b01d7401"
+
+[[package]]
+name = "use-dockerignore"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3560c9c6e7e2d6619fe56f053cc0afff7d2e419b1648a00a4106a123a87ed097"
+
+[[package]]
+name = "use-document-path"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "63281baff99f6b32e7421b64fad8d22a89423604b6c448769e7444c787567dd0"
+
+[[package]]
+name = "use-document-store"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d251b57f22260c6c4ffc8043c425510c2957034c97cb667dd6f93e163187e3e2"
 
 [[package]]
 name = "use-drawdown"
@@ -1378,14 +1981,34 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "248c395f3f506537141f9917eb15c8d4e12e51834a0d39576702ba6cc75b63bc"
 
 [[package]]
+name = "use-drupal"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4003b35f728b45f15daf96594159ab0cccddb3b372f82c3a6e8ccad98bc09ead"
+
+[[package]]
 name = "use-duality"
 version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c0eb367ab5ba41ff880680434d3e3fe633061344804b2617cfc98f3735703e66"
 
 [[package]]
+name = "use-dynamics"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1c85f1ccbeea4450bc85df0b33869bda81c28d1646036fd438513cb7995fce34"
+
+[[package]]
 name = "use-earth-constants"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f056700f37da7bcb88b6634c434cca35c78bbb70c793cc69bfd49723d233a298"
+
+[[package]]
+name = "use-ecmascript"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d8dbe74b8d04916167b0ce3b9a53e3462a2a0497431a01f89425a01e54ee2d16"
 
 [[package]]
 name = "use-ecology"
@@ -1421,6 +2044,8 @@ checksum = "aa1c13cd2258fd5d97f4c7c70ffdb148b4d20a7a88f3699eacc97dcf35c1cb43"
 [[package]]
 name = "use-eigen"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5e15acfa356127856af9af665bb75ca6dc036a698d822793b4800cd3327a281a"
 
 [[package]]
 name = "use-elasticity"
@@ -1443,6 +2068,8 @@ checksum = "58f2fda2f3ee41493a536b0bed993a45a043d8a476463ebfb52db8fe85594c6c"
 [[package]]
 name = "use-electron-shell"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "824c0aea96c76a44cf2412429fd2f07cd6a2bf0e42ca81ed0ac4234c0b5180ef"
 dependencies = [
  "use-element",
 ]
@@ -1469,12 +2096,66 @@ dependencies = [
 [[package]]
 name = "use-element"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e2f871d7c7dc39b8f829b9a5949284ece110c1e7dea4ddaf22f606f20c490f79"
 
 [[package]]
 name = "use-elevation"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6d43c0c5fea5b57c17b894698964f310bbdaf3d7f64edd492ecc6a7a5a619dd7"
+
+[[package]]
+name = "use-email"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "de605e83d82c734077e8d7f3c93aa9ad4c14c9256c81050f3a4834cd85ab804f"
+dependencies = [
+ "use-email-address",
+ "use-email-envelope",
+ "use-email-header",
+ "use-email-id",
+ "use-email-message",
+ "use-mailto",
+ "use-mime",
+]
+
+[[package]]
+name = "use-email-address"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6f5685f5cfc84d2671d64d6f804ce1694cae7d85fd417830b0bc788292590109"
+
+[[package]]
+name = "use-email-envelope"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3b6a3637c1d12fe1ac857d4d88cae46d93edf340aa5e6d314a66daca36ff1d57"
+dependencies = [
+ "use-email-address",
+]
+
+[[package]]
+name = "use-email-header"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d2605dce84a167b5da7cd9362b144487880a835e745a7ed0b0a787e4c0fd7724"
+
+[[package]]
+name = "use-email-id"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8cd002d280081354bf7e2db427c79dd13c2e6543f8b713380c95fffac13d27e0"
+
+[[package]]
+name = "use-email-message"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "61c2568330d42849ad593e5ed3bb46485771038d6c51b71efcaa49f0c2f85739"
+dependencies = [
+ "use-email-header",
+ "use-mime",
+]
 
 [[package]]
 name = "use-encoding"
@@ -1487,6 +2168,12 @@ name = "use-end-effector"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "76a02d624bf95d63afec81ff639c2b8e2fa4d8a94e2332ec30da26a5faa21576"
+
+[[package]]
+name = "use-endpoint"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "32b3140336ad296a4c8de97b41d3e809a966c60f8c98cb3d762c2cb5c59b03c0"
 
 [[package]]
 name = "use-energy"
@@ -1524,15 +2211,132 @@ checksum = "2ed17f36672d3043ef68cd423dd81dc00475eec1673d33ba39476be39e1135d4"
 [[package]]
 name = "use-equation"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fc71e4ccf5512f7fa531f8a55a1d967c585b7aad5e2dffa27d39e6f5704ba498"
 dependencies = [
  "use-polynomial",
 ]
+
+[[package]]
+name = "use-event"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dc2e7f1c15cd86f217739d4e49882affbddc9bc825c41ad7bd09e11854daffa5"
+dependencies = [
+ "use-event-dispatch",
+ "use-event-envelope",
+ "use-event-handler",
+ "use-event-id",
+ "use-event-kind",
+ "use-event-log",
+ "use-event-metadata",
+ "use-event-name",
+ "use-event-payload",
+ "use-event-source",
+ "use-event-status",
+ "use-event-stream",
+ "use-event-target",
+ "use-event-timestamp",
+]
+
+[[package]]
+name = "use-event-dispatch"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5e7e724fd2b43d8cefe715684e7f1bb6ba058193b50394be2bff1babbe65ba87"
+
+[[package]]
+name = "use-event-envelope"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cf63f2c02119de2836d3a0fd84962d86b9a4792c12cb1664cb5965d51e59871f"
+dependencies = [
+ "use-event-id",
+ "use-event-kind",
+ "use-event-metadata",
+ "use-event-name",
+ "use-event-source",
+ "use-event-target",
+ "use-event-timestamp",
+]
+
+[[package]]
+name = "use-event-handler"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d1a86c5fe282774444e6d1bcd8680fc6591fe104eba53ce34521cc49cc316d7c"
+
+[[package]]
+name = "use-event-id"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2eb954100c2ae3fa9ba583fcdb2d4a2df92c90c78383df0a2e0c04e41f65174d"
+
+[[package]]
+name = "use-event-kind"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "584369fa63ed9fa7f91cd937cfdd3526c65c4e7ab746217b7bc61c527f73c2b0"
+
+[[package]]
+name = "use-event-log"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e6bb402e433cffd9848245ab3924f2a2807dc9cc038a052c1e578c6902a5514c"
+
+[[package]]
+name = "use-event-metadata"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7d611e4793a4b38ae9f09f7b71667053de554955acd7c761b338ae8d1c8a3c7f"
+
+[[package]]
+name = "use-event-name"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "aa850bb35deda1ccc682f2cd81a14aecb8e02e4577ce7d5479f27a0ed432f79f"
+
+[[package]]
+name = "use-event-payload"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "27cf1dc5417136dea45775965881ee067c93018d0f85aa8d3b2375a330d61450"
 
 [[package]]
 name = "use-event-simulation"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "de2fe26f8d12297d9b00b78af5357f86b31d3d396060a9f945b6f0eb880567f5"
+
+[[package]]
+name = "use-event-source"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "95b2e072c53ddf747d3720cb298d1c7d167d25e568062fd07816e5b100dae1fe"
+
+[[package]]
+name = "use-event-status"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "818088682a0741aeb4a6737341cd17bbf2740847931b90f07087d84dc25af27a"
+
+[[package]]
+name = "use-event-stream"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "659b76bfdfd1b6313491470eb733f1b434cec12e0fa7ccb4b4e86a1d0826c637"
+
+[[package]]
+name = "use-event-target"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e348289efb963c11d83e1b5d7f28e6d71bb08406dfb2b4625573961ebe920436"
+
+[[package]]
+name = "use-event-timestamp"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2aebae143499bcf9fabbd426b2af41e01ef2a2d663c0f0d2096a01426efef040"
 
 [[package]]
 name = "use-exit-code"
@@ -1577,6 +2381,8 @@ checksum = "fb2f459e041532ced97647468ab4458b155f7e137e604dbe8f1133debad9a304"
 [[package]]
 name = "use-finance"
 version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d8b68678b6dea11c7ae9fd23fc48b272cd37d6225c86910ae068520f87045601"
 dependencies = [
  "use-ach",
  "use-amount",
@@ -1606,6 +2412,12 @@ name = "use-fluid"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "12c633f807c1b8ec103a51f87093f795cfc0049941093e2a34ca3ebc2c74e857"
+
+[[package]]
+name = "use-focus"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "54b40da9ba49270d920316f8d084df6b3ffd8a5a7e2f7999fe8387d377dcc232"
 
 [[package]]
 name = "use-focus-order"
@@ -1737,6 +2549,8 @@ checksum = "8317d989dfe32caab64a5f0f4aa8f9aa6ea980402a1ff43175df315313972abb"
 [[package]]
 name = "use-geode"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b7e5e64033fd9aef8beaf148394f38b727c4599de45489178dca22c53a8b8162"
 dependencies = [
  "use-catalan",
 ]
@@ -1885,8 +2699,180 @@ dependencies = [
 ]
 
 [[package]]
-name = "use-glob"
-version = "0.1.0"
+name = "use-git"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0e614b71d86b767fa680b2119f7fdfa2dd2f34f752c8fb8d35de099bdeaf6932"
+dependencies = [
+ "use-git-attribute",
+ "use-git-branch",
+ "use-git-ignore",
+ "use-git-oid",
+ "use-git-pathspec",
+ "use-git-ref",
+ "use-git-refspec",
+ "use-git-remote",
+ "use-git-revision",
+ "use-git-status",
+ "use-git-tag",
+]
+
+[[package]]
+name = "use-git-attribute"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c9093dd2fffe4bf152c52876f092df71498c1c9dc49d65526055de59b538418a"
+
+[[package]]
+name = "use-git-branch"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "28b3d2714bb672ec32c166bc44bf3bf69df3eec1b656517a1a926734c3254b76"
+
+[[package]]
+name = "use-git-ignore"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1a1ffb13f5b7e29a8d8be5bc053d34b22c050b594583f3cb639d6c001575a577"
+
+[[package]]
+name = "use-git-oid"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1174418088612de22e3b59f03052c9f70cdecfd2f4b9dc3890172d9d2fa9a991"
+
+[[package]]
+name = "use-git-pathspec"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8506bf140a9f8450132f8809fcba91759c53fbb7b54ac5339ef96e6b98ddfcac"
+
+[[package]]
+name = "use-git-ref"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8617e9d19db5f0868c825577c91b07d87b28ed6952ffb50a9b2a30d2dfd06e6b"
+
+[[package]]
+name = "use-git-refspec"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3eb115181a749094d6144c50bb66ee36f452a52190000758db65bb5092707e0d"
+
+[[package]]
+name = "use-git-remote"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bd578c5adf7a092c5682e21c67b3657563276e1d2cae4379cb05fe5b7d926338"
+
+[[package]]
+name = "use-git-revision"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "03c4d7f6fa496bc63058ed3358e7121755e74ef26bce7d666a0babf71d10f219"
+
+[[package]]
+name = "use-git-status"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "551928502c053e82105dcea13e2a579aa137d7157cb83b1e91e274b7a5c636c6"
+
+[[package]]
+name = "use-git-tag"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ba8abf2dd7840969219c81bc663a2d3b3c66e2184fa105ad5de04b1c0168aad1"
+
+[[package]]
+name = "use-go"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "154b770bd5919b19f6f7f11ea7636dcfb093bbd0b2f4122c532d0f209f916e27"
+dependencies = [
+ "use-go-identifier",
+ "use-go-import",
+ "use-go-keyword",
+ "use-go-mod",
+ "use-go-module",
+ "use-go-package",
+ "use-go-test",
+ "use-go-value",
+ "use-go-version",
+ "use-go-work",
+]
+
+[[package]]
+name = "use-go-identifier"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fe66e69e63674d4f0c6c35749169349e5b2901f6e458027cc1c8dc3580eeb956"
+
+[[package]]
+name = "use-go-import"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "38fdd9cece4e407216ce92656b65f1f1550f22c211b6c20978f82887cb9d1a9d"
+dependencies = [
+ "use-go-identifier",
+]
+
+[[package]]
+name = "use-go-keyword"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bf9802bffbbdbb4665749e5976c8f2a4d43c274164625d0fcf2dea86acf02151"
+
+[[package]]
+name = "use-go-mod"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "84e3687f374f11489d0063fafd7e782b4c397ace6b417d6b9877b718ad68339d"
+dependencies = [
+ "use-go-module",
+ "use-go-version",
+]
+
+[[package]]
+name = "use-go-module"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "12257375107c35d60a421869f382ad1d8c12ba3c33bdd51ad0769ef2cf90517c"
+
+[[package]]
+name = "use-go-package"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c4dd805c1040e6b41abc32c0a4ff8f16a1f88c01f2f03f7341eb6a6b0982da7a"
+dependencies = [
+ "use-go-identifier",
+]
+
+[[package]]
+name = "use-go-test"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "edf4f571f10bb232d268d264ce725b75987f9225abbfcf683a230f8280234a8b"
+
+[[package]]
+name = "use-go-value"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c3f1a088c440b060659372bc898273cffa352284132b7c9c368e2ece82772fd1"
+
+[[package]]
+name = "use-go-version"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f714a5adbf62abb0f42fb8c0c51b0df9a2d742d0792e70bf7fbab3cf70237b52"
+
+[[package]]
+name = "use-go-work"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "18f77cc052cd13c0f1b07327f8d8e221b7457d91504e4381375219d5324504d9"
+dependencies = [
+ "use-go-module",
+]
 
 [[package]]
 name = "use-graph"
@@ -1916,10 +2902,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "af4a7bb42b29bb5c7e071afeebf88c92e9577e4e71da4e193867a7ba3b4e05bf"
 
 [[package]]
+name = "use-graph-store"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "65b31f6d60957322393c5196d175783ab4d54fc815b6eb6bdfeef7f713eed889"
+
+[[package]]
 name = "use-graph-traversal"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "559d8b2c4a07888e9762079d73ec3acd95aee6338e87c37b5a15c0352d821944"
+
+[[package]]
+name = "use-graphql"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "17ca71ede7b8e0b40b3d87d3a632495a1d947259feda48ee272d1d19797dce8b"
 
 [[package]]
 name = "use-gravity"
@@ -1937,6 +2935,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-grpc"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1f824bc56edb046550019d8dd7d58bf9a1e6943d31eed43ddb631908c8ea5b96"
+
+[[package]]
+name = "use-guardrail"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fc6a8ac12f1427c136cc4071ef03e4be35bfa0281372068a09cb0fb18742f6cb"
+
+[[package]]
+name = "use-gzip"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7d9114c52a044aecc53c002ae471ac107be59e1929ce4e8d28ad51750afb3d1b"
+
+[[package]]
 name = "use-habitat"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1947,22 +2963,6 @@ name = "use-hardness"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b5b3fff04ea2b79b4935b3d533ad6279bedc2362b99274206555762f24597d59"
-
-[[package]]
-name = "use-header"
-version = "0.0.1"
-
-[[package]]
-name = "use-host"
-version = "0.1.0"
-
-[[package]]
-name = "use-html"
-version = "0.0.1"
-
-[[package]]
-name = "use-http"
-version = "0.0.1"
 
 [[package]]
 name = "use-hull"
@@ -1997,6 +2997,8 @@ checksum = "2c616a4ec0cb26943d65faa841e277e5a229ebdbe81d5d00f304bdd0784aab29"
 [[package]]
 name = "use-iban"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4e2f826505985d650ca5017a2440d8d27bf9a262bd583e4ed5245f1d984fad5e"
 
 [[package]]
 name = "use-id"
@@ -2025,6 +3027,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "652c2abeb9142af5d70644adfe721e30ebc844cc39bf4607ad23015443a56848"
 
 [[package]]
+name = "use-idempotency"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "faa9a1fdde7a38eaddd65f2b5611e6f5bee4c779a39cf08c23161140cd5a9bed"
+
+[[package]]
 name = "use-identifier"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2045,6 +3053,14 @@ checksum = "388c36da70cacc3ac998a25e7314ca7b1e143bb5e3388372b40f11fd6c8a5248"
 [[package]]
 name = "use-integer"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3b8eba1e983dee1fee2c8167ba66b67a2dccdd639e9d4dc4152c50cd093d52a3"
+
+[[package]]
+name = "use-interaction"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "61c2672110e9a93a4fb17b3123aee544cc5613307715c7fcec09fafe111cf9f2"
 
 [[package]]
 name = "use-intersection"
@@ -2058,6 +3074,8 @@ dependencies = [
 [[package]]
 name = "use-interval"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "254f8559758e5df16f3eb9de36fcbd2ed7e3b5f82452390545c354db4a6aef96"
 
 [[package]]
 name = "use-inversion"
@@ -2072,27 +3090,17 @@ dependencies = [
 [[package]]
 name = "use-invoice"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d29a993be94708919ebe3d59c012aa3204cbc7831ed70d459f3bb32147d7ff81"
 dependencies = [
  "use-money",
 ]
 
 [[package]]
-name = "use-ion"
+name = "use-iso"
 version = "0.1.0"
-dependencies = [
- "use-chemical-formula",
-]
-
-[[package]]
-name = "use-ip"
-version = "0.1.0"
-
-[[package]]
-name = "use-isotope"
-version = "0.1.0"
-dependencies = [
- "use-element",
-]
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c402614d09772fff9c00f18dfd1f5716ee4b3b9aaf8d75853bfbd2b16352e4b3"
 
 [[package]]
 name = "use-johnson-solid"
@@ -2107,6 +3115,105 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "95bf53f98d3b7e948952cf9b2d0726c51aeff7718ff9fc11067b6f44ee23e167"
 
 [[package]]
+name = "use-jquery"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d477c730625c52b540d8fdeaa406ecb98567c9091e86076560114d0e2d17e8c3"
+
+[[package]]
+name = "use-js"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d272ffee7e7cb865f5bda3186445866738e1ffe6973d4200668620f155288894"
+dependencies = [
+ "use-angular",
+ "use-astro",
+ "use-bun",
+ "use-deno",
+ "use-ecmascript",
+ "use-jquery",
+ "use-js-export",
+ "use-js-identifier",
+ "use-js-import",
+ "use-js-keyword",
+ "use-js-module",
+ "use-js-value",
+ "use-lit",
+ "use-next",
+ "use-node-js",
+ "use-npm",
+ "use-nuxt",
+ "use-package-json",
+ "use-pnpm",
+ "use-preact",
+ "use-qwik",
+ "use-react",
+ "use-remix",
+ "use-solid",
+ "use-storybook",
+ "use-svelte",
+ "use-ts",
+ "use-tsconfig",
+ "use-vite",
+ "use-vue",
+ "use-yarn",
+]
+
+[[package]]
+name = "use-js-export"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "caf7cf5058a22c886e8a2f38c829ecb2ab31f80bf08f5f9e5e41fad36b6548a0"
+dependencies = [
+ "use-js-module",
+]
+
+[[package]]
+name = "use-js-identifier"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "11066cd017800049ea9831334131f32253d20100e53cd93846727541f95b30c5"
+
+[[package]]
+name = "use-js-import"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6155e75542a694fcba0cdc0f4142cf41baaf78b03322b666499d9acc2d1a63e4"
+dependencies = [
+ "use-js-module",
+]
+
+[[package]]
+name = "use-js-keyword"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4a8994a9af55729deb4f0906f237382ba929dcb2aa2a653f55df40324f2d3e91"
+
+[[package]]
+name = "use-js-module"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a0e10248ef150a18e70eccc29c54e06e8068a66bdc9285579ac897f47a4c0d2e"
+
+[[package]]
+name = "use-js-value"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "34fae64fad1063fc8cbd9b64a9bd645a8633c28961b32adab9bcaf24639afdd4"
+
+[[package]]
+name = "use-key"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "505aa09d7c1bd4daaf29351b6ef75dd4e1328a4f5174329073b28d40a98388a8"
+
+[[package]]
+name = "use-key-value-store"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "65e556496c8d20151e7fc6849e211d599d84914298d9b04cc9d09b9f81a4ee4f"
+
+[[package]]
 name = "use-kinematics-label"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2119,8 +3226,28 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1e610966641052156e39a6bd9e0a2ae39b39d9aee2ab14c90cc3ad498802641b"
 
 [[package]]
+name = "use-laravel"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d195b85268a9867bd0b7b86e0799a651eecf4b44cf2961cf877a578d745006ed"
+
+[[package]]
+name = "use-layer"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "147b8d0ce2b02be8f982c05a3f7f50dfac53e505e7667f0198a2d8e71763fdd1"
+
+[[package]]
+name = "use-layout"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5742d47551efa57010f562b57224d8ed517e1c1c8fbdcc29dc65decb480f55e5"
+
+[[package]]
 name = "use-ledger"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0f225842446bdabf5c3e834bc23345181912b37e39500a8c796227a2d899c134"
 dependencies = [
  "use-money",
 ]
@@ -2140,7 +3267,7 @@ dependencies = [
  "use-coordinate",
  "use-orientation 0.1.0",
  "use-point 0.1.0",
- "use-vector 0.0.7 (registry+https://github.com/rust-lang/crates.io-index)",
+ "use-vector 0.0.7",
 ]
 
 [[package]]
@@ -2152,6 +3279,8 @@ checksum = "c8b734a461a3090d9eb4ffb41d668d66d8ec8596350ba049c89fcb1c4afa28df"
 [[package]]
 name = "use-linear"
 version = "0.0.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "88a9311b73cc306702b19de6aaeec2c21ae8cebdced3f797d00090d9b6c41c12"
 dependencies = [
  "use-matrix",
  "use-vector 0.0.7",
@@ -2168,6 +3297,15 @@ name = "use-listing"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b26fea3ffdc37fb05ee146fe3e7c0f5b6f0983472c232b53a8211275eef2d53c"
+
+[[package]]
+name = "use-lit"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "90198be42af087d48af88fe613b47bc0a69c3b858c28ff5de8785dc8318c17aa"
+dependencies = [
+ "use-js-identifier",
+]
 
 [[package]]
 name = "use-local"
@@ -2223,6 +3361,8 @@ dependencies = [
 [[package]]
 name = "use-logic"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ce3e01f26f12a866f895f9677aa0943ec06a08ae4ad2c4f9a1c3b12b39bab7b7"
 
 [[package]]
 name = "use-loss"
@@ -2231,8 +3371,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "90b63aa7ca0d2de6a9ec09bab44afc0e7a393e3a371e669c280fddb303254ffe"
 
 [[package]]
-name = "use-mac"
+name = "use-lz4"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9b4b1f0219380fc98abea4d57cad663f169b9eb9f954ea6f9b5e836f5bdfec36"
 
 [[package]]
 name = "use-magnetism"
@@ -2245,6 +3387,15 @@ name = "use-magnitude"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "63914ad70e4ee7a1cc653cefeac808d845369dbb6e5d7fe14432755801c1bc7b"
+
+[[package]]
+name = "use-mailto"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ae2d400b8736a22ef28d88d6295d35346bfc6ae009c132c7945b7358b4fff254"
+dependencies = [
+ "use-email-address",
+]
 
 [[package]]
 name = "use-manifold"
@@ -2269,10 +3420,6 @@ name = "use-market-price"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "369539b0432683344b8d2755f71ebaa8be4f8178fbad58e6a343c109df4442da"
-
-[[package]]
-name = "use-match"
-version = "0.1.0"
 
 [[package]]
 name = "use-material-elasticity"
@@ -2311,6 +3458,8 @@ checksum = "c135664848d7e5e20419250f18215c4af500e19904676f1beab7838831718456"
 [[package]]
 name = "use-math"
 version = "0.0.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "06495158160d9ad4cde786be86cd31de5cf25c45862b24399138f0070e77e6a0"
 dependencies = [
  "use-algebra",
  "use-arithmetic",
@@ -2345,10 +3494,14 @@ dependencies = [
 [[package]]
 name = "use-math-constants"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "af4b6ef2ce8156176cae9068af6bc0a7689cbcd256d92e546d033725f2a56b97"
 
 [[package]]
 name = "use-matrix"
 version = "0.0.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2927ba96002e745f238ddaf546685a34f70089ef8226f1b13efb99879ea129a1"
 dependencies = [
  "use-vector 0.0.7",
 ]
@@ -2427,12 +3580,22 @@ dependencies = [
 ]
 
 [[package]]
-name = "use-method"
+name = "use-meter"
 version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "af71e2d70577b57d6f7a4a37c4ee3d5b8031c9be3f55bb66a51720ac698455c2"
+
+[[package]]
+name = "use-midi"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8a16cb9ce80c3608e89c5e82e3f1ed3f771c8a22478ecca96f3dd677ace37237"
 
 [[package]]
 name = "use-mime"
 version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "831e681448ff93889e2bd8316891b4f7a02122da9687819fabcf5e1667090a81"
 
 [[package]]
 name = "use-mineral"
@@ -2441,29 +3604,121 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fa9ae718afbe93088684d388b09268fc2d610215a67b5d8a5fb5662fcc4b7029"
 
 [[package]]
+name = "use-ml"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "00f24b96decdc82519dcd41ab821209a9e3ba3583d53b1ffaa66a4b87fe757fe"
+dependencies = [
+ "use-ml-dataset",
+ "use-ml-embedding",
+ "use-ml-evaluation",
+ "use-ml-experiment",
+ "use-ml-feature",
+ "use-ml-inference",
+ "use-ml-label",
+ "use-ml-metric",
+ "use-ml-model",
+ "use-ml-model-card",
+ "use-ml-pipeline",
+ "use-ml-tensor",
+ "use-ml-training",
+]
+
+[[package]]
+name = "use-ml-dataset"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d9970da27c0b98b2793604226d1760f40fdbb4cec41abb907027a315404775af"
+
+[[package]]
+name = "use-ml-embedding"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "124e0124b9db0db69f48ad848e87d160dd2080ca07056a56404bb640804e7c1e"
+
+[[package]]
+name = "use-ml-evaluation"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fd0d262bc9ef0f3cb83b6ef383bde1195adfea92e5fb105ccffff21c86707b72"
+
+[[package]]
+name = "use-ml-experiment"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "64006b0424574c537c20be374fc54116aae867555dcba1542224702f463ae580"
+
+[[package]]
+name = "use-ml-feature"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8236110601257b1600c122702fee061ef070d47754c220fbd5bd830000533f78"
+
+[[package]]
+name = "use-ml-inference"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6efa32eb115aefe600db8df6b9d65edda813f91fc78fa78eb89a95a8a7e30524"
+
+[[package]]
+name = "use-ml-label"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "73d3de0543e18e3578215e1306c58e39123e1cae2fa67a4a9f4b6e00edf937a8"
+
+[[package]]
+name = "use-ml-metric"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cf4cdd5ca4c42f358300beee5ac819ea8eec4217811b6f467066d9ebf752c0d0"
+
+[[package]]
+name = "use-ml-model"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "32b339204e6d9e0d6988d7a72f2957672f83609d6bfda84e8705c1bc9172391e"
+
+[[package]]
+name = "use-ml-model-card"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a2eeaba60b7609227821b4bdbf2d77593f42ee274d96716de40b0668621a7c03"
+
+[[package]]
+name = "use-ml-pipeline"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dffdce1ba867ebe9af15c2b80182fc3c80f31e67a2e75b2159b9a34838d235f0"
+
+[[package]]
+name = "use-ml-tensor"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ac968d98a47cdb220dadbf7e71bb52e22c515c363e4883637780e7b6501a62cd"
+
+[[package]]
+name = "use-ml-training"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b2d0ba017c98130354baf945d72d624b0bd31e4b44af4b58e9130858f49f13ed"
+
+[[package]]
+name = "use-mode"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "763281ae007710a3a994b2d1da900dc6781cc93e85acc1139cf7ae1980297b2e"
+
+[[package]]
 name = "use-modular"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "18ce96dd4ebf00e67a7f8bcf7be5fb53ba5df55c1fbf6c6d7af1872f62b005d1"
 
 [[package]]
 name = "use-modular-scale"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dcadafc7bab579d92e433edd545f46e57671aba476e4e3fec76480cb15861f69"
-
-[[package]]
-name = "use-molar-mass"
-version = "0.1.0"
-dependencies = [
- "use-atomic-mass",
- "use-chemical-formula",
-]
-
-[[package]]
-name = "use-molecule"
-version = "0.1.0"
-dependencies = [
- "use-chemical-formula",
-]
 
 [[package]]
 name = "use-momentum"
@@ -2474,6 +3729,8 @@ checksum = "290fcde9fc1051419970d20616feb14e3a6cfc677b55ac78fcf309982f54ed2b"
 [[package]]
 name = "use-money"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "56dbd28fa4dc2feb4ec54f2cd6cd9d227d4e6ae0d7008febeb082ab1654c0478"
 dependencies = [
  "use-amount",
  "use-currency",
@@ -2522,14 +3779,57 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0d094642d81054918f57abbf54bbc97d2d62aaf54ffadd1c3a0e4d0d5d34ac27"
 
 [[package]]
+name = "use-mtree"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "34cd3bc527e33b0cb636577349b80bd1fbc43bf62ad9a7cc162db1b4c835ac38"
+
+[[package]]
+name = "use-music"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ba20910820632f107badada22265caaedbcbb5e401adb685f715607e05b2b743"
+dependencies = [
+ "use-articulation",
+ "use-chord",
+ "use-dynamics",
+ "use-key",
+ "use-meter",
+ "use-midi",
+ "use-mode",
+ "use-music-interval",
+ "use-notation",
+ "use-note",
+ "use-pitch",
+ "use-rhythm",
+ "use-scale",
+ "use-tempo",
+ "use-tuning",
+]
+
+[[package]]
+name = "use-music-interval"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a7d01f2e14f22dd08bbadb68ee44613d230c344f05c4b2cdf8ae2fe0218949d5"
+
+[[package]]
 name = "use-net"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "16b372e02902dced43c9a11b324cdc1d93a2ea00e3cf7dfa10d49682a3d4e487"
 
 [[package]]
 name = "use-net-label"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "aa1a4a4c37437e56c22c606eef65f1b6a7a500b334f59e5319e27c8a08a5f6df"
+
+[[package]]
+name = "use-next"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d4158170c65068e1b867996e22b00efa9e5f2d2ecedfd81d30339953e8379bf0"
 
 [[package]]
 name = "use-niche"
@@ -2542,6 +3842,50 @@ name = "use-node"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "625671019250f0e2c231ec580ac6f2f4e76989dcfb76b3115dfa973beda60603"
+
+[[package]]
+name = "use-node-js"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ce5a2fa84676ab034e0d5627089af6998ab1f0cc0def10cf286392c5de275483"
+
+[[package]]
+name = "use-nosql"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "57b376f34d3157921e3239955446c58eecdef95246134110b8865db711b10135"
+dependencies = [
+ "use-cache-store",
+ "use-change-event",
+ "use-consistency",
+ "use-document-path",
+ "use-document-store",
+ "use-graph-store",
+ "use-key-value-store",
+ "use-partition-key",
+ "use-search-index",
+ "use-timeseries-store",
+ "use-vector-store",
+ "use-wide-column",
+]
+
+[[package]]
+name = "use-notation"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "63157142ee1e6f2566c76c4c5b5944cf319b90f55a296c5958f1afbf940cc2bc"
+
+[[package]]
+name = "use-note"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e7a46a9d01ec8bf1afb98dba672c3a419da97b0bc07b63a1daef84fa11bb1ee7"
+
+[[package]]
+name = "use-npm"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e98c40e1eb33a70b1ca56b521999cc057f2c3dafbd1799852ad27af4794abf8e"
 
 [[package]]
 name = "use-nuclear"
@@ -2558,19 +3902,206 @@ checksum = "3859787306f708d3a9834045553986cfa403a53621bde4f0af599325bf3d4106"
 [[package]]
 name = "use-number"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1bddedfe4ac6a1150ad3a77f71022db63a9b2c1992c4660d0347b75e9a551442"
 
 [[package]]
 name = "use-numerical"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b5a621122d6df2291ae61c49b182224bc449af390f6932f6cd5c344d6d98e2b8"
 dependencies = [
  "use-interval",
 ]
+
+[[package]]
+name = "use-nuxt"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ec38c51371897a41a2bb9078b7c7ea2e0c086492ee82c8cb174895c5eed65217"
 
 [[package]]
 name = "use-objective"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "24aaea5d32221d4d4714ccf4bac46ac8df698f5dc68df0f1443fb43438e71bc4"
+
+[[package]]
+name = "use-oci"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8644db106577dd6d2a04f87d13c61fb9c8e663196e4ed9a140cfe01a52aa74e9"
+dependencies = [
+ "use-oci-annotation",
+ "use-oci-config",
+ "use-oci-descriptor",
+ "use-oci-digest",
+ "use-oci-distribution",
+ "use-oci-hook",
+ "use-oci-image",
+ "use-oci-index",
+ "use-oci-layer",
+ "use-oci-layout",
+ "use-oci-manifest",
+ "use-oci-media-type",
+ "use-oci-namespace",
+ "use-oci-platform",
+ "use-oci-reference",
+ "use-oci-runtime",
+ "use-oci-tag",
+]
+
+[[package]]
+name = "use-oci-annotation"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b13096dd2c8a4e229c7bee18278b550ccb601e620430307c9d7f6d47d84dd097"
+
+[[package]]
+name = "use-oci-config"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "55d3f38406291c3eb049046832858c95ba50fff702b8b8578649c1208d120aad"
+dependencies = [
+ "use-oci-annotation",
+ "use-oci-platform",
+]
+
+[[package]]
+name = "use-oci-descriptor"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ab634d491da51de25f3b171c30f2dea61cdf08c9c0080c932b3934c0df5f41c3"
+dependencies = [
+ "use-oci-annotation",
+ "use-oci-digest",
+ "use-oci-media-type",
+ "use-oci-platform",
+]
+
+[[package]]
+name = "use-oci-digest"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "30fe96ec9e6be40417bfdb64776c3be4145791ed2ad98981dab28de159a88f8d"
+
+[[package]]
+name = "use-oci-distribution"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "376bfed5237315277dbaa9ee8f3cd94d20de27ad333856e528d601b68530cd9e"
+dependencies = [
+ "use-oci-digest",
+ "use-oci-tag",
+]
+
+[[package]]
+name = "use-oci-hook"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "40971bd987a32e4794af5620f6295f0e404a1253a012b2e1887f852a54215bae"
+
+[[package]]
+name = "use-oci-image"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6e7210b75e2053469aca09c91d3e3e7fd8f2b453294e37817186613518addee2"
+dependencies = [
+ "use-oci-annotation",
+ "use-oci-descriptor",
+ "use-oci-digest",
+ "use-oci-media-type",
+ "use-oci-platform",
+ "use-oci-reference",
+]
+
+[[package]]
+name = "use-oci-index"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "061c94832d479abee6f8e5a71b5b1a3e1a1e89c2c6d35c3374e7d96b0a5481ed"
+dependencies = [
+ "use-oci-annotation",
+ "use-oci-descriptor",
+ "use-oci-platform",
+]
+
+[[package]]
+name = "use-oci-layer"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d47df568704bf6813727812f151d5c592f4ff14a1d388932fffdbd2f062b4de5"
+dependencies = [
+ "use-oci-digest",
+ "use-oci-media-type",
+]
+
+[[package]]
+name = "use-oci-layout"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dbb53b4022389b300cfc269fb6189a80264d34026d374c63842949b3a17c62b4"
+
+[[package]]
+name = "use-oci-manifest"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "73609fd0520a8d19e9ce994b1e9f3113abefd24e464988a6679b2e98ddd78d8d"
+dependencies = [
+ "use-oci-annotation",
+ "use-oci-descriptor",
+]
+
+[[package]]
+name = "use-oci-media-type"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "162854281b05531dbf467d826923b82e9f06c3a20a3e9dfd9d72e1831802557d"
+
+[[package]]
+name = "use-oci-namespace"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5cc96a239a62746361892bae2c36ae469bf8d046caf1ff9ceb044442e60d180f"
+
+[[package]]
+name = "use-oci-platform"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "05e5ffd4ea12c852cf3db53cbc94934452e3fb11d57e3c87c79d5ee40652ac3e"
+
+[[package]]
+name = "use-oci-reference"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8933176e89e3471d253655791a9dae67983cc8b3dcd5243afec39a4510f85c80"
+dependencies = [
+ "use-oci-digest",
+ "use-oci-distribution",
+ "use-oci-tag",
+]
+
+[[package]]
+name = "use-oci-runtime"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d7b4f7ec0a34da329b045b5f84aaf59f520a78d13e38a174c81dc46759414ce6"
+dependencies = [
+ "use-oci-hook",
+ "use-oci-namespace",
+]
+
+[[package]]
+name = "use-oci-tag"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9e602fe3b94e424b632cccdf391d277f09778e900e90170e4351a4fc839d2933"
+
+[[package]]
+name = "use-openapi"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "af5ac39889a9d2cc337f5b4d287bed748f1cafc3026b3104842cf56bfb5a26c6"
 
 [[package]]
 name = "use-optics"
@@ -2660,10 +4191,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "20e99723847fe37f2a175c77fef3a9766bf5a13d28b2f4e034673ac9b512541d"
 
 [[package]]
-name = "use-origin"
-version = "0.0.1"
-
-[[package]]
 name = "use-orthotope"
 version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2699,14 +4226,28 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a1b96fc7081f6bb33fa3e05d1415ade09c9396eaa77ee5d9a82d9c3b4f7da8be"
 
 [[package]]
-name = "use-oxidation-state"
-version = "0.1.0"
-
-[[package]]
 name = "use-package"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5f21f8e92460892a97f5bc0127d24def1b55c1e73f0b1cea380de3fd7a0301e7"
+
+[[package]]
+name = "use-package-json"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4a042b7eb52085f46d65b0695abfde007dde9cf4588c00851ad03469602ec3a8"
+
+[[package]]
+name = "use-packagist"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1b57167d01775df99d4935735661fb613abac08c69b9eb930cadbcb0a93a2102"
+
+[[package]]
+name = "use-pagination"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e951a2439f7f2f4ad2dbf39b802318d7f72fbd39b2531b23036f0d7ca0e5730e"
 
 [[package]]
 name = "use-particle"
@@ -2715,18 +4256,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4fc38b200919b2c010a93a24c585039317e0291f3279409e06c7bbac98419528"
 
 [[package]]
+name = "use-partition-key"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "19fd2266a2c28d3e2e3c2cd603fa3dfe4d7b899b3a15adec51ee87a1fd55ad64"
+
+[[package]]
 name = "use-pattern"
 version = "0.1.0"
-dependencies = [
- "use-glob",
- "use-match",
- "use-regex",
- "use-wildcard",
-]
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "060bbc2c27d6418c755608705754fbaea2aa9c81c95071aa27c21e3609c9a8c9"
 
 [[package]]
 name = "use-payment"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6c1cb2e0c50186f6019e217e5d1cb23381baf1fbc441beb0fff7248c0fd8510a"
 dependencies = [
  "use-money",
 ]
@@ -2740,13 +4285,209 @@ checksum = "2f62993bde13f9f4bc26d083afab58a44a3d4506b71ada132b92cdbce0f5ab10"
 [[package]]
 name = "use-periodic-table"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "94ea902d011e1a31d3ae47f6dfdb1c11122a10cc0729eb505ed1b84509fb5044"
 dependencies = [
  "use-element",
 ]
 
 [[package]]
+name = "use-pg-column"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "28a80e504c53ccc8a8456ed57c2334931e98ca335d4ff2b0714da49ffe23e0a5"
+dependencies = [
+ "use-pg-identifier",
+ "use-pg-type",
+]
+
+[[package]]
+name = "use-pg-constraint"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "edc098297872257543e21f0e5abf013cbf22d7477486dcaa72244363f381df7f"
+dependencies = [
+ "use-pg-column",
+ "use-pg-identifier",
+ "use-pg-table",
+]
+
+[[package]]
+name = "use-pg-enum"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "46ed8e64b5a639819d00797cfa7f5556a4e91062caad354e2f835d969881db39"
+dependencies = [
+ "use-pg-identifier",
+ "use-pg-schema",
+]
+
+[[package]]
+name = "use-pg-extension"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6677a274f6256f73f97d1b81212c69b86bc02ec3fe88d58d9d7c510d3dc91950"
+dependencies = [
+ "use-pg-identifier",
+ "use-pg-schema",
+]
+
+[[package]]
+name = "use-pg-identifier"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "844c911f2b7b549150e03b2b6992dbd20266db12adafe301e54ab6dd487105cf"
+
+[[package]]
+name = "use-pg-index"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2105d053db6dd0fc16e0705b4ded77e064966069449fa62e7fdf9ea2eb243189"
+dependencies = [
+ "use-pg-identifier",
+ "use-pg-table",
+]
+
+[[package]]
+name = "use-pg-schema"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dec2b15ac116b08fdee88e16d3bcd94a8ac1fbef2d8fcbf4c50cff94056a9f65"
+dependencies = [
+ "use-pg-identifier",
+]
+
+[[package]]
+name = "use-pg-sequence"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6b0cac7ace83863823e9c182fe355f6d4b78148552ad0cc8be0d3eeeababf9ee"
+dependencies = [
+ "use-pg-identifier",
+ "use-pg-table",
+]
+
+[[package]]
+name = "use-pg-table"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d798840ed49ac78d94dcd1108e170e31301610808614b9a2b1203cf362fa3926"
+dependencies = [
+ "use-pg-identifier",
+ "use-pg-schema",
+]
+
+[[package]]
+name = "use-pg-type"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cfc404cc261b6aedd3a874523ea132e3d7fea57abafdf46f1adefe554dda5f94"
+
+[[package]]
+name = "use-php"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5bc51b5874e52d65cde7bb445d993f296b50b960c856cb7e17ded8fb9de133e6"
+dependencies = [
+ "use-composer-json",
+ "use-drupal",
+ "use-laravel",
+ "use-packagist",
+ "use-php-attribute",
+ "use-php-autoload",
+ "use-php-docblock",
+ "use-php-error",
+ "use-php-extension",
+ "use-php-ini",
+ "use-php-namespace",
+ "use-php-symbol",
+ "use-php-syntax",
+ "use-php-token",
+ "use-php-type",
+ "use-php-version",
+ "use-psr",
+ "use-wordpress",
+ "use-wordpress-block",
+ "use-wordpress-hook",
+]
+
+[[package]]
+name = "use-php-attribute"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "345a1ef651fc1321bb87c4fff99ddadd5d5d8b59788b7d44d9834e278e3d4263"
+
+[[package]]
+name = "use-php-autoload"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4bff742f9b2ced83e048e5cf0600c06c235c537972f4d7e0310e70143501e1b1"
+
+[[package]]
+name = "use-php-docblock"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b3713d26d564e6c2afde0a532597a47598f128c90c460e21076eaf7e8dc5088b"
+
+[[package]]
+name = "use-php-error"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4f642f852695b9afae0f4017e1c9aad6a01127ccc14e23bf4b9ce47ddc2da8ae"
+
+[[package]]
+name = "use-php-extension"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "efba8408aded0c5b6269760b9844fdb8b5a9e91400ba5e393a542493792d274c"
+
+[[package]]
+name = "use-php-ini"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a3a0341dc24430670d6665ff8f30555ceef61b6e31ae3fd69a87fd3fd3496d6a"
+
+[[package]]
+name = "use-php-namespace"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "94db43c586566e80c9499ec628f0094fb33bab15f793402d42607cc709dfbd99"
+
+[[package]]
+name = "use-php-symbol"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "14c5f56ddd47b77c2f214ebe991a08bee8b61f59df1217b55c256087adb1da86"
+
+[[package]]
+name = "use-php-syntax"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "54882554418889c83c50e82345131265e426649d23d8b707e0014efd33bb1c12"
+
+[[package]]
+name = "use-php-token"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dcf901db1f1a1ab69fe02adb561e98c4183cfdf1875272c2e0fbeebba207fb36"
+
+[[package]]
+name = "use-php-type"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "43ff0b1168270015eaf279e919612ec08d573aa94c80c19c0813a77484a610ce"
+
+[[package]]
+name = "use-php-version"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "95f976db079a760de0edf77e4768e0132df5d6d5f37f1fe14672c4d05ad64b39"
+
+[[package]]
 name = "use-physical-constants"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f06c277f6d1ad7c844310f705e7f5beee5d0b06d9a1ef88d4f0bbd37e835d6cf"
 
 [[package]]
 name = "use-physics"
@@ -2800,6 +4541,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-pip"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "14b9424dcbbc938189028d544aa17ef9ad1a01a1f303a99e14c8f044f56627f9"
+
+[[package]]
+name = "use-pitch"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dbc8ed8e7152fb656cf03dbb548eaa5a6073ae03dde4733f56f2d626aef9d0f8"
+
+[[package]]
 name = "use-place"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2812,7 +4565,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6571374fae574a01f0ddae4e3ce676db54e49052365cdb08ffc7b144e09173a2"
 dependencies = [
  "use-coordinate",
- "use-vector 0.0.7 (registry+https://github.com/rust-lang/crates.io-index)",
+ "use-vector 0.0.7",
 ]
 
 [[package]]
@@ -2820,6 +4573,12 @@ name = "use-planet"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b833c06d30d302f20a44e2d8b35026aed304c09ae8eb9198cdc2419383a09758"
+
+[[package]]
+name = "use-planning"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b381821559c68e53b2c2cfcee1194fa2f3b6fc9b1e63d6ee8009a4c37fb9ffea"
 
 [[package]]
 name = "use-plasma"
@@ -2832,6 +4591,12 @@ name = "use-platform"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e08b85ec46977ff5c5439ed9de72995d61eaf45960da820a255dd69bfd78ae90"
+
+[[package]]
+name = "use-pnpm"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9f3d782fdbd4bf7fc9b1dbb015b631664130c10ac6e06886f40b75489497aadd"
 
 [[package]]
 name = "use-point"
@@ -2850,7 +4615,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e5dd2a7103d2fe0c0844f61c08054cd17b1da13fb31caf895901f0229a499c4d"
 dependencies = [
  "use-coordinate",
- "use-vector 0.0.7 (registry+https://github.com/rust-lang/crates.io-index)",
+ "use-vector 0.0.7",
 ]
 
 [[package]]
@@ -2890,6 +4655,8 @@ dependencies = [
 [[package]]
 name = "use-polynomial"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ccb9984fc68ef484a256472c12799ccc8f523d8759511ae0dbc093cdb8cf185a"
 
 [[package]]
 name = "use-polytope"
@@ -2904,10 +4671,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7cf7527a25e3d8bbd5533693697a2be2562792e85fa396daec236ca72baf8d31"
 
 [[package]]
-name = "use-port"
-version = "0.1.0"
-
-[[package]]
 name = "use-portfolio-weight"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2920,10 +4683,37 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4443e1fb7858d676b33a8913126c480ebfcfccbaf423e0c70d158dbccb4a41f7"
 
 [[package]]
+name = "use-postgres"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b3ae4f32d523f38c9708c6e486e3c0a22a97a36af880670fe626b82c820179e0"
+dependencies = [
+ "use-pg-column",
+ "use-pg-constraint",
+ "use-pg-enum",
+ "use-pg-extension",
+ "use-pg-identifier",
+ "use-pg-index",
+ "use-pg-schema",
+ "use-pg-sequence",
+ "use-pg-table",
+ "use-pg-type",
+]
+
+[[package]]
 name = "use-power"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c07a045264b80adf4c341a39bf7c4645aa07f61e9a45116c3c36308af5a86e99"
+
+[[package]]
+name = "use-preact"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "17bfa8aeed39cc16d21ef6ef2e0134706fb7bf59f8bd560588b543701ec73605"
+dependencies = [
+ "use-js-identifier",
+]
 
 [[package]]
 name = "use-precipitation"
@@ -2983,10 +4773,14 @@ dependencies = [
 [[package]]
 name = "use-prime"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "36fce4b079f5e208f184261d624272405d2d91861a9c25dcc7a37ef8fb8c0b3a"
 
 [[package]]
 name = "use-probability"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5436ec1bf92be5e64598be8d0af9be76933c11265ee1a269905ff8543dab8c91"
 
 [[package]]
 name = "use-process-id"
@@ -3025,6 +4819,81 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5bfd718b0b2bd2a948f59568e79208016d3e7fb7e26ccda6dfced443583ead77"
 
 [[package]]
+name = "use-psr"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bcc73ad2b147fe13f6edbdfff76c5f5bdae2bd7beefde18d64747bcf7bc65a91"
+
+[[package]]
+name = "use-pyproject"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "323d0dc9028c0caba8de83063adc67a12bbf3c283873839f2b9cba84c2e4869d"
+
+[[package]]
+name = "use-pytest"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ef339872334998db2c0b86f3a95737dc48b153e342fcf151d2509d5037f7c99d"
+dependencies = [
+ "use-python-identifier",
+]
+
+[[package]]
+name = "use-python"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9d70a8fbc1b57e0efba050271659a59f957ea3295e8be7cb76db1dd3b3bfaeed"
+dependencies = [
+ "use-pip",
+ "use-pyproject",
+ "use-pytest",
+ "use-python-identifier",
+ "use-python-keyword",
+ "use-python-module",
+ "use-python-value",
+ "use-python-version",
+ "use-uv",
+ "use-venv",
+]
+
+[[package]]
+name = "use-python-identifier"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3720573ba5f9bfc1f77de7973fa12e85bada76c80a22e7860397e8d9c5e35a81"
+dependencies = [
+ "use-python-keyword",
+]
+
+[[package]]
+name = "use-python-keyword"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8fe7a73ea3f4bc6745c41782345a87cf8de5ae3860977c635445811b521bcd5b"
+
+[[package]]
+name = "use-python-module"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "482608dd3a1ccda67b223b05efe6a98b12bd0f00f764c773c5b346c66b75679e"
+dependencies = [
+ "use-python-identifier",
+]
+
+[[package]]
+name = "use-python-value"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "03533999ce6987501459cc1770ae31c9faf527fff0a7eb8cd68376321eb7ad5d"
+
+[[package]]
+name = "use-python-version"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d0047a3703d1ae005391a6c2072e34f0ac64a75ce8379aad7337392a44da653d"
+
+[[package]]
 name = "use-quant"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3059,14 +4928,25 @@ dependencies = [
 ]
 
 [[package]]
-name = "use-query"
+name = "use-qwik"
 version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3c6b81bb25e13e4d47d6e33d098ab0d4aa7dc5a90f75833de410c57898573f68"
+dependencies = [
+ "use-js-identifier",
+]
 
 [[package]]
 name = "use-radiation"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "48d28555da6d55a3970f07299672458c5fffbe1052260e14e4f4659151d502f8"
+
+[[package]]
+name = "use-rag"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "abadeb37a6c3081fdb2e2e6000f83017e9ae3655e90395c623b8285613a73287"
 
 [[package]]
 name = "use-random-walk"
@@ -3087,6 +4967,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-rar"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e37b920fa35b7e32b8fd1a1df553a5c51d9da162913924519e2922ec201653ad"
+
+[[package]]
+name = "use-rate-limit"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7a12b1260f06dcf848d7e98fc07af54fd136b3ebf0ba399a979b2b3bb31ae660"
+
+[[package]]
 name = "use-rating"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3095,6 +4987,8 @@ checksum = "6d8b7992e41fd7c07026173c99c028b79efe40b1dd9cf253dcc3b6ab5d2613fa"
 [[package]]
 name = "use-rational"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8b32745e53fc9004e5db72a81d52a03a20f829c8aec9b559d0e0ab2d5cb1e572"
 
 [[package]]
 name = "use-ray"
@@ -3104,15 +4998,16 @@ checksum = "c2cc061d1b3dc1da0d6f3d72fe8a11b081076f61c968e6c861c7fadd53b9c2f3"
 dependencies = [
  "use-coordinate",
  "use-point 0.1.0",
- "use-vector 0.0.7 (registry+https://github.com/rust-lang/crates.io-index)",
+ "use-vector 0.0.7",
 ]
 
 [[package]]
-name = "use-reaction"
-version = "0.1.0"
+name = "use-react"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b4f879ff00ce16a399353f709d726273f2b8fa88056394afec4a918ea7aa2974"
 dependencies = [
- "use-chemical-formula",
- "use-stoichiometry",
+ "use-js-identifier",
 ]
 
 [[package]]
@@ -3124,13 +5019,23 @@ checksum = "64b3775e3daaab2e5a0673de462a5492d153467f4322776a54ee1f06e75cd7db"
 [[package]]
 name = "use-real"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ea7f6871a431fffafde03e5b7a803dd07985bf2f81c00ce16fa027a3d4ab729b"
 dependencies = [
  "use-interval",
 ]
 
 [[package]]
+name = "use-reasoning"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e110be3ddecdd470ccfff6250047fa6434d514dfd59d825e222ec901bd21260c"
+
+[[package]]
 name = "use-receipt"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "88c12eb099e4d5d2669a99aab78bede2b5484fb5feff8bd6d839986b8866e7d7"
 dependencies = [
  "use-money",
 ]
@@ -3138,6 +5043,8 @@ dependencies = [
 [[package]]
 name = "use-reconciliation"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6752562879977027be2be1f442618bb7b3be132c8bfe21824930b284823e11af"
 dependencies = [
  "use-amount",
 ]
@@ -3178,13 +5085,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "use-regex"
-version = "0.1.0"
-dependencies = [
- "regex",
-]
-
-[[package]]
 name = "use-region"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3204,6 +5104,12 @@ name = "use-relativity"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "50b381f2768e15bd422ba94763d8bc980600fb735b64388718b7469d58dd8d17"
+
+[[package]]
+name = "use-remix"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "968f105933cf3fb94a15117dda2fc24a4ad7b0dd0f48bc384efcb4ef770c7856"
 
 [[package]]
 name = "use-reproduction"
@@ -3233,10 +5139,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2b8eeefc7e9091465790dd0623a588fda269344210ba71785f5e85cbf8560757"
 
 [[package]]
+name = "use-rest"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d7774ee19451c2f0e5ff0f9a0ed5ac215646bd7f8e6eccd50ae5a10991093fc1"
+
+[[package]]
 name = "use-return"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3f1c7993954f34dc06e69bf0265c947bff1af3368fa683c2ec7c97b8c35f50e7"
+
+[[package]]
+name = "use-rhythm"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dd468fe25ba9590c6d9ad0f2eff5d77022372d126868472fbaababcb1a6a05b5"
 
 [[package]]
 name = "use-rigid-folding"
@@ -3320,12 +5238,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8bcc60db194fc59d3a01b14b5a5052c78030de1c5eb79d2e8dedb461a903611c"
 
 [[package]]
-name = "use-route"
-version = "0.0.1"
-
-[[package]]
 name = "use-routing-number"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "80407b2b1620dc720382835213c5356c04baf8750901159fa6f0d77ea3cde1eb"
+
+[[package]]
+name = "use-rpc"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f09e0682bfa02b27dcd269fb3cef59350ea62bbf6fbefb4b1aa6a7e3fb104166"
 
 [[package]]
 name = "use-rule"
@@ -3339,6 +5261,8 @@ dependencies = [
 [[package]]
 name = "use-rust"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "eb7b41c7d049364d57a8714217b3811f955a0af7ea5ed9b06f33005c93c50042"
 dependencies = [
  "use-crate",
  "use-version",
@@ -3361,6 +5285,12 @@ name = "use-sample"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ed4e0887e61cbe7c0a15ff9c1efc84e3797a85af3ab2e5c4eebf814ffe20a256"
+
+[[package]]
+name = "use-scale"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "78f78fa15e5855de32856ec449f41554551bb85ff1738ad53f7fc9d3b598cf32"
 
 [[package]]
 name = "use-schema"
@@ -3387,10 +5317,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b8c5871d0dd5e1c19dcea89349364e098ea05e616aea7973c96b19efebb002a5"
 
 [[package]]
+name = "use-search-index"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "814a8a2ba3c5b6725b16ae6133ba5a873eb5943b88c8e9cad495c5c1ef870bc4"
+
+[[package]]
 name = "use-search-space"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a9adb7ea19fcefa6277c169ba2bc18d25cc82930d0844d4d8a82bf47d19929ca"
+
+[[package]]
+name = "use-security"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "45b4b1c7be4a772d9c33c8248ecaa47d0c28b4da552062963be6cd4684e51770"
 
 [[package]]
 name = "use-sediment"
@@ -3437,10 +5379,14 @@ checksum = "56c91543c09dd8b44dd4adfa6718a1955ae9d8a7407c74b5891b13206b17a6e9"
 [[package]]
 name = "use-series"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6c32de10aeccfd30465a28b18fb2f9d3ae001b3f9f51c7f5caa0a8e50ff5a756"
 
 [[package]]
 name = "use-set"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5b1e1256ed2f174fac5153a237e8adda4ca141ef4284a2d1c49ca01dedf11dbf"
 
 [[package]]
 name = "use-setpoint"
@@ -3550,8 +5496,19 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "63ca670bbe3bce630d98be11f25f4b392e699ab1eecc589c850ee9ed6b22d3d5"
 
 [[package]]
-name = "use-socket"
+name = "use-solid"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7da6e52a19570bb0994d982cb87a4d34595a78d9911743e87669431f41af6da1"
+dependencies = [
+ "use-js-identifier",
+]
+
+[[package]]
+name = "use-spacing"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c554a96e3d5d631491c3be67a5315b2d103410459ac338691b60013752e79df0"
 
 [[package]]
 name = "use-spacing-scale"
@@ -3593,6 +5550,136 @@ dependencies = [
 ]
 
 [[package]]
+name = "use-sql"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "993d724f7903cc42cf4a77b798416607423a6cc01888ba52e82b2d6935efde6c"
+dependencies = [
+ "use-sql-clause",
+ "use-sql-column",
+ "use-sql-constraint",
+ "use-sql-dialect",
+ "use-sql-expression",
+ "use-sql-ident",
+ "use-sql-keyword",
+ "use-sql-operator",
+ "use-sql-param",
+ "use-sql-query",
+ "use-sql-schema",
+ "use-sql-table",
+ "use-sql-type",
+ "use-sql-value",
+]
+
+[[package]]
+name = "use-sql-clause"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7483887351ae1e0fe04489fbbfa465a8cf6f8ff3542b9b9ecc9049f56cc80613"
+
+[[package]]
+name = "use-sql-column"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bc349a3e105aa2fcc814b72065559b752b09dcc71f7efdfe42e0f6bd996dff65"
+dependencies = [
+ "use-sql-ident",
+ "use-sql-table",
+]
+
+[[package]]
+name = "use-sql-constraint"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ecda95b1e9b7ae385126c0c38dfc8e54848d4a9d4f3e903bb366a0bde091884c"
+dependencies = [
+ "use-sql-ident",
+]
+
+[[package]]
+name = "use-sql-dialect"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "89e8ca8fa7db4e8ca89b089f8bf1652d4f339003e102c412bae88bd4fb2bb0d1"
+
+[[package]]
+name = "use-sql-expression"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7bf5a95c34dbb8a55381765d422f36113419dc15bcef1466cd999880d21b9146"
+dependencies = [
+ "use-sql-column",
+ "use-sql-ident",
+ "use-sql-operator",
+ "use-sql-param",
+ "use-sql-value",
+]
+
+[[package]]
+name = "use-sql-ident"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c09f4d252e14857b4af52b5987889292b8ea36794dfb974a26b0a9f118d3a288"
+
+[[package]]
+name = "use-sql-keyword"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "01ccde95a198866b93126755509ef6a3fbcd432de5be8d58ea3131526e067d2f"
+
+[[package]]
+name = "use-sql-operator"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "16f20d79745514e2a5f6c68bb30ce60f6d5d7fae214c46332a08f0c6e58aedc5"
+
+[[package]]
+name = "use-sql-param"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f07f1dbd002b4cdc912ba088b22239c63f19e516ddaafee12d83247cf2c92cc3"
+dependencies = [
+ "use-sql-ident",
+]
+
+[[package]]
+name = "use-sql-query"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a3e20dbba8a6efdf4ec6db7eaa061042e06a17958eafe701caa5ae8fc6401f46"
+
+[[package]]
+name = "use-sql-schema"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0564c78cdedfa7a8fa62e3c963e90fae9a0c59bfb3b3658b63ab5fd7e5e04a56"
+dependencies = [
+ "use-sql-ident",
+]
+
+[[package]]
+name = "use-sql-table"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "df3f965eabc7ec739bb00d9cfab29f598ead47bac95ed59e880a96d76861ae27"
+dependencies = [
+ "use-sql-ident",
+ "use-sql-schema",
+]
+
+[[package]]
+name = "use-sql-type"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f2f2b64ee18e03f80975ed7b2441cfbfe9ba3440f1a538acbf80a488f1ceb4fb"
+
+[[package]]
+name = "use-sql-value"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fd599a5ff85e732bba7340c40ab5d688f5f0451fa47235acede28beca720a510"
+
+[[package]]
 name = "use-stability"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3631,6 +5718,8 @@ checksum = "3847e8336968d71e749fc0217d40e6d83f5189e11ab436a9d682d0113d0093b0"
 [[package]]
 name = "use-statistics"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7a9a684ee574aae66bf4752054abe9ad98aa7995c4bfbe1f002161664db67250"
 
 [[package]]
 name = "use-stats"
@@ -3646,10 +5735,6 @@ dependencies = [
  "use-variance",
  "use-z-score",
 ]
-
-[[package]]
-name = "use-status"
-version = "0.0.1"
 
 [[package]]
 name = "use-stderr"
@@ -3670,10 +5755,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "583d202fa61d6023268be3ecbbc7c809c92248282f59c93cd0bace82d714afc8"
 
 [[package]]
-name = "use-stoichiometry"
-version = "0.1.0"
+name = "use-storybook"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "15c79c6be44bc12f5c176e0d33277c2abaccdc9b70c152e5d07bd8928fb1244d"
 dependencies = [
- "use-chemical-formula",
+ "use-js-identifier",
 ]
 
 [[package]]
@@ -3701,6 +5788,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f7858b98993ca067c902b9d8c9d83145733da92e273a159704ec3c38fbe32c40"
 
 [[package]]
+name = "use-svelte"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9a5875f5decb73de5be9d5a6319b06b73f2f98a535a7d807a35793eecbdb72e1"
+dependencies = [
+ "use-js-identifier",
+]
+
+[[package]]
 name = "use-svg"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3713,20 +5809,28 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3eb66f0c98f1e0e9c4b6a1be4aaf1191cfa3b84e4927cc5ef8d1b725ee003965"
 
 [[package]]
+name = "use-tar"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d88b59fb6e6c32260491b3f472f16b305a27fe75302aad716030e82455636ee8"
+
+[[package]]
 name = "use-taxonomy"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2b42813615cd9218506e4fcb0ba6079937236bcb43d167c5bb5bffe401bb9adc"
 
 [[package]]
-name = "use-tcp"
-version = "0.1.0"
-
-[[package]]
 name = "use-tectonic-plate"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "65b4b5a9767b6d1f3852eaabe41e907d6dfee70c9d0612dce0a673a0889d3f16"
+
+[[package]]
+name = "use-tempo"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e2f770c4aab1cf3892e843f809f877a398784e95580ac511065d8c94af192a31"
 
 [[package]]
 name = "use-terminal"
@@ -3739,6 +5843,77 @@ name = "use-tessellation"
 version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "17373291d00e58e68d63dc516a7ddb2dbd3bb50b30f05168eb23360f0186481f"
+
+[[package]]
+name = "use-test"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0f937720bb96a9b08db8835c57f39d7244d713e20ff84ce8619a3333afe594e8"
+dependencies = [
+ "use-test-assertion",
+ "use-test-case",
+ "use-test-expectation",
+ "use-test-fixture",
+ "use-test-outcome",
+ "use-test-report",
+ "use-test-snapshot",
+ "use-test-status",
+ "use-test-suite",
+]
+
+[[package]]
+name = "use-test-assertion"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b4b4fcf8b0dc2d28ceaec45e8814ef10929dd4c7ef77596fe269908e92dc7498"
+
+[[package]]
+name = "use-test-case"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d4f7ba5e594c02dc1a11a21c0d57632834403496e5adb5254680d6e37afc2fa9"
+
+[[package]]
+name = "use-test-expectation"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d05183c0c6880e9e5aa68d631910aa4f78affe875ada823f50c66d1a0ea69bc5"
+
+[[package]]
+name = "use-test-fixture"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4929a663d660a5adbb70e8773143ea44ba5835993a91528c3d374821345b1451"
+
+[[package]]
+name = "use-test-outcome"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9fe57739ac15ec756bcb8d719007135d479e02a0c7a7a52b19c24f31c4bd6a41"
+
+[[package]]
+name = "use-test-report"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6732d18884bb854d7d0b93cf0820669adb4e9b4c36b96aaf694e4b8d99feb45f"
+
+[[package]]
+name = "use-test-snapshot"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1b31dade95ad1db7816467fff5fe7a8284ce8292ebaabbbf5744d7e0fb5c017c"
+
+[[package]]
+name = "use-test-status"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "784ef71e1d80ffce59890244a9d68a2655d9e4b1e56f94b4438fa327a6df5d28"
+
+[[package]]
+name = "use-test-suite"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6276ee60b414fe447ecf8b486c181c7b86d9e66f337236a34c7b8b25f5f4e660"
 
 [[package]]
 name = "use-text"
@@ -3765,6 +5940,12 @@ name = "use-text-line"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f956fb81d3c96a00b5519a76b5c1fbff152c973820989c9c744e7cc33e346e1e"
+
+[[package]]
+name = "use-theme"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "002fa92802c13dade9ec6a21ad2f8d46eb30969e3d89e0f691e31696cc60c7ed"
 
 [[package]]
 name = "use-thermal-expansion"
@@ -3812,6 +5993,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3f49f7ca373d2e209975793186e4d0099c86f805520a484f79b4f03d107b3836"
 
 [[package]]
+name = "use-timeseries-store"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "84192888e97c711aff16a99e66a87cdc74f35730224130e5e77388ab5bc5a422"
+
+[[package]]
 name = "use-timezone"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3831,6 +6018,12 @@ name = "use-token"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b9ce3b72288d4ac6d11fd860f53e19c7b478592f99a9bb0a2a83f421fe9fae64"
+
+[[package]]
+name = "use-tool-call"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "94cd79dd02e976c3e67f672b77d6b6b0793c14d6609d9492caefde7d58e1d955"
 
 [[package]]
 name = "use-torque"
@@ -3859,6 +6052,8 @@ checksum = "3a1b7133508e28c89248e8f8db558192eb29109a5c77c0c780993c5c86948885"
 [[package]]
 name = "use-transaction"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e689ff91374640ccc4d95656e738cbee98c4cd64e1edbbe86fe1754335112e21"
 dependencies = [
  "use-amount",
 ]
@@ -3900,12 +6095,38 @@ checksum = "585c370d686c44fc3f553442145661313df05970c3e0b2fbf86dc6412263ff7c"
 [[package]]
 name = "use-trigonometry"
 version = "0.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dbd41460d35632aad295c01a383b7cd551e9f06afc0f7f71ff7430de2f4efaa4"
 
 [[package]]
 name = "use-trophic-level"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "642dc5a6da6c7445b8483d7984cae409804491104ee3f8bc761d2e6e1a43b8d7"
+
+[[package]]
+name = "use-ts"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dca8086575f4a6e5e465e19dace4c016752e27f5e6f47576b41a205ba0109198"
+dependencies = [
+ "use-ecmascript",
+]
+
+[[package]]
+name = "use-tsconfig"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "08b5cc08b5f2fea44d083185c3363eecc43d342c33e155a40adb8e4324afab49"
+dependencies = [
+ "use-ts",
+]
+
+[[package]]
+name = "use-tuning"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c30b7c91533b3b1849867df71fb8167f1307e650cfdc16fc21c9d1319e694904"
 
 [[package]]
 name = "use-type-rhythm"
@@ -3942,8 +6163,36 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "eab6428add010e0516223c4acafe47430b2760dac8c395fa79d22523a2db9ab7"
 
 [[package]]
-name = "use-udp"
+name = "use-ui"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dcc8b5620ba937bd82e0ccc10540b1676e7090e67725aabd5b0b9e974c18dd2f"
+dependencies = [
+ "use-affordance",
+ "use-breakpoint",
+ "use-design-token",
+ "use-focus",
+ "use-interaction",
+ "use-layer",
+ "use-layout",
+ "use-spacing",
+ "use-theme",
+ "use-ui-component",
+ "use-ui-motion",
+ "use-viewport",
+]
+
+[[package]]
+name = "use-ui-component"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "05d5d4571d94f71aede1654d395dc6bf1f86c1c568b6b7b761435f2220ecf838"
+
+[[package]]
+name = "use-ui-motion"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "702fbe31436f5efb13d8832e2c0fec8c110b62c8c21ab00294bcd1e048b8fb51"
 
 [[package]]
 name = "use-ulid"
@@ -3973,14 +6222,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c1da6c84194f2898e4b8d4bfdba62f661d0031982ea21fe6ea4e91a5582fa972"
 
 [[package]]
-name = "use-uri"
-version = "0.0.1"
-
-[[package]]
-name = "use-url"
-version = "0.0.1"
-
-[[package]]
 name = "use-utm"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3994,6 +6235,12 @@ checksum = "d60caf3e1b228683e3b46fdd3848a7a60174ddb1ebff3b180474b3daaa8f9cef"
 dependencies = [
  "uuid",
 ]
+
+[[package]]
+name = "use-uv"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2d7fb04255cc35c71fc5f2ae6a7eebc59476bc094afe3e81295e4c7e5d8367f0"
 
 [[package]]
 name = "use-validate"
@@ -4024,20 +6271,42 @@ checksum = "fae06807c82cf8cd00b94396dbbaf84895d28cd09657564e7df81e5aebbde245"
 [[package]]
 name = "use-vector"
 version = "0.0.7"
-
-[[package]]
-name = "use-vector"
-version = "0.0.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "77ffc1bb9b9f8e52d625d5e33e1456c35142e3e2bdc0b8bcb93e65a4165bee77"
 
 [[package]]
+name = "use-vector-store"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a7ad1ca86d8a092a677c7f8fc53db0b30aa3e5c90bc95c3213f11c2fb44af9de"
+
+[[package]]
+name = "use-venv"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8af414b80b1d5f1034677fac6be184722859b17608e5cc5fb0bf6714a916f007"
+
+[[package]]
 name = "use-version"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e208011eda1b74b9d0aa70a0c4efd6bee7ef44ff28af9a2e88ce6e58130b2a9f"
 dependencies = [
  "semver",
  "serde",
 ]
+
+[[package]]
+name = "use-viewport"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6bea91670a40ae46d4cfbf64bc4bc0951a83e16118c773bd8dd521aab211c40b"
+
+[[package]]
+name = "use-vite"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "02024f302cac4fff800a6ea652100b72783ac65149165f8b8641ada8c35953bc"
 
 [[package]]
 name = "use-volatility"
@@ -4053,6 +6322,130 @@ checksum = "46d8ed991d5449abc749c2f264f461b437a5c3b9107d543db700314d70e151c8"
 dependencies = [
  "use-point 0.0.6",
 ]
+
+[[package]]
+name = "use-vue"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a68589654c2e76f8f6171a4219396a80109acd2713480e77ebc7aae809d04dee"
+dependencies = [
+ "use-js-identifier",
+]
+
+[[package]]
+name = "use-warc"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6062798454f49ec591e0ac7b6b6fd8170e6fc81fee863ef8b020b174a376ee9e"
+
+[[package]]
+name = "use-wasi"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e97353511b4839c081d42c02a9bc818bd3c6d65ea73f60962821acbad696e0a1"
+
+[[package]]
+name = "use-wasm"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a6d572ec8ddc823be3ed9a7a181bb66ba6981eea2bac48fb6fc8d0abd7ef275b"
+dependencies = [
+ "use-wasi",
+ "use-wasm-binary",
+ "use-wasm-component",
+ "use-wasm-export",
+ "use-wasm-feature",
+ "use-wasm-function",
+ "use-wasm-import",
+ "use-wasm-memory",
+ "use-wasm-module",
+ "use-wasm-section",
+ "use-wasm-target",
+ "use-wasm-text",
+ "use-wasm-value",
+ "use-wasm-wit",
+]
+
+[[package]]
+name = "use-wasm-binary"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2e568ef48cbbdafeded892c1eff4a6c1679d2f23a7f5b33d11e4a0511328fe0f"
+
+[[package]]
+name = "use-wasm-component"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5fd95376d342d84bf8c78228bd06efb46ddcb4d0232a4718ecd663268f76d9e6"
+
+[[package]]
+name = "use-wasm-export"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "48e7e64502eb64eda3b7c1baa59df085268f1e2b3a8a9bc82583cb511c9c21bc"
+
+[[package]]
+name = "use-wasm-feature"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "04ccd8ee1a9d08ba71bedc31d660296ba2051922fcd7b1d3f0d646f9a21e97ae"
+
+[[package]]
+name = "use-wasm-function"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5613a38d0eda59ad58d8e257798595261a0120b471dc9774a74123a3b54e4e5b"
+dependencies = [
+ "use-wasm-value",
+]
+
+[[package]]
+name = "use-wasm-import"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6cd3544e648e4087242e4781daaf292c695d7629a43f4e72bcfa2c983f312195"
+
+[[package]]
+name = "use-wasm-memory"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b22ccb3112915ad2b154ada1f8e307ad5c088df8c2f7a954dcaeef246ce697fe"
+
+[[package]]
+name = "use-wasm-module"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "58aa0fea43daf44db3368feb8769d1988138856d71577b1c56f2a58669f9b963"
+
+[[package]]
+name = "use-wasm-section"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "57dcca2c79b19050d6d28bc86114585fa8fb469532e30efc0b1bcc82f45f78d2"
+
+[[package]]
+name = "use-wasm-target"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6be7b25570734c062a98cf04a330dbd0dfedffdb55c0635dc29cb0e10bd2ab90"
+
+[[package]]
+name = "use-wasm-text"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a00b122d2a4f8b55053da7422d656f75485de85a5d74414f32f56b3193371980"
+
+[[package]]
+name = "use-wasm-value"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "09349260a58bf2328f25eb3b8b98c63d359e7257c949919c8c2769aca7f8c79f"
+
+[[package]]
+name = "use-wasm-wit"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f9da1649da885bb98dde32b307cb78e0659df3b93dfe7a26e10c5d5ea1774706"
 
 [[package]]
 name = "use-wave"
@@ -4081,10 +6474,14 @@ checksum = "8f3267d325b51016862b0dc526f1cf6ca856e52832ab3182dfdd95aa1f44cc08"
 [[package]]
 name = "use-web"
 version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8e7a7f5395dd5cc6cdb81c436336536589a0c13812e47090fcdaa12e743efe9a"
 
 [[package]]
-name = "use-web-css"
+name = "use-webhook"
 version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c9d206991bdba6ac5736212670a8236fda8877f77d5927e80c92cab93c9b5d40"
 
 [[package]]
 name = "use-weekday"
@@ -4102,8 +6499,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8fff4818bc2c30c332b87a1085417efeb354c63a96ce320be5743b9a2122cfd3"
 
 [[package]]
-name = "use-wildcard"
+name = "use-wide-column"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6f27c33d250bef3f6a5e1367e168d0d10eff8e6dfe5a5b925376dfa81996ad78"
 
 [[package]]
 name = "use-wind"
@@ -4118,6 +6517,24 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e134bc673fbbe6020d96e379821781d4fce3067b575b7f20b5c0ffa021a8dfe9"
 
 [[package]]
+name = "use-wordpress"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d550f2aa9ebc62f503f2937093f690d775914649936a58475445f7a18841e403"
+
+[[package]]
+name = "use-wordpress-block"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8cb00a7cacc97efba38c710100e741dd606ef5298bddefa34f681be98e72de77"
+
+[[package]]
+name = "use-wordpress-hook"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "504dbd0cf0afd8d3e21ec91745bfd1e0dfe29fd0773fb0f9dd279385c982c473"
+
+[[package]]
 name = "use-work"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4128,6 +6545,18 @@ name = "use-wythoff"
 version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dc253590db9749a060559ed44de7cc016e1c87ef67c1371858c6bfbcf4c74f72"
+
+[[package]]
+name = "use-xz"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9ac16d53ba7c1f14f92ea191f6e6651b9166325d607a694e1fd37a21e5d598aa"
+
+[[package]]
+name = "use-yarn"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "12a0be78bb2b83128bcdf3fdafca19a4d3125415ac4db36021217e2d33287d81"
 
 [[package]]
 name = "use-year"
@@ -4149,6 +6578,18 @@ name = "use-zero-crossing"
 version = "0.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c5062da5da3e6729ac7ff4e26867b34017e6a2d6467525c59c628ad2666dce9c"
+
+[[package]]
+name = "use-zip"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5ed2947be980d45caa40f38467252c5d234967d77169476543f64268f3196a1b"
+
+[[package]]
+name = "use-zstd"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bceae9c0d14da9d23e5917fbe4848064864cbc7dea1fe2c52b622ba5cc3d5b52"
 
 [[package]]
 name = "uuid"
